@@ -32,13 +32,31 @@ tags: ["R Markdown", "plot", "regression"]
 
 |       Para inserir *objetos* e *caminhos* no **Sisma**, e elaborar reações, cadeias ou redes metabólicas dinâmicas, pode-se seguir esse [tutorial](.\sisma.tut.pdf). 
 
-## Alguns exemplos ##
+## Exemplos de Mapas do Sisma ##
 
-[Condição de Briggs-Haldane do estado estacionário](.\briggsHald.sis)
+[Condição de Briggs-Haldane do estado estacionário](.\mapas\briggsHald.sis)
 
-[Equilíbrio T-R em enzima](.\eqTR.sis)
+[Efeito de Vm e Km](.\mapas\Vm_Km.sis)
 
-[Glicólise](.\glicolise.sis)
+[Efeito do teor de enzima](.\mapas\conc_enz.sis)
+
+[Inibição por substrato](.\mapas\inib_substr.sis)
+
+[Equilíbrio T-R em enzima](.\mapas\eqTR.sis)
+
+[Ajuste induzido](.\mapas\ajuste_induzido.sis)
+
+[Efetor alostérico negativo](.\mapas\efetor_neg.sis)
+
+[Efetor alostérico positivo](.\mapas\efetor_pos.sis)
+
+[Glicólise](.\mapas\glicolise.sis)
+
+[Metabolismo de carboidratos](.\mapas\mapaCHO.sis)
+
+[Beta-oxidação de ácidos graxos](.\mapas\betaoxid.sis)
+
+[Mapa Metabólico](.\mapas\mapaMetab.sis)
  
 
 
