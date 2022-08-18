@@ -68,5 +68,14 @@ fontesize: 12pt
 ![](1a2t.png){width=5%}  [1a2t - nuclease de estafilococo (chave grega)](.\1a2t.png){target="\_blank"}
 ![](9pap.png){width=5%}  [9pap - papaína](.\9pap.png){target="\_blank"}
 ![](1mbo.png){width=5%}  [1mbo - mioglobina](.\1mbo.png){target="\_blank"}
-k
-
+![](1cgd.png){width=5%}  [1cgd - colágeno](.\1cgd.png){target="\_blank"}
+![](1slk.png){width=5%}  [1slk - fibroína](.\1slk.png){target="\_blank"}
+![](1pkm.png){width=5%}  [1pkm - piruvato quinase](.\1pkm.png){target="\_blank"}
+![](1ldn.png){width=5%}  [1ldn - lactato desidrogenase](.\1ldn.png){target="\_blank"}
+![](1emd.png){width=5%}  [1emd - succinato desidrogenase](.\1emd.png){target="\_blank"}
+![](1thb.png){width=5%}  [1thb - hemoglobina](.\1thb.png){target="\_blank"}
+![](1igt.png){width=5%}  [1igt - imunoglobulina G](.\1igt.png){target="\_blank
+![](1prc.png){width=5%}  [1prc - fotossistema](.\1prc.png){target="\_blank
+![](1aon.png){width=5%}  [1aon - chaperonina GroEl](.\1aon.png){target="\_blank
+![](1aoi.png){width=5%}  [1aoi - nucleossomo](.\1aoi.png){target="\_blank
+![](1qrs.png){width=5%}  [1qrs - ribossomo](.\1qrs.png){target="\_blank
