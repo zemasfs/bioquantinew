@@ -143,10 +143,19 @@ fontesize: 12pt
 ![](progesterona.png){width=5%}  [progesterona](.\progesterona.png){target="\_blank"}
 ![](aldosterona.png){width=5%}  [aldosterona](.\aldosterona.png){target="\_blank"}
 ![](cortisol.png){width=5%}  [cortisol](.\cortisol.png){target="\_blank"}
-![](ac_colico.png){width=5%}  [ác cólico](.\ac_deoxicolico.png){target="\_blank"}
-![](ac_deoxicolico.png){width=5%}  [taurina](.\taurina.png){target="\_blank"}
+![](ac_colico.png){width=5%}  [ác cólico](.\ac_colico.png){target="\_blank"}
+![](ac_deoxicolico.png){width=5%}  [ácido deoxicólico](.\ac_deoxicolico.png){target="\_blank"}
 ![](taurina.png){width=5%}  [taurina](.\taurina.png){target="\_blank"}
 
+## Capítulo 9 - Ácidos Nucleicos ##
 
-
-
+![](adenine.png){width=5%}  [adenina](.\adenine.png){target="\_blank"}
+![](citosina.png){width=5%}  [citosina](.\citosina.png){target="\_blank"}
+![](guanine.png){width=5%}  [guanina](.\guanine.png){target="\_blank"}
+![](uracil.png){width=5%}  [uracila](.\uracil.png){target="\_blank"}
+![](423D.png){width=5%}  [423D - B-DNA](.\423D.png){target="\_blank"}
+![](1qph.png){width=5%}  [1qph - A-DNA](.\1qph.png){target="\_blank"}
+![](1dj6.png){width=5%}  [1dj6 - Z-DNA](.\1dj6.png){target="\_blank"}
+![](6tna.png){width=5%}  [6tna - tRNA](.\6tna.png){target="\_blank"}
+![](1j5e.png){width=5%}  [1j5e - ribossomo](.\1j5e.png){target="\_blank"}
+![](4v42.png){width=5%}  [4v42 - partícula 70S](.\4v42.png){target="\_blank"}

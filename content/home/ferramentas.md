@@ -23,5 +23,8 @@ design:
 <!---Sisma --->
 {{< icon name="list-group-item" pack="fa fa-pencil fa-fw" >}} {{< staticref "uploads/SismaBook/index.html" "newtab" >}}Dinâmica & Sisma{{< /staticref >}}
 
+<!---Outras --->
+{{< icon name="list-group-item" pack="fa fa-pencil fa-fw" >}} {{< staticref "uploads/Outras/index.html" "newtab" >}}Outras{{< /staticref >}}
+
 </font>
 

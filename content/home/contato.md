@@ -13,6 +13,7 @@ active : true
 title: Contato
 subtitle: Prof. Dr. José Maurício SF Silva 
 
+
 content:
   # Automatically link email and phone or display as text?
   autolink: true
@@ -59,3 +60,4 @@ design:
   columns: '2'
 ---
 
+![](https://www.unifal-mg.edu.br/portal/wp-content/uploads/sites/52/2020/01/cropped-logo-portal-3-3.png) 

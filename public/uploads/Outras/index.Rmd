@@ -1,0 +1,83 @@
+---
+title: "Outras Ferramentas Educacionais Para Bioquímica"
+author: 
+# hidedate: TRUE
+date:  
+categories: ["R"]
+tags: []
+---
+
+<font size="4">
+
+<!-- ![ ](estacion.png){width=40%} -->
+
+|       Os *links* abaixo permitem acessar alguns objetos didáticos *online* e de instalação para o ensino e aprendizagem em Bioquímica e áreas correlatas, e que requerem a intervenção do usuário.
+
+ <br />
+
+[Protein Purification](http://www.agbooth.com/pp_ajax/){target="\_blank"}. Ferramenta online (também para Android e iPhone) que simula o fracionamento proteico por técnicas diversas.
+
+[EnzLab](https://download.cnet.com/EnzLab-for-Windows-32-bit/3000-2054_4-76136182.html){target="\_blank"}. Programa pra Windows e Mac que simula a atividade em laboratório de experimentos de cinética e inibição enzimáticas. 
+
+[Dosagem de Proteínas - Biureto](https://www.bdc.ib.unicamp.br/bdc/visualizarMaterial.php?idMaterial=1342){target="\_blank"}. Simulação de ensaio para determinação de proteínas por absorção molecular.
+
+[iMolView](https://www.molsoft.com/iMolview.html){target="\_blank"}. Aplicativo para Android de visualização de moléculas em 3D (NCBI, PDB e DrugBank).
+
+[LudoKrebs: aprendendo bioquímica de um modo divertido](LudoKrebs: aprendendo bioquímica de um modo divertido){target="\_blank"}. Jogo de tabuleiro para o ensino de metabolismo energético.
+
+[Determinação sorológica de antígeno por ELISA](https://media.hhmi.org/biointeractive/vlabs/immunology/index.html){target="\_blank"}. Ferramenta online de simulação de ELISA aplicada à identificação de lupus eritematoso.
+
+[BDC - Biblioteca Digital de Ciências da Unicamp](https://www.bdc.ib.unicamp.br/bdc/busca.php?tipoMaterial=a%3A1%3A%7Bi%3A0%3Bs%3A8%3A%22software%22%3B%7D&acao=exibirCategoria){target="\_blank"}. Portal de acesso a diversos softwares aplicados na área.
+
+[LTE - Laboratório de Tecnologia Educacional da Unicamp](https://www.lte.ib.unicamp.br/portal/). Portal de acesso com aplicativos diversos na área, incluindo de realidade aumentada (ARMET).
+
+
+
+
+
+<!-- ![ ](RP1.png){width=40%} -->
+<!-- ![ ](rede.png){width=40%} -->
+<!-- ![ ](achase.png){width=30%} -->
+
+<!-- ## Download ## -->
+
+<!-- |       O arquivo comprimido contendo o programa pode ser obtido neste [link](.\Sisma.zip) -->
+
+<!-- ## Dica rápida de uso ! ## -->
+<!-- |       Para utilizar o **Sisma** baixe o arquivo do link acima e descompacte-o no seu PC. Não requer instalação, apenas [*JAVA*](https://www.java.com/pt-BR/download/manual.jsp). Para executá-lo, vá para a pasta "dist" e clique no arquivo de Java (*"Sisma_Realese_1.jar"*). -->
+
+<!-- ## Tutorial ## -->
+
+<!-- |       Para inserir *objetos* e *caminhos* no **Sisma**, e elaborar reações, cadeias ou redes metabólicas dinâmicas, pode-se seguir esse [tutorial](.\sisma.tut.pdf).  -->
+
+<!-- ## Exemplos de Mapas do Sisma ## -->
+
+<!-- [Condição de Briggs-Haldane do estado estacionário](.\mapas\briggsHald.sis) -->
+
+<!-- [Efeito de Vm e Km](.\mapas\Vm_Km.sis) -->
+
+<!-- [Efeito do teor de enzima](.\mapas\conc_enz.sis) -->
+
+<!-- [Inibição por substrato](.\mapas\inib_substr.sis) -->
+
+<!-- [Equilíbrio T-R em enzima](.\mapas\eqTR.sis) -->
+
+<!-- [Ajuste induzido](.\mapas\ajuste_induzido.sis) -->
+
+<!-- [Efetor alostérico negativo](.\mapas\efetor_neg.sis) -->
+
+<!-- [Efetor alostérico positivo](.\mapas\efetor_pos.sis) -->
+
+<!-- [Glicólise](.\mapas\glicolise.sis) -->
+
+<!-- [Metabolismo de carboidratos](.\mapas\mapaCHO.sis) -->
+
+<!-- [Beta-oxidação de ácidos graxos](.\mapas\betaoxid.sis) -->
+
+<!-- [Mapa Metabólico](.\mapas\mapaMetab.sis) -->
+ 
+
+
+</font>
+
+
