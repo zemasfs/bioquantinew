@@ -30,7 +30,7 @@ tags: ["R Markdown", "plot", "regression"]
 
 ## Tutorial ##
 
-|       Para inserir *objetos* e *caminhos* no **Sisma**, e elaborar reações, cadeias ou redes metabólicas dinâmicas, pode-se seguir esse [tutorial](.\sisma.tut.pdf). 
+|       Para inserir *objetos* e *caminhos* no **Sisma**, e elaborar reações, cadeias ou redes metabólicas dinâmicas, pode-se seguir esse [tutorial](.\sisma_all.pdf). 
 
 ## Exemplos de Mapas do Sisma ##
 

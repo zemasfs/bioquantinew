@@ -9,7 +9,7 @@ tags: ["R Markdown", "plot", "regression"]
 
 <font size="4">
 
-![ ](estacion.png){width=40%}
+![ ](logo_sisma.png){width=20%}
 
 |       **Sisma** é um programa elaborado com a proposta de gerar uma imagem dinâmica de transformações ocorridas entre reagentes e produtos em uma rede, e pela simples inserção de compostos (*object*) interligados por setas (*path*). Nesse sentido, o programa foi desenhado para facilitar a inserção de reagentes e vias metabólicas, simulando o que se desenharia com um lápis e uma folha de papel em branco. 
 
@@ -17,6 +17,7 @@ tags: ["R Markdown", "plot", "regression"]
 
 |       Para o estudo dessas relações, o programa permite a inserção de objetos, vias, figuras e anotações no mapa, armazenamento e leitura de mapas, simulações por gráfico de pontos e linhas para cada objeto simultaneamente às que ocorrem no próprio mapa, pausa, interrupção, retrocesso e avanço da visualização a qualquer momento da simulação, geração automática e exportação de planilha contendo os valores numéricos de cada objeto transformado em cada instante, e impressão instantânea do mapa no ponto de uma transformação desejada. Dessa forma, o programa torna dinâmica a visualização de forças e de fluxos que são apresentados de forma estática em representações bidimensionais de mesma natureza em Bioquímica e áreas afins. 
 
+![ ](estacion.png){width=40%}
 ![ ](RP1.png){width=40%}
 ![ ](rede.png){width=40%}
 ![ ](achase.png){width=30%}
@@ -30,7 +31,7 @@ tags: ["R Markdown", "plot", "regression"]
 
 ## Tutorial ##
 
-|       Para inserir *objetos* e *caminhos* no **Sisma**, e elaborar reações, cadeias ou redes metabólicas dinâmicas, pode-se seguir esse [tutorial](.\sisma.tut.pdf). 
+|       Para inserir *objetos* e *caminhos* no **Sisma**, e elaborar reações, cadeias ou redes metabólicas dinâmicas, pode-se seguir esse [tutorial](.\sisma_all.pdf). 
 
 ## Exemplos de Mapas do Sisma ##
 
