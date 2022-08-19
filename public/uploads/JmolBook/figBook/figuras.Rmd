@@ -107,10 +107,22 @@ fontesize: 12pt
 ![](sac.png){width=5%}  [sacarose ](.\sac.png){target="\_blank"}
 ![](lac.png){width=5%}  [lactose ](.\lac.png){target="\_blank"}
 ![](maltotriose.png){width=5%}  [maltotriose ](.\maltotriose.png){target="\_blank"}
+![](inulina.png){width=5%}  [inulina ](.\inulina.png){target="\_blank"}
 ![](amilopectina.png){width=5%}  [amilopectina ](.\amilopectina.png){target="\_blank"}
 ![](amilose.png){width=5%}  [amilose ](.\amilose.png){target="\_blank"}
 ![](glicogenio.png){width=5%}  [glicogênio](.\glicogenio.png){target="\_blank"}
 ![](celulose.png){width=5%}  [celulose](.\celulose.png){target="\_blank"}
 ![](quitina.png){width=5%}  [quitina ](.\quitina.png){target="\_blank"}
 ![](hialuronico.png){width=5%}  [ácido hialurônico](.\hialuronico.png){target="\_blank"}
+![](heparina.png){width=5%}  [heparina ](.\heparina.png){target="\_blank"}
+![](pectina.png){width=5%}  [pectina ](.\pectina.png){target="\_blank"}
+
+## Capítulo 8 - Lipídios ##
+
+
+
+
+
+
+
 
