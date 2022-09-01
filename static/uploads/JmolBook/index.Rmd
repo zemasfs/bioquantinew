@@ -17,12 +17,16 @@ de translação e rotação nas moléculas, ampliação visual, cálculos de dis
 |       O programa é multiplataforma (Windows, Mac OS X, Linux, Unix) elaborado em ambiente Java, e que pode ser executado tanto em versão fechada (standalone), como integrado a outras aplicações em Java, ou ainda junto a *browsers* de internet por auxílio de um applet. *Jmol* pode rodar tanto a partir de
 uma pasta de diretório contendo seus arquivos, como a partir de um disco rígido ou mídia removível (pendrive).
 
-|       Os conteúdos desenvolvidos com **Jmol** para **Bioquímica** e temas afins podem ser visualizados neste [ebook](.\BioqEstrutJmol.pdf).
-|       As estruturas contidas no **ebook** podem ser obtidas nesse [link](.\figBook\figuras.html), separadas por capítulo. Também pode-se obter o [aquivo comprimido](.\figBook\figBook.zip) contendo todas as estruturas. Pode-se observá-las de forma estática num visualizador de imagens, ou tridimensionalmente pelo *Jmol*.
+|       Os conteúdos desenvolvidos com **Jmol** para **Bioquímica** e temas afins podem ser visualizados neste [ebook](.\BioqEstrutJmol.pdf). Trata-se de um material  autoinstrucional para o aprendizado das principais estruturas moleculares em *Bioquímica*, e elaborado num formato itemizado, permitindo o aprendizado progressivo dos temas tratados com uso do visualizador.
+|       As estruturas contidas no **ebook** podem ser obtidas nesse [LINK](.\figBook\figuras.html), e estão separadas por capítulos. Também pode-se obter o [aquivo comprimido](.\figBook\figBook.zip) contendo todas as estruturas. Pode-se observá-las de forma estática num visualizador de imagens, ou tridimensionalmente pelo *Jmol*.
 
-## Uma dica ! ## 
+
+## Dica rápida de uso ! ## 
 
 |       O *Jmol* pode ser acessado *online* por diversos sítios de Biologia Estrutural, tais como [Jmol User Design Environment (JUDE)](https://cbm.msoe.edu/modelingResources/jmolUserDesignEnvironment/#forward){target="\_blank"} do *Center For Biomolecular Modelling (CBM-SOE)* da *Milwaukee School of Engineering*.
+
+|       Assim, basta entrar no [link](https://cbm.msoe.edu/modelingResources/jmolUserDesignEnvironment/#forward){target="\_blank"}, clicar com o botão direito do mouse no espaço vazio (*canvas*), buscar File->Load->Open from PDB, e digitar um código do banco de dados online [Protein DataBank](https://www.rcsb.org/) como, por exemplo *5cyt* (citocromo C).
+|       Por outro lado, se desejar o estudo de alguma figura do [ebook](.\BioqEstrutJmol.pdf), baixe o arquivo do  [link](.\figBook\figuras.html) de imagens, e arraste-o para a janela do [JUDE](https://cbm.msoe.edu/modelingResources/jmolUserDesignEnvironment/#forward), para renderizar a estrutura em 3D.
 
 ![](jmol2.png){width=20%}
 
