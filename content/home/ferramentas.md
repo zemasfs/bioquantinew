@@ -14,17 +14,18 @@ design:
 
 <font size="6">
 
-<!--- RStudio --->
-{{< icon name="list-group-item" pack="fa fa-pencil fa-fw" >}} {{< staticref "uploads/biqBook/index.html" "newtab" >}}Quantidades & R{{< /staticref >}} 
-
 <!--- Jmol --->
 {{< icon name="list-group-item" pack="fa fa-pencil fa-fw" >}} {{< staticref "uploads/JmolBook/index.html" "newtab" >}}Estrutura & Jmol{{< /staticref >}}
+
+<!--- RStudio --->
+{{< icon name="list-group-item" pack="fa fa-pencil fa-fw" >}} {{< staticref "uploads/biqBook/index.html" "newtab" >}}Função & R{{< /staticref >}} 
 
 <!---Sisma --->
 {{< icon name="list-group-item" pack="fa fa-pencil fa-fw" >}} {{< staticref "uploads/SismaBook/index.html" "newtab" >}}Dinâmica & Sisma{{< /staticref >}}
 
 <!---Outras --->
 {{< icon name="list-group-item" pack="fa fa-pencil fa-fw" >}} {{< staticref "uploads/Outras/index.html" "newtab" >}}Outras{{< /staticref >}}
+
 
 </font>
 
