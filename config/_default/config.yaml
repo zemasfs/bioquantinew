@@ -8,7 +8,8 @@ title: Bioquímica Quantitativa # Nome do sítio que vai à esquerda da página 
 baseURL: 'https://bioquanti.netlify.app/' # Website URL
 marketing:
   analytics:
-    google_analytics: 'G-S1L73VGCG5'
+    google_analytics: 'G-J1WH4VNZ3F' 
+    # do bioquanti.net: 'G-S1L73VGCG5'
 
 ############################
 ## LANGUAGE
