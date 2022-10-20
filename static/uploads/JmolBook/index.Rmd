@@ -53,7 +53,7 @@ uma pasta de diretório contendo seus arquivos, como a partir de um disco rígid
 
 [Peptídios](.\JmolQuarto\peptidio.html)
 
-[Proteínas](.\JmolQuarto\proteinas.html)
+[Proteínas](.\JmolQuarto\proteina.html)
 
 
 
