@@ -34,12 +34,12 @@ uma pasta de diretório contendo seus arquivos, como a partir de um disco rígid
 
 ## Dica rápida de uso ! ## 
 
-|       O *Jmol* é acessado *online* por diversos sítios de *Biologia Estrutura*l, tais como [Jmol User Design Environment (JUDE)](https://cbm.msoe.edu/modelingResources/jmolUserDesignEnvironment/#forward){target="\_blank"} do *Center For Biomolecular Modelling (CBM-SOE)* da *Milwaukee School of Engineering*.
+|       O *Jmol* é acessado *online* por diversos sítios de *Biologia Estrutural*, tais como [First Glance in Jmol](https://proteopedia.org/wiki/fgij/){target="\_blank"} do *Proteopedia*, ou o [St. Olaf College](https://chemapps.stolaf.edu/jmol/jsmol/simple.htm).
 
-|       Este [**tutorial rápido**](https://youtu.be/NnO4oytvvjk){target="\_blank"} em *vídeo* ilustra essa dica.
+|       Este [**tutorial rápido**](https://youtu.be/NnO4oytvvjk){target="\_blank"} em *vídeo* ilustra uma dica também para outro site .
 
-|       Assim, basta entrar no [link](https://cbm.msoe.edu/modelingResources/jmolUserDesignEnvironment/#forward){target="\_blank"}, clicar com o botão direito do mouse no espaço vazio (*canvas*), buscar *File->Load->Open from PDB*, e digitar um código do banco de dados online [*Protein Data Bank*](https://www.rcsb.org/) como, por exemplo *5cyt* (citocromo C).
-|       Por outro lado, se desejar o estudo de alguma figura do [ebook](.\BioqEstrutJmol.pdf), baixe o arquivo desejado do  [link](.\figBook\figuras.html) de imagens, e arraste-o para a janela do [JUDE](https://cbm.msoe.edu/modelingResources/jmolUserDesignEnvironment/#forward), para renderizar a estrutura em 3D automaticamente.
+|       Assim, basta entrar no [link](https://proteopedia.org/wiki/fgij/){target="\_blank"}, clicar com o botão direito do mouse no espaço vazio (*canvas*), buscar *File->Load->Open from PDB*, e digitar um código do banco de dados online [*Protein Data Bank*](https://www.rcsb.org/) como, por exemplo *5cyt* (citocromo C).
+|       Por outro lado, se desejar o estudo de alguma figura do [ebook](.\BioqEstrutJmol.pdf), baixe o arquivo desejado do  [link](.\figBook\figuras.html) de imagens, e arraste-o para a janela do [FGJM](https://cbm.msoe.edu/modelingResources/jmolUserDesignEnvironment/#forward), para renderizar a estrutura em 3D automaticamente.
 
 ![](jmol2.png){width=20%}
 
@@ -50,6 +50,9 @@ uma pasta de diretório contendo seus arquivos, como a partir de um disco rígid
 |       Os links abaixo possibilitam experimentar um *material em construção totalmente online* para aprendizado em Bioquímica e uso do *Jmol*. Este material está sob portabilização e adaptação a partir do *ebook* constante nesta página.
 
 [Aminoácidos](.\JmolQuarto\aminoacid.html)
+
+
+[Peptídios](.\JmolQuarto\peptidios.html)
 
 
 
