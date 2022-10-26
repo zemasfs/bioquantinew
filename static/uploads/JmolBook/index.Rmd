@@ -55,7 +55,7 @@ uma pasta de diretório contendo seus arquivos, como a partir de um disco rígid
 
 [Comandos](.\JmolQuarto\comandos.html){target="_blank"}
 
-[Aminoácidos](.\JmolQuarto\aminoacid.html){target="_blank"}
+[Aminoácidos](.\JmolQuarto\aminoacido.html){target="_blank"}
 
 [Peptídios](.\JmolQuarto\peptidio.html){target="_blank"}
 
