@@ -31,6 +31,10 @@ uma pasta de diretório contendo seus arquivos, como a partir de um disco rígid
 
 |       Os modelos contidos no **ebook** são obtidos neste [**LINK**](.\figBook\figuras.html){target="_blank"}, separados por capítulos do *ebook*, ou em [aquivo único comprimido (zip)](.\figBook\figBook.zip), contendo as imagens renderizáveis. As figuras são abertas em qualquer visualizador de imagens de forma estática, ou renderizam-se tridimensionalmente pelo *Jmol*.
 
+## Outros programas para visualização de modelos 3D
+
+|	Existem diversos programas para renderização tridimensional de modelos atômicos, tanto *standalone*, para dispositivos móveis (Android, iPhone), como *online*. Uma rápida busca na internet permite acessas programas como *Pymol*, *Maestro*, *iMolView*, *Vesta*, *QuteMol*, dentre vários.
+
 
 ## Dica rápida de uso ! ## 
 
@@ -49,7 +53,7 @@ uma pasta de diretório contendo seus arquivos, como a partir de um disco rígid
 ## Em Desenvolvimento...
 |       Os links abaixo possibilitam experimentar um *material em construção totalmente online* para aprendizado em Bioquímica e uso do *Jmol*. Este material está sob portabilização e adaptação a partir do *ebook* constante nesta página.
 
-[Comandos Básicos](.\JmolQuarto\comandos.html){target="_blank"}
+[Comandos](.\JmolQuarto\comandos.html){target="_blank"}
 
 [Aminoácidos](.\JmolQuarto\aminoacid.html){target="_blank"}
 
