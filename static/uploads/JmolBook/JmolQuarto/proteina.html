@@ -20,6 +20,69 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -218,21 +281,24 @@ ul.task-list li input[type="checkbox"] {
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Abra o <em>Console</em> e baixe o arquivo que segue do banco de estruturas, ou ainda pela página do próprio PDB:</p>
 <p><a href="https://chemapps.stolaf.edu/jmol/jmol.php?pdbid=1lev&amp;script=Console" target="_blank">1lev.pdb</a></p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;De que estrutura se trata ? <em>Domínio da frutose-1,6-bifosfatase</em> de rim suíno complexada a um ligante (veja a informação do <em>Console</em> pelo <em>Jmol</em>, ou pelo <em>sítio do PDB</em>, ou ainda pelo comando <em>show file</em> já visto. Apesar de refletir uma molécula apenas, o modelo não permite distinção de peculiaridades da estrutura. Nesse sentido, experimente as ações abaixo para uma melhor visualização e estudo, colando cada linha no <em>Console</em> e executando uma por vez.</p>
-<pre><code>cartoon only # renderiza como "cartoon"
-color structure # modifica a coloração do modelo em função de sua estrutura 2a.
-spin 10 # rotaciona o modelo a determinada velocidade
-spin off # para interromper a rotação</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>cartoon only <span class="co"># renderiza como "cartoon"</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>color structure <span class="co"># modifica a coloração do modelo em função de sua estrutura 2a.</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>spin <span class="dv">10</span> <span class="co"># rotaciona o modelo a determinada velocidade</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>spin off <span class="co"># para interromper a rotação</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Em qualquer estrutura proteica em meio aquoso, os resíduos de aminoácidos hidrofóbicos tendem a situar-se no <em>cerne</em> (interior) da proteína, ao passo que os polares em sua <em>superfície</em>. Para testar isso, visualize a proteína seguindo o trecho de código abaixo.</p>
-<pre><code>spacefill only; select hydrophobic; color green; select positive; color blue; select negative; color red; select aromatic; color magenta # distribui cores para classes de aminoácidos
-
-rotate # observe a distribuição de resíduos carregados e aromáticos
-
-slab on; slab 50 # realiza um corte sagital nos orbitais atômicos (fatiamento, 50% no caso)
-
-slab off # retirada do recurso de fatiamento</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>spacefill only; select hydrophobic; color green; select positive; color blue; select negative; color red; select aromatic; color magenta <span class="co"># distribui cores para classes de aminoácidos</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>rotate <span class="co"># observe a distribuição de resíduos carregados e aromáticos</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>slab on; slab <span class="dv">50</span> <span class="co"># realiza um corte sagital nos orbitais atômicos (fatiamento, 50% no caso)</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>slab off <span class="co"># retirada do recurso de fatiamento</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para visualizar a estrutura da proteína com <em>renderizações distintas</em>, experimente:</p>
-<pre><code>backbone only; backbone 50
-trace only; trace 100</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>backbone only; backbone <span class="dv">50</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>trace only; trace <span class="dv">100</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <section id="hierarquia-estrutural-de-proteínas" class="level3" data-number="4.4.1">
 <h3 data-number="4.4.1" class="anchored" data-anchor-id="hierarquia-estrutural-de-proteínas"><span class="header-section-number">4.4.1</span> <strong>Hierarquia estrutural de proteínas</strong></h3>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No intuito de se facilitar a observação e estudo de partes de uma proteína, sua estrutura é didaticamente subdividada em <em>sequências</em> (ou <em>estruturas</em>), de primária à quinquenária.</p>
@@ -246,132 +312,173 @@ trace only; trace 100</code></pre>
 <h4 data-number="4.4.1.2" class="anchored" data-anchor-id="estrutura-secundária"><span class="header-section-number">4.4.1.2</span> <strong>Estrutura Secundária</strong></h4>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A estrutura secundária de proteínas é formada basicamente por <em>hélices</em>, <em>dobramentos (folhas)</em> e <em>alças</em>. A identificação de cada é facilitada pelo visualizador, como mostrado acima (comando <em>color structure</em>). Quando a alça é formada por menos de seis resíduos e provoca uma mudança brusca na direção da cadeia polipeptídica, constitui uma <em>volta</em>.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para um estudo interativo da <em>estrutura secundária</em>, carregue o arquivo <a href="https://chemapps.stolaf.edu/jmol/jmol.php?pdbid=8cat&amp;script=Console" target="_blank">8cat.pdb</a>. Como a visualização inicial padrão no <em>Jmol</em> é de <em>ball&amp;stick (bolas&amp;varetas)</em>, experimente:</p>
-<pre><code>restrict protein;cartoon only; color structure</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>restrict protein;cartoon only; color structure</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trata-se da <em>catalase</em> bovina, enzima com atividade hidroperoxidase, comumente presente em hemácias. A representação <em>default</em> (por definição) da coloração <em>structure</em> confere cor amarela às folhas, vermelha às helices e branca às voltas.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para confirmar essas estruturas, digite:</p>
-<pre><code>show info  # informações de cadeias e estrutura 2a. no modelo</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>show info  <span class="co"># informações de cadeias e estrutura 2a. no modelo</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Também existem outros tipos de estruturas secundárias além das mencionadas. Para visualizá-las além da coloração padrão, é necessário que o programa calcule as estruturas secundárias por um algoritmo interno denominado <strong>DSSP - Define Secondary Structure</strong> . Para tanto:</p>
-<pre><code>calculate structure</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>calculate structure</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Observe que o modelo da proteína desapareceu. Para voltar a visualizá-la, digite ou volte com as setas do teclado para o comando de representação por cartoon e coloração por estrutura (<em>cartoon only; color structure</em>).</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Veja agora que, após o cálculo pelo algoritmo de estruturas secundárias, a imagem sofreu alterações, surgindo novas cores, púrpura para algumas hélices e azul para algumas voltas. Essas estruturas possuem uma <em>identificação codificada</em> como abaixo, e visualizada pelo Console em cada trecho:</p>
-<pre><code>H - alfa-hélice
-E - fita estendida de um beta-folha
-T - volta com ligação de H
-B - resíduo em ponte beta isolado (somente duas ligações H)
-G - hélice 3/10
-I - hélice pi
-S - torsão (mudança mínima de 70 graus na curvatura da estrutura)</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>H <span class="sc">-</span> alfa<span class="sc">-</span>hélice</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>E <span class="sc">-</span> fita estendida de um beta<span class="sc">-</span>folha</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>T <span class="sc">-</span> volta com ligação de H</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>B <span class="sc">-</span> resíduo em ponte beta <span class="fu">isolado</span> (somente duas ligações H)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>G <span class="sc">-</span> hélice <span class="dv">3</span><span class="sc">/</span><span class="dv">10</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>I <span class="sc">-</span> hélice pi</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>S <span class="sc">-</span> torsão (mudança mínima de <span class="dv">70</span> graus na curvatura da estrutura)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <section id="dobramentos-ou-beta-folhas" class="level5" data-number="4.4.1.2.1">
 <h5 data-number="4.4.1.2.1" class="anchored" data-anchor-id="dobramentos-ou-beta-folhas"><span class="header-section-number">4.4.1.2.1</span> Dobramentos ou beta-folhas</h5>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dobramentos ou folhas podem ser <em>paralelos</em> ou <em>antiparalelos</em>, os primeiros mais comuns pela natureza própria da estrutura primária. Para visualizar um dobramento paralelo, carregue <a href="https://chemapps.stolaf.edu/jmol/jmol.php?pdbid=2pec&amp;script=Console" target="_blank">2pec.pdb</a>)</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Forneça uma visualização prática por <em>cartoon</em> ou <em>rockets</em>, e uma coloração por grupo:</p>
-<pre><code>cartoon only # ou rockets only
-color group # ou Group, ou groups, ou Groups</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a> cartoon only <span class="co"># ou rockets only</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a> color group <span class="co"># ou Group, ou groups, ou Groups</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Esse <em>esquema de coloração</em> tinge a proteína da região amino terminal (NH<span class="math inline">\(_{2}\)</span>-t) em azul para a região carboxil terminal (COOH-t) em vermelho.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para melhor compreensão da estrutura secundária, carregue o arquivo <a href="https://chemapps.stolaf.edu/jmol/jmol.php?pdbid=2lyz&amp;script=Console" target="_blank">2lyz.pdb</a> referente à <em>lisozima</em>, uma hidrolase de glicanos. E em seguida:</p>
-<pre><code>show info # observação das estruturas 2as.
-cartoon only; color structure
-calculate structure # algoritmo para otimização de estruturas 2as.
-cartoon only; color structure # basta clicar na seta pra cima no teclado para recuperar a linha de comando
-
-Agora...
-restrict 42-60 # restrinje a visão de folhas beta na proteína a uma determinada região</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>  show info <span class="co"># observação das estruturas 2as.</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  cartoon only; color structure</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  calculate structure <span class="co"># algoritmo para otimização de estruturas 2as.</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  cartoon only; color structure <span class="co"># basta clicar na seta pra cima no teclado para recuperar a linha de comando</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a> Agora...</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  restrict <span class="dv">42-60</span> <span class="co"># restrinje a visão de folhas beta na proteína a uma determinada região</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Observe que a folha selecionada possui uma direção <em>antiparalela</em>; se não estiver claro, altere a renderização para:</p>
-<pre><code>rockets only
-spin 20 # spin off para desligar
-wireframe only; wireframe 50; color cpk
-calculate hbonds;hbonds 0.2 # visualização das ligações de H na estrutura
-zoom 150</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a> rockets only</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a> spin <span class="dv">20</span> <span class="co"># spin off para desligar</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a> wireframe only; wireframe <span class="dv">50</span>; color cpk</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a> calculate hbonds; hbonds <span class="fl">0.2</span> <span class="co"># visualização das ligações de H na estrutura </span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a> zoom <span class="dv">150</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O mesmo pode ser realizado para o entendimento das <em>ligações de H</em> em uma hélice alfa. Para tanto, retorne à estrutura original e realize as modificações que seguem:</p>
-<p>Veja que surgiram os códigos estruturais no <em>Console</em> e colorações distintas na imagem. –&gt;</p>
-<pre><code>select all; cartoon only; color structure; zoom 0
-calculate structure
-cartoon only; color structure # visualiza-se as estruturas 2as calculadas</code></pre>
+<p>Veja que surgiram os códigos estruturais no <em>Console</em> e colorações distintas na imagem.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a> select all; cartoon only; color structure; zoom <span class="dv">0</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a> calculate structure</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a> cartoon only; color structure <span class="co"># visualiza-se as estruturas 2as calculadas</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agora selecione uma <span class="math inline">\(\alpha\)</span>-hélice. Para isto, veja que no <em>Console</em>, as <span class="math inline">\(\alpha\)</span>-hélices estão representadas por <em>H</em>, como já explicado. Escolha uma região contendo H e restrinja sua observação. Você pode selecionar uma com a região descrita no <em>Console</em> (por ex: H : A:109_A:114), ou clicar no ínicio e final de uma hélice que deseja na imagem, conferindo a posição do resíduo de aminoácido no <em>Console.</em> Exemplificando:</p>
-<pre><code>restrict 26-36 # restringe a visualização a uma alfa-hélice selecionada
-wireframe 50; color cpk 
-calculate hbonds</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>  restrict <span class="dv">26-36</span> <span class="co"># restringe a visualização a uma alfa-hélice selecionada</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  wireframe <span class="dv">50</span>; color cpk </span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  calculate hbonds</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rotacione a molécula e veja como se distribui a cadeia lateral dos resíduos na estrutura. Uma <span class="math inline">\(\alpha\)</span>-hélice possui 3,6 resíduos por volta, e com passo de 0,54 nm (distância vertical entre duas voltas). Por fim, observe como também se distribuem as ligações de H. Também existem outros tipos de hélices, como a hélice 3/10, a ser explorada nas próximas seções.</p>
 </section>
 <section id="diagrama-de-ramachandran" class="level5" data-number="4.4.1.2.2">
 <h5 data-number="4.4.1.2.2" class="anchored" data-anchor-id="diagrama-de-ramachandran"><span class="header-section-number">4.4.1.2.2</span> Diagrama de Ramachandran</h5>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Em síntese o <em>diagrama de Ramachandran</em> refere-se a um gráfico representado no plano indicando os valores dos ângulos diedrais potenciais para a formação de <span class="math inline">\(\alpha\)</span>-hélice, folhas-<span class="math inline">\(\beta\)</span> e voltas, sendo bastante utilizado na predição estrutural de proteínas. Para observá-lo digite no <em>Console</em>:</p>
-<pre><code>load=9pap # carrega o odelo da papaína, enzima proteolíca do mamão
-plot rama # ou...plot ramachandran</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>load<span class="ot">=</span>9pap <span class="co"># carrega o odelo da papaína, enzima proteolíca do mamão</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>plot rama <span class="co"># ou...plot ramachandran</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A representação cromática pode ser interpretada no <em>Jmol</em> com o mesmo esquema de cores da renderização original. Dessa forma, folhas-<span class="math inline">\(\beta\)</span> são colorizadas em amarelo, <span class="math inline">\(\alpha\)</span>-hélices em vermelho, e hélices 3/10 em púrpura. Observe o teor de folhas beta e de <span class="math inline">\(\alpha\)</span>-hélices em quadrantes distintos, e dependente dos ângulos diedrais <span class="math inline">\(\phi\)</span> e <span class="math inline">\(\psi\)</span>.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Observe também o espalhamento de pontos brancos fora dessas regiões. Clique em algumas que estão fora e identifique o aminoácido. Não por acaso, há um grande número de resíduos de Gly, provavelmente participando de estruturas secundárias de voltas. Você pode generalizar essa visualização por <em>display gly</em>. E também pode verificar onde encontram-se esses resíduos na estrutura tridimensional da proteína digitando <em>model 1</em>. Agora, retorne à representação original:</p>
-<pre><code>plot rama;
-display all;</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>plot rama;</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>display all;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Memorize a região coberta por hélices alfa (vermelha), e identifique os resíduos de <em>Pro</em>:</p>
-<pre><code>display all;
-display pro</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>display all;</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>display pro</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Observe que apenas um resíduo de <em>Pro</em> encontra-se numa região de predição de hélice alfa. Na prática, <em>Pro</em> não participa de hélices alfa por possuir um <em>anel de pirrolidina</em> na cadeia lateral, o qual bloqueia a orientação dessa estrutura, um impedimento estérico.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Outras representações de propriedades são também possíveis com o <em>Jmol</em>, como explicitado no capítulo <em>Comandos</em>, tais como <em>massa</em>, <em>hidrofobicidade</em>, <em>carga parcial</em>. Para ilustrar um plot tridimensional dos ângulos diedrais em função do número do resíduo, por exemplo, digite:</p>
-<pre><code>plot properties phi psi resno</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>plot properties phi psi resno</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O portal do <em>Proteopedia</em> possui um <em>link</em> interativo bem interessante para aprendizado do <em>Diagrama de Ramachandran</em> denonminado <a href="https://proteopedia.org/wiki/index.php/Tutorial:Ramachandran_Plot_Inspection" target="_blank">Ramachandran Plot Inspection</a>.</p>
 </section>
 <section id="estruturas-supersecundárias" class="level5" data-number="4.4.1.2.3">
 <h5 data-number="4.4.1.2.3" class="anchored" data-anchor-id="estruturas-supersecundárias"><span class="header-section-number">4.4.1.2.3</span> Estruturas supersecundárias</h5>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Possuem esse nome por situar-se numa organização intermediária entre as secundárias e as terciárias. Trata-se de uma combinação de poucas estruturas secundárias com arranjo geométrico específico (<em>motivos</em>). Como exemplo inicial, carregue o arquivo <a href="https://chemapps.stolaf.edu/jmol/jmol.php?pdbid=1yme&amp;script=Console" target="_blank">1yme.pdb</a>, referente à enzima carboxipeptidase.</p>
-<pre><code>cartoon only;color structure
-restrict 61-108 # restrição visual para uma estrutura supersecundária
-backbone only; backbone 100; color grey
-spin 15</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>cartoon only;color structure</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>restrict <span class="dv">61-108</span> <span class="co"># restrição visual para uma estrutura supersecundária</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>backbone only; backbone <span class="dv">100</span>; color grey</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>spin <span class="dv">15</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Essa estrutura é formada por uma unidade <em>beta-alfa-beta</em>. Com um pouco de criatividade a imagem parece assemelhar-se a um <em>grampo</em>. Não à toa, sua definição estrutural é <em>grampo de cabelo</em>” ou <em>hairpin</em>, no original. Outro grampo apresentado pela carboxipeptidase, numa visualização distinta, pode ser obtido por: <em>restrict 201-242; rockets only; color structure</em>.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agora restrinja a imagem à outra estrutura supersecundária:</p>
-<pre><code>restrict 73-102; cartoon only; color structure</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>restrict <span class="dv">73-102</span>; cartoon only; color structure</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Embora esteja inserida em um estrutura supersecundária <em>alfa-beta-alfa</em>, trata-se de um <em>motivo</em>, estrutura que se repete em larga extensão em proteínas. No caso, o motivo <em>alfa-volta-alfa</em>, ou grampo alfa-alfa.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Outra estrutura supersecundária curiosa até no nome é o <em>sanduiche beta</em> apresentado pela estrutura <a href="https://chemapps.stolaf.edu/jmol/jmol.php?pdbid=1bmw&amp;script=Console" target="_blank">1bmw.pdb</a>. Efetue a renderização padrão de <em>cartoon</em> e coloração por estrutura, e observe a razão do nome pela justaposição de duas folhas beta antiparalelas.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;É possível conhecer todas as estruturas secundárias e motivos de uma proteína por um sítio correlato ao PDB: <a href="http://www.ebi.ac.uk/thornton-srv/databases/cgi-bin/pdbsum/\GetPage.pl?pdbcode=index.html">PDBSum Database</a>. Acesse-o, busque a carboxipeptidase (<em>1yme</em>), escolha a <em>aba Protein</em>, e veja a riqueza de estruturas secundárias e motivos da carboxipeptidase, todos com <em>links</em> para outras informações e sítios correlatos na internete.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para interagir com o Jmol carregado com a carboxipeptidase acima, selecione no sítio do <em>PDB Sum</em> a estrutura <em>beta hairpin</em> clicando em seu <em>link</em> na aba <em>Protein</em>. A janela aberta informa que esse <em>grampo beta</em>} vai do resíduo Val33 a Arg40. Pois bem, identifique-o selecionando no Jmol, marcando antes a proteína com representação de arame. <strong>Dica: copie e cole o trecho de código abaixo no Console Jmol/JSmol</strong>. Separando-se os comandos por <em>ponto-e-vírgula</em> em linhas sucessivas simula-se o <em>Script Editor</em> no próprio <em>Console</em>.</p>
-<pre><code>select all; 
-backbone only; 
-color grey; 
-select 33-40; 
-wireframe only; 
-wireframe 50; 
-color magenta</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>select all; </span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>backbone only; </span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>color grey; </span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>select <span class="dv">33-40</span>; </span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>wireframe only; </span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>wireframe <span class="dv">50</span>; </span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>color magenta</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para uma outra estrutura supersecundária, carregue agora o arquivo <a href="https://chemapps.stolaf.edu/jmol/jmol.php?pdbid=1kt7&amp;script=Console" target="_blank">1kt7.pdb</a>, proteína ligadora de retinol. Visualize-a como de praxe em <em>cartoon.</em> Gire a estrutura. O trecho em amarelo compreende a estrutura supersecundária denominada <em>barril-beta</em>.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Da mesma forma também existe o <em>barril-alfa</em>. Para visualizá-lo, carregue o modelo <a href="https://chemapps.stolaf.edu/jmol/jmol.php?pdbid=3lay&amp;script=Console" target="_blank">3lay.pdb</a>, uma sequência da proteína ligadora de zinco em <em>salmonela</em>. Experimente a renderização padrão (estrutura e coloração) e rotacione a molécula.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Outra estrutura supersecundária muito comum na interação com fendas de ácidos nucleicos é denominada <em>hélice-volta-hélice</em>. Um exemplo pode ser encontrada no domínio da proteína ligadora de DNA do <em>repressor lac</em>, <a href="https://chemapps.stolaf.edu/jmol/jmol.php?pdbid=1lcc&amp;script=Console" target="_blank">1lcc.pdb</a>. Carregue a estrutura, forneça uma visualização adequada, e veja como se dá sua interação com a molécula de DNA.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Várias outras estruturas supersecundárias podem ocorrer nas proteínas, exemplificando o <em>dedo de zinco</em>, o <em>zíper de leucina</em>, a <em>mão EF</em>, e a <em>chave grega</em>.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O <em>dedo de zinco</em> e o ziper de leucina são comumente encontrados na interação com DNA. Experimente carregar <a href="https://chemapps.stolaf.edu/jmol/jmol.php?pdbid=1aay&amp;script=Console" target="_blank">1aay.pdb</a> e digitar ou copiar/colar a sequência:</p>
-<pre><code>cartoon only; 
-color structure; 
-select hetero and not solvent; 
-spacefill 300; 
-color cpk</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>cartoon only; </span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>color structure; </span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>select hetero and not solvent; </span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>spacefill <span class="dv">300</span>; </span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>color cpk</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Já para se ter uma ideia do <em>ziper de leucina</em>, carregue <a href="https://chemapps.stolaf.edu/jmol/jmol.php?pdbid=1ysa&amp;script=Console" target="_blank">1ysa.pdb</a> e digite:</p>
-<pre><code>cartoon only; 
-color structure; 
-select leu; 
-spacefill 300; 
-color cpk
-select positive;
-wireframe 100;
-color lightblue</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>cartoon only; </span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>color structure; </span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>select leu; </span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>spacefill <span class="dv">300</span>; </span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>color cpk</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>select positive;</span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>wireframe <span class="dv">100</span>;</span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>color lightblue</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Além do caráter anfipático das hélices, sua interação com o DNA dá-se por resíduos positivos frente à natureza ácida da dupla fita.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Por sua vez, a chamada <em>mão EF</em> é um <em>motivo</em> encontrado comumente em proteínas ligadoras de íons cálcio, tais como a <em>calmodulina</em>, <a href="https://chemapps.stolaf.edu/jmol/jmol.php?pdbid=1cll&amp;script=Console" target="_blank">1cll.pdb</a>. Carregue a estrutura, forneça a visualização de costume e digite:</p>
-<pre><code>select hetero and not solvent; 
-spacefill 300; 
-color cpk</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>select hetero and not solvent; </span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>spacefill <span class="dv">300</span>; </span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>color cpk</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clicando em uma esfera verde, surge no <em>Console</em> sua identificação, um átomo de cálcio. Para destacar o motivo, digite:</p>
-<pre><code>select 117-147;
-color white</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>select <span class="dv">117-147</span>;</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>color white</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Como já deve ter percebido, esse motivo é semelhante ao de <em>hélice-volta-hélice</em>, mas distingui-se desse por ser específico de ligações com cálcio.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A <em>chave grega</em>, outra estrutura supersecundária, compreende um arranjo de fitas antiparalelas, e pode ser visualizada em <a href="https://chemapps.stolaf.edu/jmol/jmol.php?pdbid=1a2t&amp;script=Console" target="_blank">1a2t.pdb</a>, uma nuclease de <em>estafilococo</em>. Sua observação é um pouco difícil, portanto é necessário uma coloração mais específica, como segue:</p>
-<p>(efetuá-la após a visualização de praxe): –&gt;</p>
-<pre><code>select all;
-cartoon only;
-color structure;
-select 7-19;
-color red;
-select 21-28;
-color red;
-select 29-36;
-color green;
-select 71-77;
-color blue</code></pre>
+<p>(efetuá-la após a visualização de praxe):</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>    select all;</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>    cartoon only;</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>    color structure;</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>    select <span class="dv">7-19</span>;</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>    color red;</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>    select <span class="dv">21-28</span>;</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>    color red;</span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>    select <span class="dv">29-36</span>;</span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>    color green;</span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>    select <span class="dv">71-77</span>;</span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>    color blue</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Observe que a primeira e a segunda fita em vermelho estão num arranjo antiparalelo entre si. A terceira fita em verde encontra-se antiparalela à primeira (vemelha), esboçando a chave grega. O desenho metafórico de uma chave grega, entretanto é melhor comparado à sua estrutura bidimensional encontrada em livros-texto.</p>
 </section>
 </section>
@@ -381,69 +488,91 @@ color blue</code></pre>
 <section id="conservação" class="level5" data-number="4.4.1.3.1">
 <h5 data-number="4.4.1.3.1" class="anchored" data-anchor-id="conservação"><span class="header-section-number">4.4.1.3.1</span> Conservação</h5>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para se ter uma ideia da conservação estrutural terciária de proteínas, carregue a estrutura da proteína transportadora de elétrons <em>citocromo c</em>, e a partir de 3 fontes: peixe, arroz, e levedura de padaria. Nesse caso, como trata-se de arquivos carregados a partir de mídia física, é necessário realizar seu <em>download</em> prévio no diretório raiz do programa (ou naquele tornado raiz, pelo comando <em>cd ?</em>.</p>
-<pre><code># Download das estruturas:
-load=5cyt.pdb;write 5cyt.pdb
-load=1ccr.pdb;write 1ccr.pdb
-load=1ycc.pdb;write 1ycc.pdb
-
-# Carregamento dos modelos
-load files "5cyt.pdb" "1ccr.pdb" "1ycc.pdb"
-
-#    Representação das três estruturas com cores distintas e no mesmo ecrã:
-frame* # todos os modelos no mesmo ecrã
-select all; 
-trace only;
-select 1.1; color white; # cit. c de peixe
-select 2.1; color green; # cit. c de arroz
-select 3.1; color blue # cit. c de levedura</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Download das estruturas:</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>    load<span class="ot">=</span>5cyt.pdb;write 5cyt.pdb</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>    load<span class="ot">=</span>1ccr.pdb;write 1ccr.pdb</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>    load<span class="ot">=</span>1ycc.pdb;write 1ycc.pdb</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Carregamento dos modelos</span></span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>    load files <span class="st">"5cyt.pdb"</span> <span class="st">"1ccr.pdb"</span> <span class="st">"1ycc.pdb"</span></span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Representação das três estruturas com cores distintas e no mesmo ecrã:</span></span>
+<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a>    frame<span class="sc">*</span> <span class="co"># todos os modelos no mesmo ecrã</span></span>
+<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a>    select all; </span>
+<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a>    trace only;</span>
+<span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a>    select <span class="fl">1.1</span>; color white; <span class="co"># cit. c de peixe</span></span>
+<span id="cb25-14"><a href="#cb25-14" aria-hidden="true" tabindex="-1"></a>    select <span class="fl">2.1</span>; color green; <span class="co"># cit. c de arroz</span></span>
+<span id="cb25-15"><a href="#cb25-15" aria-hidden="true" tabindex="-1"></a>    select <span class="fl">3.1</span>; color blue <span class="co"># cit. c de levedura</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rotacione as estruturas e veja a conservação das mesmas em filos distintos.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Está com dificuldade em perceber a conservação ? O <em>Jmol</em> permite uma animação das moléculas, útil para alinhamento estrutural. Para tanto, digite ou copie/cole no <em>Console</em>:</p>
-<pre><code>compare {1.1} {2.1} rotate translate 2;  # rotação e translação conjugadas entre cit. c de peixe e arroz
-compare {3.1} {2.1} rotate translate 2; # rotação e translação conjugadas entre cit. c de levedura e arroz
-reset # centraliza os modelos
-zoomto 0.5 *1.5 # aumenta o tamanho dos modelos progressivamente para 50% a mais, e a uma taxa de 0,5s por vez
-spin 15 # rotação
-delay 10; # tempo de 20s de aguardo
-spin off # desligamento da rotação</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>    compare {<span class="fl">1.1</span>} {<span class="fl">2.1</span>} rotate translate <span class="dv">2</span>;  <span class="co"># rotação e translação conjugadas entre cit. c de peixe e arroz</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>    compare {<span class="fl">3.1</span>} {<span class="fl">2.1</span>} rotate translate <span class="dv">2</span>; <span class="co"># rotação e translação conjugadas entre cit. c de levedura e arroz</span></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>    reset <span class="co"># centraliza os modelos</span></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>    zoomto <span class="fl">0.5</span> <span class="sc">*</span><span class="fl">1.5</span> <span class="co"># aumenta o tamanho dos modelos progressivamente para 50% a mais, e a uma taxa de 0,5s por vez</span></span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>    spin <span class="dv">15</span> <span class="co"># rotação</span></span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>    delay <span class="dv">10</span>; <span class="co"># tempo de 20s de aguardo</span></span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>    spin off <span class="co"># desligamento da rotação</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Se você chegou até aqui executando os dois trecho de código acima, parabéns ! Acaba de “rodar” <em>scripts</em> que automatizam a observação e análise estrutural, uma grande vantagem do <em>Jmol</em>.</p>
 </section>
 <section id="estabilidade-conformacional" class="level5" data-number="4.4.1.3.2">
 <h5 data-number="4.4.1.3.2" class="anchored" data-anchor-id="estabilidade-conformacional"><span class="header-section-number">4.4.1.3.2</span> Estabilidade conformacional</h5>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Proteínas podem ser classificadas como <em>globulares</em> e <em>fibrosas.</em> Para o estudo de uma proteína globular, carregue a papaína, <a href="https://chemapps.stolaf.edu/jmol/jmol.php?pdbid=9pap&amp;script=Console" target="_blank">9pap.pdb</a>. Omita a visualização do solvente e visualize-a como arame, e rotacione o modelo:</p>
-<pre><code>restrict protein;
-wireframe only; wireframe 50
-spin on # para parar, "spin off"</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>    restrict protein;</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>    wireframe only; wireframe <span class="dv">50</span></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>    spin on <span class="co"># para parar, "spin off"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantos resíduos de aminoácidos a papaína possui e qual sua sequência primária ?</p>
-<pre><code>show sequence # apresenta a sequência 1a.
-show info # apresenta a sequência 2a. </code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>    show sequence <span class="co"># apresenta a sequência 1a.</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>    show info <span class="co"># apresenta a sequência 2a.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Como uma proteína pode estabilizar-se conformacionalmente ? Por <em>forças covalentes</em> e <em>forças fracas</em>. As primeiras residem na <em>ligação peptídica</em> presente na estrutura, em número de <em>n-1</em> resíduos de aminoácidos, bem como na proximidade de dois grupos tiol de resíduos de Cys, formando <em>ligações dissulfeto</em>. Essas ligações estão representadas em amarelo na estrutura, mas podem ser destacadas digitando-se ou colando-se o trecho de código que segue:</p>
-<pre><code>trace only; 
-ssbonds on; 
-set ssbonds backbone;
-ssbonds 100</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>    trace only; </span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>    ssbonds on; </span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>    set ssbonds backbone;</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>    ssbonds <span class="dv">100</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para visualizar os resíduos envolvidos na ligação bem como os tiois livres restantes, selecione apenas <em>Cys.</em> Na papaína, todas as <em>Cys</em> estão envolvidas na formação da ligação dissulfeto:</p>
-<pre><code>ssbonds off;
-select cys; 
-wireframe 100; 
-color cpk</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>    ssbonds off;</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>    select cys; </span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>    wireframe <span class="dv">100</span>; </span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>    color cpk</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visualize agora as <em>ligações de hidrogênio</em> contidas na estrutura:</p>
-<pre><code>restrict protein; 
-trace only; 
-calculate hbonds
-set hbonds backbone # permite associar as ligações de H ao esqueleto carbônico (alternativa: "set hbonds sidechain)</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>    restrict protein; </span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>    trace only; </span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>    calculate hbonds</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>    set hbonds backbone <span class="co"># permite associar as ligações de H ao esqueleto carbônico (alternativa: "set hbonds sidechain)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Se girar manualmente a molécula perceberá ainda uma distribuição de ligações H entre <em>folhas beta</em> e <em>hélices alfa</em> da estrutura secundária da proteína. Para desligar as ligações de H: <em>hbonds off</em>.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Como todo átomo interage com outro por <em>forças de dispersão</em> ou deslocalização eletrônica (<em>van der Waals e London</em>), experimente visualizar as <em>nuvens de van der Waals</em> com:</p>
-<pre><code>dots on # "dots off" pra retirar a superfície de VDW</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>dots on <span class="co"># "dots off" pra retirar a superfície de VDW</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Interações eletrostáticas também contribuem para a estabilização da proteína, como pode ser observado digitando-se:</p>
-<pre><code>trace 10;
-select charged;
-wireframe 50; 
-color yellow</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>    trace <span class="dv">10</span>;</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>    select charged;</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>    wireframe <span class="dv">50</span>; </span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>    color yellow</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Observe girando a estrutura que esses resíduos carregados encontram-se mais na superfície da proteína. Identifique as cargas opostas desses resíduos, bem como os de natureza hidrofóbica por:</p>
-<pre><code>select positive;color blue;select negative; color red # resíduos ácidos e básicos
-select aromatic; wireframe 50; color green # resíduos hidrofóbicos</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>    select positive;color blue;select negative; color red <span class="co"># resíduos ácidos e básicos</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>    select aromatic; wireframe <span class="dv">50</span>; color green <span class="co"># resíduos hidrofóbicos</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O <em>efeito hidrofóbico</em> (ou interação hidrofóbica) participa como força fraca complementar para a conformação nativa da proteína, como pode ser observado inicialmente pelo posicionamento dos resíduos aromáticos identificados no modelo. Generalizando para todos os resíduos hidrofóbicos, é possível perceber sua contribuição maciça para a estabilidade da proteína Pode-se também discernir entre os hidrófóbicos os resíduos aromáticos:</p>
-<pre><code>select trp;color magenta;select phe; color pink;select tyr;color aquamarine</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>select trp;color magenta;select phe; color pink;select tyr;color aquamarine</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Veja que enquanto <em>Tyr</em> fenólico interage com o solvente, <em>Trp</em> indólico permanece principamente no cerne proteico. :</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A estabilidade conformacional de uma proteína é portanto ditada por forças fortes e fracas entre seus átomos e o solvente, num arranjo tridimensional que depende das rotações permitidas em torno de cada resíduo de aminoácido. Analisando-se os <em>ângulos diedrais phi e psi</em> em torno da ligação peptídica (vide capítulo de <em>Peptídios</em>), é possível efetuar uma predição de estrutura terciária baseada na estrutura primária da molécula. De modo mais preciso, contudo, é possível a predição da estrutura secundária, tal como representado pelo <em>diagrama de Ramachandran</em>.</p>
 </section>
@@ -451,58 +580,78 @@ select aromatic; wireframe 50; color green # resíduos hidrofóbicos</code></pre
 <h5 data-number="4.4.1.3.3" class="anchored" data-anchor-id="grupos-prostéticos"><span class="header-section-number">4.4.1.3.3</span> Grupos prostéticos</h5>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Várias proteínas dependem funcionalmente de estruturas orgânicas de origem distinta dos aminoácidos, os grupos prostéticos (<em>apoproteína</em>+<em>grupo prostético</em> = <em>holoproteína</em>). Para exemplificar, carregue o pigmento respiratório mioglobina, <a href="https://chemapps.stolaf.edu/jmol/jmol.php?pdbid=1mbo&amp;script=Console" target="_blank">1mbo.pdb</a>. –&gt;</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Desapareça com o solvente, represente-a como traço e ressalte o grupo prostético. Para identificar esse último faz-se necessário conhecer a que grupo pertence no modelo: <em>show groups</em>. Nesse caso, o grupo aparece nominado como <em>hem</em>.</p>
-<pre><code>restrict protein;
-trace only;
-trace 30;
-select hem;
-wireframe 100; 
-color cpk
-spin 20;
-delay 10;
-spin off</code></pre>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O grupo prostético da mioglobina (e também da hemoglobina e de alguns citocromos) configura um anel de <em>porfirina</em> ou <em>grupo heme</em>) formado por justaposição de quatro <em>anéis pirrólicos</em>, tendo o átomo de <em>Fe </em> como central para a interação com o oxigênio molecular. Para ressaltar esse oxigênio, procure o grupo a que pertence, como feito acima.</p>
-<pre><code>select oxy;spacefill 200</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>    restrict protein;</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>    trace only;</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>    trace <span class="dv">30</span>;</span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>    select hem;</span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>    wireframe <span class="dv">100</span>; </span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>    color cpk</span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a>    spin <span class="dv">20</span>;</span>
+<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a>    delay <span class="dv">10</span>;</span>
+<span id="cb36-9"><a href="#cb36-9" aria-hidden="true" tabindex="-1"></a>    spin off</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O grupo prostético da mioglobina (e também da hemoglobina e de alguns citocromos) configura um anel de <em>porfirina</em> ou <em>grupo heme</em>) formado por justaposição de quatro <em>anéis pirrólicos</em>, tendo o átomo de <em>Fe</em> como central para a interação com o oxigênio molecular. Para ressaltar esse oxigênio, procure o grupo a que pertence, como feito acima.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>select oxy;spacefill <span class="dv">200</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Isole o grupo heme da proteína com o oxigênio molecular, aproxime-o, e</p>
 <p>observe sua estrutura junto à molécula de <span class="math inline">\(O_{2}\)</span>.</p>
-<pre><code>restrict (hem,oxy) and not protein;
-zoom 0</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">restrict</span> (hem,oxy) and not protein;</span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>    zoom <span class="dv">0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Observe como a estrutura do grupo heme coordenado com o oxigênio é planar. Isso decorre da ligação do O<span class="math inline">\(_{2}\)</span> com o Fe(III) da porfirina da metamioglobina, resultando em Fe(II)-O<span class="math inline">\(_{2}\)</span>, e convergindo a conformação ligeiramente curva do anel para planar.</p>
 </section>
 <section id="proteínas-fibrosas" class="level5" data-number="4.4.1.3.4">
 <h5 data-number="4.4.1.3.4" class="anchored" data-anchor-id="proteínas-fibrosas"><span class="header-section-number">4.4.1.3.4</span> Proteínas fibrosas</h5>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Outro grande grupo ao lado de proteínas globulares é o de proteínas fibrosas. Para exemplificá-lo, carregue a estrutura do colágeno, <a href="https://chemapps.stolaf.edu/jmol/jmol.php?pdbid=1cgd&amp;script=Console" target="_blank">1cgd.pdb</a>, elimine o solvente, e visualize o modelo em traço e por coloração de cadeias:</p>
-<pre><code>restrict protein;
-trace only;
-trace 100;
-color chain</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>    restrict protein;</span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>    trace only;</span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>    trace <span class="dv">100</span>;</span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>    color chain</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gire a estrutura e perceba o entrelaçamento de 3 fitas. Verifique se a estrutura secundária coincide com sua observação por <em>show info</em>. Observe que não há voltas nem dobramentos.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mostre os resíduos de aminoácidos por <em>show groups</em>. Veja que a molécula é composta apenas de <em>Gly</em>, <em>Ala</em>, <em>Pro</em>, e <em>Hyp</em> (<em>hidroxiprolina</em>). Esse entrelaçamento compreende as <em>hélices 3/10</em> do colágeno. Forneça a sequência primária por <em>show sequence</em> e observe como esses resíduos estão distribuidos.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Observe também como seu estiramento é maior que o de hélices alfa, restringindo a observação à cadeia <em>C</em> somente: <em>restrict :C</em>. Na hélice 3/10 do colágeno o passo é de 0,94 nm (maior, portanto, que para <span class="math inline">\(\alpha\)</span>-hélice, 0,54 nm). Para verificar isso, basta dar um duplo clique com o botão direito do mouse numa parte da hélice, e arrastar para outra parte, até cobrir aproximadamente 0,9 nm.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Por fim, veja como estão distribuidas as ligações de H na estrutura:</p>
-<pre><code>calculate hbonds;
-hbonds 50;
-color hbonds yellow; 
-hbonds 0.5</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>    calculate hbonds;</span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>    hbonds <span class="dv">50</span>;</span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>    color hbonds yellow; </span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>    hbonds <span class="fl">0.5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agora carregue outra proteína fibrosa, <em>fibroína</em> do bicho-da-seda, <a href="https://chemapps.stolaf.edu/jmol/jmol.php?pdbid=1slk&amp;script=Console" target="_blank">1slk.pdb</a>. Observe inicialmente a estrutura sem a visualização didática por <em>cartoon</em> ou similar. Em uma primeira visão, parecem existir hélices alfa ? Confira com <em>show info</em>. Veja que existem 15 cadeias polipeptídicas na molécula. Para distingui-las, <em>color chain</em>. Como você espera que seja a interação entre as cadeias ?</p>
-<pre><code>calculate hbonds;
-set hbonds backbone;
-hbonds 50;
-color hbonds white</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>    calculate hbonds;</span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>    set hbonds backbone;</span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>    hbonds <span class="dv">50</span>;</span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a>    color hbonds white</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Qual a composição de aminoácidos (<em>show groups</em>) ? Veja que a estrutura é composta por um homopolímero de <em>Ala</em> e <em>Gly</em>, além de um N-terminal acetilado (<em>ACE</em>) e um C-terminal metilaminado (<em>NME</em>) em cada cadeia. Agora restrinja a visão apenas para quatro cadeias, Para melhor visualização, selecione um plano de fundo branco: (e como as ligações H estão também brancas: ). Agora : . Rotacione a estrutura e observe seu paralelismo. Trata-se de que estrutura secundária ? Digite: <em>rockets only</em>. Observe a orientação antiparalela do trecho de folha-<span class="math inline">\(\beta\)</span> representada.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agora carregue a principal cadeia da piruvato quinase felina, <a href="https://chemapps.stolaf.edu/jmol/jmol.php?pdbid=1pkm&amp;script=Console" target="_blank">1pkm.pdb</a>. Visualize-a como de praxe, gire a molécula e descubra quantos domínios possui. Veja que cada domínio constitui uma unidade compacta distinta. Pra facilitar:</p>
-<pre><code>select 116-219;color blue;
-select 1-115;color green; 
-select 220-388;color red; 
-select 389-530;color pink</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>    select <span class="dv">116-219</span>;color blue;</span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>    select <span class="dv">1-115</span>;color green; </span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>    select <span class="dv">220-388</span>;color red; </span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>    select <span class="dv">389-530</span>;color pink</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Por vezes os domínios podem constituir estruturas muito similares, embora em proteínas bem distintas. Para observar isso, carregue a <em>lactato desidrogenase</em> microbiana <a href="https://chemapps.stolaf.edu/jmol/jmol.php?pdbid=1ldn&amp;script=Console" target="_blank">1ldn.pdb</a>. Se obtiver a informação da estrutura (<em>show info</em>), verá que o modelo é constituido por duas moléculas cristalografadas. Adicione ao quadro (<em>frame</em>) a <em>succinato desidrogenase</em> também microbiana <a href="https://chemapps.stolaf.edu/jmol/jmol.php?pdbid=1emd&amp;script=Console" target="_blank">1emd.pdb</a>. Para esse carregamento adicional, é necessário que a estrutura já esteja no diretório raiz do <em>Jmol.</em> Para isso, carregue a estrutura normalmente e salve-a clicando com o botão direito do mouse e selecionando <em>File, Save</em>. Para adicionar a estrutura à molécula anterior:</p>
-<pre><code>load append "1emd.pdb" # comando para adicionar modelos ao ecrã do programa</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>load append <span class="st">"1emd.pdb"</span> <span class="co"># comando para adicionar modelos ao ecrã do programa</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coloque ambas as moléculas mesmo quadro, visualize-as em fitas (<em>cartoon</em>), mas com cores distintas, e limite a piruvato quinase à sua cadeia A, ampliando a imagem final:</p>
-<pre><code>frame*
-select all; cartoon only; select 1.1; color white; select 2.1; color green
-select 1.1; restrict :A
-zoom 0</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>    frame<span class="sc">*</span></span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>    select all; cartoon only; select <span class="fl">1.1</span>; color white; select <span class="fl">2.1</span>; color green</span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>    select <span class="fl">1.1</span>; restrict <span class="sc">:</span>A</span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>    zoom <span class="dv">0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Finalmente, alinhe as estruturas dos domínios e rotacione as moléculas para visualizar sua similaridade:</p>
-<pre><code>compare {2.1} {1.1} rotate translate 2</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>compare {<span class="fl">2.1</span>} {<span class="fl">1.1</span>} rotate translate <span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Veja que, embora as enzimas de origem microbiana atuem sobre substratos distintos, as cadeias possuem domínios estruturalmente semelhantes</p>
 </section>
 </section>
@@ -519,44 +668,59 @@ zoom 0</code></pre>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Essa cooperatividade traduz uma mudança conformacional produzida na hemoglobina sob ligação ao O<span class="math inline">\(_{2}\)</span>, de seu estado <em>T</em> ao estado <em>R</em>. Resumidamente, o movimento do plano do heme é transmitido para a hélice F por uma His (hélice F8, histidina proximal His87) ligada ao átomo de Fe. Mudanças conformacionais em uma unidade são transmitidas através das interfaces das subunidades <span class="math inline">\(\alpha\)</span><span class="math inline">\(_{1}\)</span>-<span class="math inline">\(\beta\)</span><span class="math inline">\(_{2}\)</span> e <span class="math inline">\(\alpha\)</span><span class="math inline">\(_{2}\)</span>-<span class="math inline">\(\beta\)</span><span class="math inline">\(_{1}\)</span>.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Essa diferença entre as afinidades de Hb e Mb para o O<span class="math inline">\(_{2}\)</span> faz com que a saturação de <em>Mb</em> ocorra com uma pressão de 2,8 torr (capilares venosos, 30 torr), enquanto que a <em>Hb</em> sature com 30 torr (cem vezes maior; alvéolos pulmonares - 100 torr).</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para uma observação direta da <em>Hb</em>, visualize o modelo com coloração por cadeias em desenho, identifique e destaque o grupo prostético heme (anel de porfirina):</p>
-<pre><code>select protein;
-hide solvent;
-cartoon only;
-color chain;
-show groups;
-select hem
-wireframe 100;color cpk
-spin 10
-delay 5
-spin off</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>    select protein;</span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>    hide solvent;</span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>    cartoon only;</span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>    color chain;</span>
+<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a>    show groups;</span>
+<span id="cb46-6"><a href="#cb46-6" aria-hidden="true" tabindex="-1"></a>    select hem</span>
+<span id="cb46-7"><a href="#cb46-7" aria-hidden="true" tabindex="-1"></a>    wireframe <span class="dv">100</span>;color cpk</span>
+<span id="cb46-8"><a href="#cb46-8" aria-hidden="true" tabindex="-1"></a>    spin <span class="dv">10</span></span>
+<span id="cb46-9"><a href="#cb46-9" aria-hidden="true" tabindex="-1"></a>    delay <span class="dv">5</span></span>
+<span id="cb46-10"><a href="#cb46-10" aria-hidden="true" tabindex="-1"></a>    spin off</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Identifique as cadeias clicando em cada. Identifique também algum possível ligante, digitando <em>show groups</em>. Inositol hexafosfato (<em>IHP</em>) pode ser visualizado então por:</p>
-<pre><code>select ihp;wireframe 50;color cpk</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>select ihp;wireframe <span class="dv">50</span>;color cpk</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IHP é análogo ao <em>2,3-BPG</em> (bifosfoglicerato) de organismos não mamíferos. Gire a Hb e perceba que o IHP encontra-se interagindo com as cadeias numa fenda, próximo às subunidades B e D da proteína.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O 2,3-BPG liga-se ao estado <em>T</em> de Hb mas não ao estado <em>R</em>, dessa forma reduzindo a afinidade da proteína ao oxigênio. Isso permite em torno de 40% de oxigênio livre no sangue venoso. A hemoglobina fetal não se liga tão fortemente ao 2,3-BPG, permitindo uma alta afinidade de O<span class="math inline">\(_{2}\)</span> pela proteína.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Como as cadeias de Hb interagem entre si ? Quais subunidades ligam-se ao IHP ?</p>
-<pre><code>select protein; spacefill
-label \%c # etiqueta a cadeia "c" da Hb</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>    select protein; spacefill</span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>    label \%c <span class="co"># etiqueta a cadeia "c" da Hb</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As cadeias A e B representam um <em>dímero alfa/beta</em>. Observe os contatos extensos entre essas cadeias, bem como entre as cadeias C e D (também alfa/beta). Mas veja que há pouquíssimos contatos entre as cadeias A e C, bem como entre B e D, esses pares formados por cadeias alfa ou cadeias beta. Para visualizar como o IHP com seus seis grupos fosfato negativos interage com a proteína:</p>
-<pre><code>select positive;color blue</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>select positive;color blue</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agora visualize apenas a cadeia <em>C</em>, colorida da região N-terminal à C-terminal, com seu grupo heme, e sem a sobreposição de esferas:</p>
-<p>. –&gt;</p>
-<pre><code>select all; spacefill off; cartoon only; 
-restrict :c and not ihp; 
-color group; 
-select hem and not iron and :c;
-wireframe 100;color cpk; zoom 0; 
-select iron and :c; spacefill 200;color cpk</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>    select all; spacefill off; cartoon only; </span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a>    restrict <span class="sc">:</span>c and not ihp; </span>
+<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a>    color group; </span>
+<span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a>    select hem and not iron and <span class="sc">:</span>c;</span>
+<span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a>    wireframe <span class="dv">100</span>;color cpk; zoom <span class="dv">0</span>; </span>
+<span id="cb50-6"><a href="#cb50-6" aria-hidden="true" tabindex="-1"></a>    select iron and <span class="sc">:</span>c; spacefill <span class="dv">200</span>;color cpk</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Como o oxigênio molecular interage com a hemoglobina ?</p>
-<p>“Desligue” a representação de fitas (): . –&gt;</p>
-<pre><code>select protein and :c;trace only;trace 10; color groups # cadeia "b" com grupo heme destacado
-select (his58,his87,val62,phe43) and :c # seleção de resíduos próximos do grupo heme
-define Obind selected # define os resíduos selecionados com uma etiqueta
-select Obind; wireframe 50;color cpk # representa didaticamente o grupo
-select oxy and :c;spacefill 150;color cpk # apresenta o O2 na estrutura</code></pre>
+<p>“Desligue” a representação de fitas (): .</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>    select protein and <span class="sc">:</span>c;trace only;trace <span class="dv">10</span>; color groups <span class="co"># cadeia "b" com grupo heme destacado</span></span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span> (his58,his87,val62,phe43) and <span class="sc">:</span>c <span class="co"># seleção de resíduos próximos do grupo heme</span></span>
+<span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a>    define Obind selected <span class="co"># define os resíduos selecionados com uma etiqueta</span></span>
+<span id="cb51-4"><a href="#cb51-4" aria-hidden="true" tabindex="-1"></a>    select Obind; wireframe <span class="dv">50</span>;color cpk <span class="co"># representa didaticamente o grupo</span></span>
+<span id="cb51-5"><a href="#cb51-5" aria-hidden="true" tabindex="-1"></a>    select oxy and <span class="sc">:</span>c;spacefill <span class="dv">150</span>;color cpk <span class="co"># apresenta o O2 na estrutura</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perceba a proximidade das cadeias laterais de His, Val e Phe ao centro do grupo heme. Pode-se visualizá-la melhor com:</p>
-<pre><code>select (Obind, oxy and :c); dots on ("dots off" pra omitir as nuvens de VDW)</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="fu">select</span> (Obind, oxy and <span class="sc">:</span>c); dots <span class="fu">on</span> (<span class="st">"dots off"</span> pra omitir as nuvens de VDW)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pra facilitar, nomeie os resíduos selecionados no carbono alfa:</p>
-<pre><code>select Obind :*.ca; label "\%n \%R"; color label white</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>select Obind <span class="sc">:</span><span class="er">*</span>.ca; label <span class="st">"\%n \%R"</span>; color label white</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A interação do átomo de ferro férrico (Fe<span class="math inline">\(^{2+}\)</span>) do grupo heme dá-se por seis ligantes, quatro dos quais os nitrogênios tetrapirrólicos do <em>grupo prostético</em> da <em>Hb</em>, um do nitrogênio do anel imidazólico da histidina proximal His87 e o sexto ligante o oxigênio molecular entre o átomo de Fe e a cadeia lateral da histidina distal His58. Gire a estrutura e perceba porque His 87 é proximal. Complementarmente, Val62 e Phe43 contribuem para o ambiente hidrofóbico de interação com o oxigênio molecular. No <em>estado desoxigenado</em> o átomo de Fe do grupo heme fica apenas pentacoordenado.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pra fechar, uma curiosidade: a ligação do oxigênio desloca o Fe porfirínico dentro do plano tetrapirrólico em apenas <em>0,4 angstroms</em>, o suficiente para deslocar a hélice alfa em que His87 proximal está inserida para perto do heme.</p>
 </section>
@@ -566,12 +730,18 @@ select oxy and :c;spacefill 150;color cpk # apresenta o O2 na estrutura</code></
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Carregue um anticorpo, imunoglobulina G, <a href="https://chemapps.stolaf.edu/jmol/jmol.php?pdbid=1igt&amp;script=Console" target="_blank">1igt.pdb</a>. Rotacione a molécula sem modificar sua visualização, e perceba tratar-se de uma proteína complexa, no formato clássico da letra “Y”, e com ao menos três grandes domínios articulados por poucos resíduos.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Veja também que pelo cabeçalho do <em>Console</em> ocorrem diversos açúcares ligados à proteína, configurando uma <em>glicoproteína</em>. Renderize então a estrutura como de praxe: (<em>cartoon only;color structure</em>). Nominalmente, suas cadeias são divididas em pesadas e leves, as últimas formadas por folhas-<span class="math inline">\(\beta\)</span> que realizam o contato com o antígeno.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agora, quais as cadeias que contatam a superfície celular ? Girando a estrutura não fica claro. Entretanto, esses domínios das cadeias pesadas encontram-se ligados a carboidratos. Assim, visualize o <em>“tronco do Y”</em> por:</p>
-<pre><code>select hetero and not solvent;wireframe 50;color cpk</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>select hetero and not solvent;wireframe <span class="dv">50</span>;color cpk</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Outra estrutura quaternária bastante complexa constitui o fotossistema de <em>Rhodopseudomonas</em>, <a href="https://chemapps.stolaf.edu/jmol/jmol.php?pdbid=1prc&amp;script=Console" target="_blank">1prc.pdb</a>. Carregue-o e represente-o por fitas e coloração por cadeias: <em>cartoon only;color chain</em>.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Esse fotossistema é formado por duas subunidades idênticas (verde claro e escuro) e outras duas (rosa e vermelho) ligadas a diversos pigmentos fotossintéticos:</p>
-<pre><code>select hetero;wireframe 100;color cpk</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>select hetero;wireframe <span class="dv">100</span>;color cpk</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para um último exemplo de estrutura quaternária, a complexidade de uma chaperona bacteriana denominada <em>GroEl</em>, proteína que auxilia o correto enovelamento de outras proteínas <a href="https://chemapps.stolaf.edu/jmol/jmol.php?pdbid=1aon&amp;script=Console" target="_blank">1aon.pdb</a>. Carregue a estrutura, forneça uma visualização apropriada com coloração por cadeia, como dantes, e só então rotacione a molécula para visualizar sua complexidade estrutural. Proteínas sob enovelamento interagem na cavidade central da GroEl. Chaperonas dependem de ATP para sua ação, o que pode ser observado por sua identificação com <em>show groups</em>:</p>
-<pre><code>select all; color grey; select adp;wireframe 300;color cpk</code></pre>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>select all; color grey; select adp;wireframe <span class="dv">300</span>;color cpk</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
 </section>
 <section id="estrutura-quinquenária" class="level4" data-number="4.4.1.5">
