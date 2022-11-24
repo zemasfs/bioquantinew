@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories | Bioquímica Quantitativa</title>
-    <link>https://bioquanti.netlify.app/categories/</link>
-      <atom:link href="https://bioquanti.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://bioquanti.net/categories/</link>
+      <atom:link href="http://bioquanti.net/categories/index.xml" rel="self" type="application/rss+xml" />
     <description>Categories</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>pt-br</language>
     <image>
-      <url>https://bioquanti.netlify.app/media/icon_hu7208a802a376a45d3814814dd5d5e8f4_16213_512x512_fill_lanczos_center_3.png</url>
+      <url>http://bioquanti.net/media/icon_hu7208a802a376a45d3814814dd5d5e8f4_16213_512x512_fill_lanczos_center_3.png</url>
       <title>Categories</title>
-      <link>https://bioquanti.netlify.app/categories/</link>
+      <link>http://bioquanti.net/categories/</link>
     </image>
     
   </channel>

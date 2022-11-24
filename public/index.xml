@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bioquímica Quantitativa</title>
-    <link>https://bioquanti.netlify.app/</link>
-      <atom:link href="https://bioquanti.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://bioquanti.net/</link>
+      <atom:link href="http://bioquanti.net/index.xml" rel="self" type="application/rss+xml" />
     <description>Bioquímica Quantitativa</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>pt-br</language>
     <image>
-      <url>https://bioquanti.netlify.app/media/icon_hu7208a802a376a45d3814814dd5d5e8f4_16213_512x512_fill_lanczos_center_3.png</url>
+      <url>http://bioquanti.net/media/icon_hu7208a802a376a45d3814814dd5d5e8f4_16213_512x512_fill_lanczos_center_3.png</url>
       <title>Bioquímica Quantitativa</title>
-      <link>https://bioquanti.netlify.app/</link>
+      <link>http://bioquanti.net/</link>
     </image>
     
     <item>
       <title></title>
-      <link>https://bioquanti.netlify.app/admin/config.yml</link>
+      <link>http://bioquanti.net/admin/config.yml</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://bioquanti.netlify.app/admin/config.yml</guid>
+      <guid>http://bioquanti.net/admin/config.yml</guid>
       <description></description>
     </item>
     
