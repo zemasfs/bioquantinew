@@ -67,5 +67,5 @@ uma pasta de diretório contendo seus arquivos, como a partir de um disco rígid
 
 [Lipídios](.\JmolQuarto\lipidio.html){target="_blank"}
 
-[Ácidos nucleicos](.\JmolQuarto\acnucleico.html){target="_blank"}s
+[Ácidos nucleicos](.\JmolQuarto\acnucleico.html){target="_blank"}
 
