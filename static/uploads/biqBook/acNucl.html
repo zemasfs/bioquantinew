@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Capítulo 7 Ácidos Nucleicos | Bioquímica Quantitativa com R</title>
+  <title>Capítulo 7 Ácidos Nucleicos | Bioquímica Quantitativa &amp; R</title>
   <meta name="description" content="não sei." />
-  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Capítulo 7 Ácidos Nucleicos | Bioquímica Quantitativa com R" />
+  <meta property="og:title" content="Capítulo 7 Ácidos Nucleicos | Bioquímica Quantitativa &amp; R" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="não sei." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Capítulo 7 Ácidos Nucleicos | Bioquímica Quantitativa com R" />
+  <meta name="twitter:title" content="Capítulo 7 Ácidos Nucleicos | Bioquímica Quantitativa &amp; R" />
   
   <meta name="twitter:description" content="não sei." />
   
@@ -91,7 +91,7 @@ code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -104,7 +104,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -154,7 +154,7 @@ div.csl-indent {
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">Bioquímica Quantitativa com R</a></li>
+<li><a href="./">Bioquímica Quantitativa & R</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="introdução.html"><a href="introdução.html"><i class="fa fa-check"></i>Introdução</a></li>
@@ -208,7 +208,7 @@ div.csl-indent {
 <li class="chapter" data-level="5.6" data-path="Enzimas.html"><a href="Enzimas.html#diagnóstico-estatístico-de-inibição-enzimática"><i class="fa fa-check"></i><b>5.6</b> Diagnóstico estatístico de inibição enzimática</a></li>
 <li class="chapter" data-level="5.7" data-path="Enzimas.html"><a href="Enzimas.html#cinética-de-estado-pré-estacionário"><i class="fa fa-check"></i><b>5.7</b> Cinética de estado pré-estacionário</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="Binding.html"><a href="Binding.html"><i class="fa fa-check"></i><b>6</b> Interação Biomolecular</a>
+<li class="chapter" data-level="6" data-path="Binding.html"><a href="Binding.html"><i class="fa fa-check"></i><b>6</b> Interação Bimolecular</a>
 <ul>
 <li class="chapter" data-level="6.1" data-path="Binding.html"><a href="Binding.html#modelos-de-interação-e-representações-lineares"><i class="fa fa-check"></i><b>6.1</b> Modelos de Interação e Representações Lineares</a></li>
 <li class="chapter" data-level="6.2" data-path="Binding.html"><a href="Binding.html#ajuste-não-linear-em-interação-ligante-proteína"><i class="fa fa-check"></i><b>6.2</b> Ajuste Não-Linear Em Interação Ligante-Proteína</a></li>
@@ -270,7 +270,7 @@ div.csl-indent {
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Bioquímica Quantitativa com R</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Bioquímica Quantitativa &amp; R</a>
           </h1>
         </div>
 
@@ -364,7 +364,7 @@ Obs: Com o número de referência é possível acessar o conteúdo desejado a pa
 <span id="cb233-3"><a href="acNucl.html#cb233-3" aria-hidden="true" tabindex="-1"></a>seq.liso <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(liso.nucl))</span>
 <span id="cb233-4"><a href="acNucl.html#cb233-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(seq.liso,<span class="fu">as.vector</span>(liso.nucl.numer2),<span class="at">type=</span><span class="st">&quot;l&quot;</span>,</span>
 <span id="cb233-5"><a href="acNucl.html#cb233-5" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlim=</span><span class="fu">c</span>(<span class="dv">100</span>,<span class="dv">300</span>),<span class="at">main=</span> <span class="st">&quot;Sequência de bases entre  resíduos 100 a 300&quot;</span>,<span class="at">sub=</span><span class="st">&quot;A=1;C=2;G=3;T=4&quot;</span>)</span></code></pre></div>
-<p><img src="Bioqu%C3%ADmica-Quantitativa-com-R_files/figure-html/unnamed-chunk-55-1.png" width="672" /></p>
+<p><img src="Bioqu%C3%ADmica-Quantitativa---R_files/figure-html/unnamed-chunk-55-1.png" width="672" /></p>
 <div class="sourceCode" id="cb234"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb234-1"><a href="acNucl.html#cb234-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Obtenção de sequência complementar</span></span>
 <span id="cb234-2"><a href="acNucl.html#cb234-2" aria-hidden="true" tabindex="-1"></a>comp.liso.nucl <span class="ot">&lt;-</span>seqinr<span class="sc">::</span><span class="fu">comp</span>(liso.nucl)</span>
 <span id="cb234-3"><a href="acNucl.html#cb234-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(seqinr<span class="sc">::</span><span class="fu">c2s</span>(comp.liso.nucl),<span class="dv">50</span>) <span class="co"># apresenta os primeiros 50 nucleotídios complementares</span></span></code></pre></div>
@@ -486,13 +486,22 @@ Tm=(81,5+16,6*log(\frac{[Na^+]}{1+0,7*[Na^+]})+41*f_{GC}-\frac{500}{L}-0,63\%_f)
 <span id="cb236-105"><a href="acNucl.html#cb236-105" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(Na.conc,Tm.Na.h,<span class="at">type=</span><span class="st">&quot;l&quot;</span>,<span class="at">col=</span><span class="dv">3</span>)</span>
 <span id="cb236-106"><a href="acNucl.html#cb236-106" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="at">x=</span><span class="fl">0.15</span>,<span class="at">y=</span><span class="dv">75</span>,<span class="at">legend=</span><span class="fu">c</span>(<span class="st">&quot;galinha&quot;</span>,<span class="st">&quot;humana&quot;</span>),<span class="at">col=</span><span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">3</span>),<span class="at">cex=</span><span class="dv">1</span>,<span class="at">lty=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>))</span></code></pre></div>
 <div class="figure"><span style="display:block;" id="fig:unnamed-chunk-56"></span>
-<img src="Bioqu%C3%ADmica-Quantitativa-com-R_files/figure-html/unnamed-chunk-56-1.png" alt="Comparação entre a curvas simuladas de Tm para a sequência nucleotídica da lisozima de galinha e lisozima humana, em função do teor de NaCl do meio." width="672" />
+<img src="Bioqu%C3%ADmica-Quantitativa---R_files/figure-html/unnamed-chunk-56-1.png" alt="Comparação entre a curvas simuladas de Tm para a sequência nucleotídica da lisozima de galinha e lisozima humana, em função do teor de NaCl do meio." width="672" />
 <p class="caption">
 Figura 7.1: Comparação entre a curvas simuladas de Tm para a sequência nucleotídica da lisozima de galinha e lisozima humana, em função do teor de NaCl do meio.
 </p>
 </div>
 <div class="line-block">      Observe como a diferença no teor de GC tem efeito direto na termoestabilidade de fitas duplas de DNA. Uma observação: embora a faixa do valor de Tm relatado na literatura para a lisozima encontra-se em torno de 74<span class="math inline">\(^o\)</span>C, esse valor refere-se à desnaturação cooperativa da enzima em solução aquosa, e não ao desenovelamento de sua sequência gênica de DNA duplex.</div>
 
+<!-- Google tag (gtag.js)-->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S1L73VGCG5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S1L73VGCG5');
+</script>
 </div>
 </div>
 <h3>References</h3>
@@ -555,7 +564,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["Bioquímica Quantitativa com R.pdf", "Bioquímica Quantitativa com R.epub"],
+"download": ["Bioquímica Quantitativa & R.pdf", "Bioquímica Quantitativa & R.epub"],
 "search": {
 "engine": "fuse",
 "options": null
@@ -573,7 +582,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
         src = src.replace(/^https?:/, '');
