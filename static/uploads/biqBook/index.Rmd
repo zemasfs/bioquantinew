@@ -21,12 +21,39 @@ tags: ["R Markdown", "plot", "regression"]
 
 |   [R](https://cran.r-project.org/) é um software gratuito desenvolvido para computação estatística e gráficos. Roda-se o *R* em diversas interfaces de usuário (GUI), dentre as quais destaca-se o [RStudio](https://www.rstudio.com/), um ambiente de desenvolvimento integrado (IDE) também gratuito. O *Rstudio* possui também uma *versão online* gratuita, acessível pelo sítio [RStudio Cloud](https://rstudio.cloud/).
 
-|       Os conteúdos desenvolvidos com **R** e **RStudio** para **Bioquímica** e temas afins são visualizados neste [**LINK**](.\introducao.html).
 
-## Uma dica ! ##
-|       Para reproduzir os comandos de qualquer tema tratado, basta clicar no canto superior direito do trecho de código contendo um ícone de cópia ![ copiar ](icon_copiar.png){width=2%}, colando-o em uma sessão instalada do *RStudio*, ou em sua versão *online* [RStudio Cloud](https://login.rstudio.cloud/).
+## Bioquímica Quantitativa & R
 
-|       Este [**tutorial rápido**](https://youtu.be/LF99kO8DE6Y){target="\_blank"} em *vídeo* ilustra a dica acima.
+|       Para acessar os conteúdos desenvolvidos com **R** e **RStudio** para **Bioquímica** e temas afins pode-se alternativamente descarregar um [**ebook**] do material, ou acessar os tópicos individualmente abaixo. Nesse caso, é possível reproduzir as atividades em qualquer tema tratado, bastando-se clicar no canto superior direito do trecho de código contendo um ícone de cópia ![ copiar ](icon_copiar.png){width=2%}, e colando-o em uma sessão instalada do *RStudio*, ou em sua versão *online* [RStudio Cloud](https://login.rstudio.cloud/). Este [**tutorial rápido**](https://youtu.be/LF99kO8DE6Y){target="\_blank"} em *vídeo* ilustra a dica.
+
+### Conteúdo
+
+[1. Introdução](.\introducao.html){target="_blank"}
+
+
+[2. Biomoléculas e dimensões](.\biomol.html){target="_blank"}
+
+[3. Tampões biológicos](.\tampões-biológicos.html){target="_blank"}
+
+[4. Aminoácidos & peptídios](.\AAcido.html){target="_blank"}
+
+[5. Proteínas](.\proteinas.html){target="_blank"}
+
+[6. Enzimas](.\enzimas.html){target="_blank"}
+
+[7. Interação bimolecular](.\binding.html){target="_blank"}
+
+[8. Ácidos nucleicos](.\acnucl.html){target="_blank"}
+
+[9. Bioenergética & soluções matriciais](.\bioenerg.html){target="_blank"}
+
+[10. Metabolismo](.\metabolismo.html){target="_blank"}
+
+[11. Redes metabólicas](.\redes.html){target="_blank"}
+
+[Referências](.\referências.html){target="_blank"}
+
+
 
 ![](r.logo.jpeg){width=20%}
 ![](rstudio.png){width=20%}
