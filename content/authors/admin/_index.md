@@ -53,8 +53,8 @@ title:
   gtag('config', 'G-S1L73VGCG5');
 </script>
 
-Página elaborada no intuito de contribuir ao ensino e aprendizagem de conteúdos de Bioquímica e áreas correlatas, pelo uso de **material autoinstrucional** baseado em *freewares* bem estabelecidos ([R](https://cran.r-project.org/), [RStudio](https://www.rstudio.com/) e [Jmol](http://jmol.sourceforge.net/)), bem como desenvolvido pela **UNIFAL-MG** {{% staticref "uploads/SismaBook/index.html" "newtab" %}}(Sisma){{% /staticref %}}.
+Página elaborada no intuito de contribuir ao ensino e aprendizagem de conteúdos de Bioquímica e áreas correlatas, pelo uso de *material autoinstrucional* baseado em programas de livre distribuição ([R](https://cran.r-project.org/) & [RStudio](https://www.rstudio.com/),[Jmol](http://jmol.sourceforge.net/), e **Sisma (UNIFAL-MG)** {{% staticref "uploads/SismaBook/index.html" "newtab" %}}(Sisma){{% /staticref %}}.
   
   <!---  ![ texto](unifal3.jpg)--->
   
-  A seleção dos programas tradicionais (*R, Rstudio e Jmol*) baseia-se em suas características de flexibilidade, expansibilidade, rápida curva de aprendizado, boa useabilidade, interatividade, fácil instalação ou uso mesmo por navegadores de internete, e larga aplicabilidade, tanto para ensino (remoto ou EaD) como para pesquisa.
+  A seleção dos programas tradicionais (*R, Rstudio e Jmol*) baseia-se em suas características de flexibilidade, expansibilidade, rápida curva de aprendizado, boa useabilidade, interatividade, fácil instalação ou uso por navegadores de internete, e larga aplicabilidade, tanto para ensino (presencial, híbrido ou EaD) como para pesquisa.

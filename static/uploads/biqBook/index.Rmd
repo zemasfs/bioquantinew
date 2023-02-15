@@ -52,7 +52,7 @@ tags:
 
 [11. Redes metabólicas](.\redesMet.html){target="_blank"}
 
-[Referências](.\referências.html){target="_blank"}
+[Referências](.\referencias.html){target="_blank"}
 
 
 
