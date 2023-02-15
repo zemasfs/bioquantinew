@@ -1,7 +1,7 @@
 ---
 title: "R & Rstudio - Relações Matemáticas & Gráficas"
-author: "null"
-date: "null"
+# author: "null"
+# date: "null"
 categories: R
 tags:
 - R Markdown
