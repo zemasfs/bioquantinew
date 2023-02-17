@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Capítulo 6 Interação Biomolecular | Bioquímica Quantitativa com R</title>
+  <title>Capítulo 6 Interação Bimolecular | Bioquímica Quantitativa &amp; R</title>
   <meta name="description" content="não sei." />
-  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Capítulo 6 Interação Biomolecular | Bioquímica Quantitativa com R" />
+  <meta property="og:title" content="Capítulo 6 Interação Bimolecular | Bioquímica Quantitativa &amp; R" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="não sei." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Capítulo 6 Interação Biomolecular | Bioquímica Quantitativa com R" />
+  <meta name="twitter:title" content="Capítulo 6 Interação Bimolecular | Bioquímica Quantitativa &amp; R" />
   
   <meta name="twitter:description" content="não sei." />
   
@@ -91,7 +91,7 @@ code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -104,7 +104,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -154,7 +154,7 @@ div.csl-indent {
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">Bioquímica Quantitativa com R</a></li>
+<li><a href="./">Bioquímica Quantitativa & R</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="introdução.html"><a href="introdução.html"><i class="fa fa-check"></i>Introdução</a></li>
@@ -208,7 +208,7 @@ div.csl-indent {
 <li class="chapter" data-level="5.6" data-path="Enzimas.html"><a href="Enzimas.html#diagnóstico-estatístico-de-inibição-enzimática"><i class="fa fa-check"></i><b>5.6</b> Diagnóstico estatístico de inibição enzimática</a></li>
 <li class="chapter" data-level="5.7" data-path="Enzimas.html"><a href="Enzimas.html#cinética-de-estado-pré-estacionário"><i class="fa fa-check"></i><b>5.7</b> Cinética de estado pré-estacionário</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="Binding.html"><a href="Binding.html"><i class="fa fa-check"></i><b>6</b> Interação Biomolecular</a>
+<li class="chapter" data-level="6" data-path="Binding.html"><a href="Binding.html"><i class="fa fa-check"></i><b>6</b> Interação Bimolecular</a>
 <ul>
 <li class="chapter" data-level="6.1" data-path="Binding.html"><a href="Binding.html#modelos-de-interação-e-representações-lineares"><i class="fa fa-check"></i><b>6.1</b> Modelos de Interação e Representações Lineares</a></li>
 <li class="chapter" data-level="6.2" data-path="Binding.html"><a href="Binding.html#ajuste-não-linear-em-interação-ligante-proteína"><i class="fa fa-check"></i><b>6.2</b> Ajuste Não-Linear Em Interação Ligante-Proteína</a></li>
@@ -270,7 +270,7 @@ div.csl-indent {
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Bioquímica Quantitativa com R</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Bioquímica Quantitativa &amp; R</a>
           </h1>
         </div>
 
@@ -279,7 +279,7 @@ div.csl-indent {
 
             <section class="normal" id="section-">
 <div id="Binding" class="section level1 hasAnchor" number="6">
-<h1><span class="header-section-number">Capítulo 6</span> Interação Biomolecular<a href="Binding.html#Binding" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<h1><span class="header-section-number">Capítulo 6</span> Interação Bimolecular<a href="Binding.html#Binding" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div class="line-block">      Quando se menciona interação entre biomoléculas, normalmente se faz referência à processos adsortivos envolvendo um biopolímero (proteína, ácido nucleico, glicano), e um ligante de baixo peso molecular, embora o formalismo também se aplique com alguma restrição a interações entre biopolímeros, e mesmo células inteiras.<br />
       O formalismo mais comum para interação biomolecular é o que envolve a formação de complexo adsortivo entre uma proteína e um ligante (<em>ligand binding</em>), exemplificado para íons (Ca<span class="math inline">\(^{2+}\)</span>, Mg<span class="math inline">\(^{2+}\)</span>, etc), fármacos e candidatos, produtos naturais, e antígenos, dentre vários.<br />
       Perguntas simples acerca da <em>interação ligante-proteína</em> podem elucidar diversas características da formação de tais complexos, como:</div>
@@ -328,7 +328,7 @@ Kd=\frac{k_{off}}{k_{on}}
 <span id="cb172-9"><a href="Binding.html#cb172-9" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(L,L<span class="sc">/</span>v,<span class="at">type=</span><span class="st">&quot;o&quot;</span>,<span class="at">main=</span><span class="st">&quot;Woolf&quot;</span>)</span>
 <span id="cb172-10"><a href="Binding.html#cb172-10" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">log10</span>(L),<span class="fu">log10</span>(v<span class="sc">/</span>(n<span class="sc">-</span>v)),<span class="at">type=</span><span class="st">&quot;o&quot;</span>,<span class="at">main=</span><span class="st">&quot;Hill&quot;</span>) </span></code></pre></div>
 <div class="figure"><span style="display:block;" id="fig:figLinBind"></span>
-<img src="Bioqu%C3%ADmica-Quantitativa-com-R_files/figure-html/figLinBind-1.png" alt="Principais linearizações da isoterma de ligação ligante-proteína." width="672" />
+<img src="Bioqu%C3%ADmica-Quantitativa---R_files/figure-html/figLinBind-1.png" alt="Principais linearizações da isoterma de ligação ligante-proteína." width="672" />
 <p class="caption">
 Figura 6.1: Principais linearizações da isoterma de ligação ligante-proteína.
 </p>
@@ -358,7 +358,7 @@ K = \frac{1}{Kd}
 <span id="cb174-11"><a href="Binding.html#cb174-11" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(L,L<span class="sc">/</span>v,<span class="at">type=</span><span class="st">&quot;o&quot;</span>,<span class="at">main=</span><span class="st">&quot;Woolf&quot;</span>)</span>
 <span id="cb174-12"><a href="Binding.html#cb174-12" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">log10</span>(L),<span class="fu">log10</span>(v<span class="sc">/</span>(n1<span class="sc">+</span>n2<span class="sc">-</span>v)),<span class="at">type=</span><span class="st">&quot;o&quot;</span>,<span class="at">main=</span><span class="st">&quot;Hill&quot;</span>) <span class="co"># n1+n2=ntot no Hill</span></span></code></pre></div>
 <div class="figure"><span style="display:block;" id="fig:figHeterSit"></span>
-<img src="Bioqu%C3%ADmica-Quantitativa-com-R_files/figure-html/figHeterSit-1.png" alt="Modelo e linearizações para  heterogeneidade de 2 conjuntos de sítios de ligação" width="672" />
+<img src="Bioqu%C3%ADmica-Quantitativa---R_files/figure-html/figHeterSit-1.png" alt="Modelo e linearizações para  heterogeneidade de 2 conjuntos de sítios de ligação" width="672" />
 <p class="caption">
 Figura 6.2: Modelo e linearizações para heterogeneidade de 2 conjuntos de sítios de ligação
 </p>
@@ -379,7 +379,7 @@ Figura 6.2: Modelo e linearizações para heterogeneidade de 2 conjuntos de sít
 <span id="cb176-12"><a href="Binding.html#cb176-12" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">log10</span>(L),<span class="fu">log10</span>(v<span class="sc">/</span>(n<span class="sc">-</span>v)),<span class="at">type=</span><span class="st">&quot;o&quot;</span>,<span class="at">main=</span><span class="st">&quot;Hill&quot;</span>) <span class="co"># n1+n2=ntot no Hill</span></span></code></pre></div>
 <pre><code>## Warning in xy.coords(x, y, xlabel, ylabel, log): NaNs produced</code></pre>
 <div class="figure"><span style="display:block;" id="fig:figOneSitCreat"></span>
-<img src="Bioqu%C3%ADmica-Quantitativa-com-R_files/figure-html/figOneSitCreat-1.png" alt="Modelo e linearizações para  criação de novo sítio: *1-site creator*." width="672" />
+<img src="Bioqu%C3%ADmica-Quantitativa---R_files/figure-html/figOneSitCreat-1.png" alt="Modelo e linearizações para  criação de novo sítio: *1-site creator*." width="672" />
 <p class="caption">
 Figura 6.3: Modelo e linearizações para criação de novo sítio: <em>1-site creator</em>.
 </p>
@@ -398,7 +398,7 @@ Figura 6.3: Modelo e linearizações para criação de novo sítio: <em>1-site c
 <span id="cb179-10"><a href="Binding.html#cb179-10" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(L,L<span class="sc">/</span>v,<span class="at">type=</span><span class="st">&quot;o&quot;</span>,<span class="at">main=</span><span class="st">&quot;Woolf&quot;</span>)</span>
 <span id="cb179-11"><a href="Binding.html#cb179-11" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">log10</span>(L),<span class="fu">log10</span>(v<span class="sc">/</span>(n<span class="sc">-</span>v)),<span class="at">type=</span><span class="st">&quot;o&quot;</span>,<span class="at">main=</span><span class="st">&quot;Hill&quot;</span>) <span class="co"># n1+n2=ntot no Hill</span></span></code></pre></div>
 <div class="figure"><span style="display:block;" id="fig:figCoopNeg"></span>
-<img src="Bioqu%C3%ADmica-Quantitativa-com-R_files/figure-html/figCoopNeg-1.png" alt="Modelo e linearizações para  cooperatividade negativa de sítios de ligação." width="672" />
+<img src="Bioqu%C3%ADmica-Quantitativa---R_files/figure-html/figCoopNeg-1.png" alt="Modelo e linearizações para  cooperatividade negativa de sítios de ligação." width="672" />
 <p class="caption">
 Figura 6.4: Modelo e linearizações para cooperatividade negativa de sítios de ligação.
 </p>
@@ -417,7 +417,7 @@ Figura 6.4: Modelo e linearizações para cooperatividade negativa de sítios de
 <span id="cb181-10"><a href="Binding.html#cb181-10" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(L,L<span class="sc">/</span>v,<span class="at">type=</span><span class="st">&quot;o&quot;</span>,<span class="at">main=</span><span class="st">&quot;Woolf&quot;</span>)</span>
 <span id="cb181-11"><a href="Binding.html#cb181-11" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">log10</span>(L),<span class="fu">log10</span>(v<span class="sc">/</span>(n<span class="sc">-</span>v)),<span class="at">type=</span><span class="st">&quot;o&quot;</span>,<span class="at">main=</span><span class="st">&quot;Hill&quot;</span>) <span class="co"># n1+n2=ntot no Hill</span></span></code></pre></div>
 <div class="figure"><span style="display:block;" id="fig:figCoopPos"></span>
-<img src="Bioqu%C3%ADmica-Quantitativa-com-R_files/figure-html/figCoopPos-1.png" alt="Modelo e linearizações para  cooperatividade positiva de sítios de ligação." width="672" />
+<img src="Bioqu%C3%ADmica-Quantitativa---R_files/figure-html/figCoopPos-1.png" alt="Modelo e linearizações para  cooperatividade positiva de sítios de ligação." width="672" />
 <p class="caption">
 Figura 6.5: Modelo e linearizações para cooperatividade positiva de sítios de ligação.
 </p>
@@ -439,7 +439,7 @@ Figura 6.5: Modelo e linearizações para cooperatividade positiva de sítios de
 <pre><code>## Warning in (L * n)/(Kd + L) + rnorm(40, 0, 0.1): longer object length is not a
 ## multiple of shorter object length</code></pre>
 <div class="sourceCode" id="cb185"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb185-1"><a href="Binding.html#cb185-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(L,v)</span></code></pre></div>
-<p><img src="Bioqu%C3%ADmica-Quantitativa-com-R_files/figure-html/1SitBindSimul-1.png" width="672" /></p>
+<p><img src="Bioqu%C3%ADmica-Quantitativa---R_files/figure-html/1SitBindSimul-1.png" width="672" /></p>
 <div class="line-block">      Observe que o comando ‘rnorm’ adiciona um erro de distribuição normal aos dados. Outra forma para simulação desses é dada abaixo, introduzindo-se o comando ‘runif’ de geração de números aleatórios.</div>
 <div class="sourceCode" id="cb186"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb186-1"><a href="Binding.html#cb186-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Simulação de dados de interação bimolecular (1 sítio)</span></span>
 <span id="cb186-2"><a href="Binding.html#cb186-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -451,7 +451,7 @@ Figura 6.5: Modelo e linearizações para cooperatividade positiva de sítios de
 <span id="cb186-8"><a href="Binding.html#cb186-8" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. rnorm(no. pontos,media,desvio) - erro aleatório de distribuição normal</span></span>
 <span id="cb186-9"><a href="Binding.html#cb186-9" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(L,PL, <span class="at">xlab=</span><span class="st">&quot;L&quot;</span>, <span class="at">ylab=</span><span class="st">&quot;PL&quot;</span>)</span></code></pre></div>
 <div class="figure"><span style="display:block;" id="fig:1sitBindSimul2"></span>
-<img src="Bioqu%C3%ADmica-Quantitativa-com-R_files/figure-html/1sitBindSimul2-1.png" alt="Dados simulados para isoterma de interação bimolecular." width="672" />
+<img src="Bioqu%C3%ADmica-Quantitativa---R_files/figure-html/1sitBindSimul2-1.png" alt="Dados simulados para isoterma de interação bimolecular." width="672" />
 <p class="caption">
 Figura 6.6: Dados simulados para isoterma de interação bimolecular.
 </p>
@@ -466,7 +466,7 @@ Figura 6.6: Dados simulados para isoterma de interação bimolecular.
 <div class="sourceCode" id="cb189"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb189-1"><a href="Binding.html#cb189-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Gráfico de dados e simulação</span></span>
 <span id="cb189-2"><a href="Binding.html#cb189-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(L,PL)</span>
 <span id="cb189-3"><a href="Binding.html#cb189-3" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(L,<span class="fu">predict</span>(m),<span class="at">lty=</span><span class="dv">2</span>,<span class="at">col=</span><span class="st">&quot;red&quot;</span>,<span class="at">lwd=</span><span class="dv">3</span>)</span></code></pre></div>
-<p><img src="Bioqu%C3%ADmica-Quantitativa-com-R_files/figure-html/nlsBind-1.png" width="672" /></p>
+<p><img src="Bioqu%C3%ADmica-Quantitativa---R_files/figure-html/nlsBind-1.png" width="672" /></p>
 <div class="sourceCode" id="cb190"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb190-1"><a href="Binding.html#cb190-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(m)</span></code></pre></div>
 <pre><code>## 
 ## Formula: PL ~ n * L/(Kd + L)
@@ -481,7 +481,7 @@ Figura 6.6: Dados simulados para isoterma de interação bimolecular.
 ## Residual standard error: 0.8 on 49 degrees of freedom
 ## 
 ## Number of iterations to convergence: 6 
-## Achieved convergence tolerance: 1.56e-06</code></pre>
+## Achieved convergence tolerance: 1.55e-06</code></pre>
 </div>
 <div id="sistemas-gráficos-no-r" class="section level2 hasAnchor" number="6.3">
 <h2><span class="header-section-number">6.3</span> Sistemas Gráficos no R<a href="Binding.html#sistemas-gráficos-no-r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -498,11 +498,11 @@ Figura 6.6: Dados simulados para isoterma de interação bimolecular.
 <span id="cb192-8"><a href="Binding.html#cb192-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Produção do gráfico com sistema Lattice</span></span>
 <span id="cb192-9"><a href="Binding.html#cb192-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lattice)</span>
 <span id="cb192-10"><a href="Binding.html#cb192-10" aria-hidden="true" tabindex="-1"></a><span class="fu">xyplot</span>(PL<span class="sc">~</span>L)</span></code></pre></div>
-<p><img src="Bioqu%C3%ADmica-Quantitativa-com-R_files/figure-html/1sitBindSimulLattice-1.png" width="672" /></p>
+<p><img src="Bioqu%C3%ADmica-Quantitativa---R_files/figure-html/1sitBindSimulLattice-1.png" width="672" /></p>
 <div class="sourceCode" id="cb193"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb193-1"><a href="Binding.html#cb193-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Produção do gráfico com sistema ggplot2</span></span>
 <span id="cb193-2"><a href="Binding.html#cb193-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
 <span id="cb193-3"><a href="Binding.html#cb193-3" aria-hidden="true" tabindex="-1"></a><span class="fu">qplot</span>(L,PL)</span></code></pre></div>
-<p><img src="Bioqu%C3%ADmica-Quantitativa-com-R_files/figure-html/1sitBindSimulLattice-2.png" width="672" /></p>
+<p><img src="Bioqu%C3%ADmica-Quantitativa---R_files/figure-html/1sitBindSimulLattice-2.png" width="672" /></p>
 <div class="line-block">      Como a percepção de peculiaridades dos sistemas gráficos se revela melhor com dados mais elaborados, as ilustrações a seguir utilizarão o conjunto de dados ‘Puromycin’, que integra a biblioteca ‘datasets’ do ‘R’. Os dados apresentam a velocidade de reação enzimática sobre um substrato em células tratadas e não tratadas com puromicina.</div>
 <div class="line-block">      O código abaixo retorna a plotagem, ajuste não linear e resultados obtidos com a biblioteca <em>Graphics</em> padrão, e foi extraído do própria documentação do <em>dataset</em>.</div>
 <div class="sourceCode" id="cb194"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb194-1"><a href="Binding.html#cb194-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(datasets)</span>
@@ -550,7 +550,7 @@ Figura 6.6: Dados simulados para isoterma de interação bimolecular.
 ## Residual standard error: 10 on 9 degrees of freedom
 ## 
 ## Number of iterations to convergence: 5 
-## Achieved convergence tolerance: 4.47e-06</code></pre>
+## Achieved convergence tolerance: 4.45e-06</code></pre>
 <div class="sourceCode" id="cb198"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb198-1"><a href="Binding.html#cb198-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Adição de linhas de ajuste ao plot</span></span>
 <span id="cb198-2"><a href="Binding.html#cb198-2" aria-hidden="true" tabindex="-1"></a>conc <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="fl">1.2</span>, <span class="at">length.out =</span> <span class="dv">101</span>)</span>
 <span id="cb198-3"><a href="Binding.html#cb198-3" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(conc, <span class="fu">predict</span>(fm1, <span class="fu">list</span>(<span class="at">conc =</span> conc)), <span class="at">lty =</span> <span class="dv">1</span>, <span class="at">col =</span> <span class="dv">1</span>)</span>
@@ -558,7 +558,7 @@ Figura 6.6: Dados simulados para isoterma de interação bimolecular.
 <span id="cb198-5"><a href="Binding.html#cb198-5" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="fl">0.8</span>, <span class="dv">120</span>, <span class="fu">levels</span>(Puromycin<span class="sc">$</span>state),</span>
 <span id="cb198-6"><a href="Binding.html#cb198-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">col =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>, <span class="at">lty =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>, <span class="at">pch =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>)</span></code></pre></div>
 <div class="figure"><span style="display:block;" id="fig:puromycGraphics"></span>
-<img src="Bioqu%C3%ADmica-Quantitativa-com-R_files/figure-html/puromycGraphics-1.png" alt="Plotagem e análise com graphics." width="672" />
+<img src="Bioqu%C3%ADmica-Quantitativa---R_files/figure-html/puromycGraphics-1.png" alt="Plotagem e análise com graphics." width="672" />
 <p class="caption">
 Figura 6.7: Plotagem e análise com graphics.
 </p>
@@ -575,7 +575,7 @@ Figura 6.7: Plotagem e análise com graphics.
 <span id="cb199-9"><a href="Binding.html#cb199-9" aria-hidden="true" tabindex="-1"></a>  ) <span class="co"># expressão que define o plot</span></span>
 <span id="cb199-10"><a href="Binding.html#cb199-10" aria-hidden="true" tabindex="-1"></a>p <span class="co"># variável que apresenta o plot</span></span></code></pre></div>
 <div class="figure"><span style="display:block;" id="fig:puromycGgplot2"></span>
-<img src="Bioqu%C3%ADmica-Quantitativa-com-R_files/figure-html/puromycGgplot2-1.png" alt="Plotagem e análise com ggplot2." width="672" />
+<img src="Bioqu%C3%ADmica-Quantitativa---R_files/figure-html/puromycGgplot2-1.png" alt="Plotagem e análise com ggplot2." width="672" />
 <p class="caption">
 Figura 6.8: Plotagem e análise com ggplot2.
 </p>
@@ -583,7 +583,7 @@ Figura 6.8: Plotagem e análise com ggplot2.
 <div class="line-block">      Perceba o menor número de instruções do <em>script</em> para a produção do gráfico. Além disso, e diferente do <em>Graphics</em>, <em>ggplot2</em> permite adicionar camadas à linha de comandos principais, e apresentar os dados multivariados em paineis (funções ‘facet_grid’ e ‘facet_wrap’), sem a necessidade de se utilizar o comando ‘mfrow’ ou ‘mfcol’ visto no capítulo, como segue:</div>
 <div class="sourceCode" id="cb200"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb200-1"><a href="Binding.html#cb200-1" aria-hidden="true" tabindex="-1"></a>p <span class="sc">+</span> <span class="fu">facet_grid</span>(<span class="at">rows =</span> <span class="fu">vars</span>(state))</span></code></pre></div>
 <div class="figure"><span style="display:block;" id="fig:puromycGgplot2Facet"></span>
-<img src="Bioqu%C3%ADmica-Quantitativa-com-R_files/figure-html/puromycGgplot2Facet-1.png" alt="Plotagem e análise com ggplot2 - paineis (faceting)." width="672" />
+<img src="Bioqu%C3%ADmica-Quantitativa---R_files/figure-html/puromycGgplot2Facet-1.png" alt="Plotagem e análise com ggplot2 - paineis (faceting)." width="672" />
 <p class="caption">
 Figura 6.9: Plotagem e análise com ggplot2 - paineis (faceting).
 </p>
@@ -595,7 +595,7 @@ xyplot(y \sim x~|~ groups = z)
 \end{equation}\]</span>
 <div class="sourceCode" id="cb201"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb201-1"><a href="Binding.html#cb201-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lattice)</span>
 <span id="cb201-2"><a href="Binding.html#cb201-2" aria-hidden="true" tabindex="-1"></a><span class="fu">xyplot</span>(rate <span class="sc">~</span> conc, <span class="at">data =</span> Puromycin, <span class="at">groups=</span>state)</span></code></pre></div>
-<p><img src="Bioqu%C3%ADmica-Quantitativa-com-R_files/figure-html/unnamed-chunk-48-1.png" width="672" /></p>
+<p><img src="Bioqu%C3%ADmica-Quantitativa---R_files/figure-html/unnamed-chunk-48-1.png" width="672" /></p>
 <div class="line-block">      E para a representação dos ajustes não lineares:</div>
 <div class="sourceCode" id="cb202"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb202-1"><a href="Binding.html#cb202-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(nlme)</span>
 <span id="cb202-2"><a href="Binding.html#cb202-2" aria-hidden="true" tabindex="-1"></a>n1<span class="ot">&lt;-</span><span class="fu">nlsList</span>(rate <span class="sc">~</span> Vmax<span class="sc">*</span>conc<span class="sc">/</span>(Km<span class="sc">+</span>conc) <span class="sc">|</span> state, <span class="at">data=</span>Puromycin, <span class="at">start=</span><span class="fu">list</span>(<span class="at">Vmax=</span><span class="dv">200</span>, <span class="at">Km=</span><span class="fl">0.1</span>))</span>
@@ -637,7 +637,7 @@ xyplot(y \sim x~|~ groups = z)
 <span id="cb209-2"><a href="Binding.html#cb209-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">type=</span><span class="fu">c</span>(<span class="st">&quot;p&quot;</span>,<span class="st">&quot;l&quot;</span>),<span class="at">distribute.type=</span><span class="cn">TRUE</span>,<span class="at">col.line=</span><span class="st">&quot;red&quot;</span>,</span>
 <span id="cb209-3"><a href="Binding.html#cb209-3" aria-hidden="true" tabindex="-1"></a>       <span class="at">ylab=</span><span class="st">&quot;rate&quot;</span>)</span></code></pre></div>
 <div class="figure"><span style="display:block;" id="fig:puromicLatticePan"></span>
-<img src="Bioqu%C3%ADmica-Quantitativa-com-R_files/figure-html/puromicLatticePan-1.png" alt="Plotagem e análise com Lattice - ajuste externo e paineis." width="672" />
+<img src="Bioqu%C3%ADmica-Quantitativa---R_files/figure-html/puromicLatticePan-1.png" alt="Plotagem e análise com Lattice - ajuste externo e paineis." width="672" />
 <p class="caption">
 Figura 6.10: Plotagem e análise com Lattice - ajuste externo e paineis.
 </p>
@@ -652,7 +652,7 @@ Figura 6.10: Plotagem e análise com Lattice - ajuste externo e paineis.
 <span id="cb210-6"><a href="Binding.html#cb210-6" aria-hidden="true" tabindex="-1"></a>       },</span>
 <span id="cb210-7"><a href="Binding.html#cb210-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">xlab =</span> <span class="st">&quot;conc&quot;</span>, <span class="at">ylab =</span> <span class="st">&quot;rate&quot;</span>)</span></code></pre></div>
 <div class="figure"><span style="display:block;" id="fig:puromicLatticePanInterno"></span>
-<img src="Bioqu%C3%ADmica-Quantitativa-com-R_files/figure-html/puromicLatticePanInterno-1.png" alt="Plotagem e análise com Lattice - ajuste interno e paineis." width="672" />
+<img src="Bioqu%C3%ADmica-Quantitativa---R_files/figure-html/puromicLatticePanInterno-1.png" alt="Plotagem e análise com Lattice - ajuste interno e paineis." width="672" />
 <p class="caption">
 Figura 6.11: Plotagem e análise com Lattice - ajuste interno e paineis.
 </p>
@@ -823,12 +823,21 @@ Taxas \, líquidas:
 <span id="cb217-32"><a href="Binding.html#cb217-32" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span> (sol.rk4<span class="sc">$</span>time, sol.rk4<span class="sc">$</span>P, <span class="at">type=</span><span class="st">&quot;l&quot;</span>, <span class="at">lty=</span><span class="dv">2</span>,<span class="at">col=</span><span class="dv">2</span>,<span class="at">lwd=</span><span class="fl">1.5</span>)</span>
 <span id="cb217-33"><a href="Binding.html#cb217-33" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span> (sol.rk4<span class="sc">$</span>time, sol.rk4<span class="sc">$</span>PL, <span class="at">type=</span><span class="st">&quot;l&quot;</span>, <span class="at">lty=</span><span class="dv">3</span>,<span class="at">col=</span><span class="dv">3</span>,<span class="at">lwd=</span><span class="fl">1.5</span>)</span></code></pre></div>
 <div class="figure"><span style="display:block;" id="fig:unnamed-chunk-52"></span>
-<img src="Bioqu%C3%ADmica-Quantitativa-com-R_files/figure-html/unnamed-chunk-52-1.png" alt="Teores de ligante e proteína livres (L e P), bem como do complexo PL  apresentados ao longo do tempo de acordo com o método Runge-Kutta de 4a. ordem para solução de equações diferenciais." width="672" />
+<img src="Bioqu%C3%ADmica-Quantitativa---R_files/figure-html/unnamed-chunk-52-1.png" alt="Teores de ligante e proteína livres (L e P), bem como do complexo PL  apresentados ao longo do tempo de acordo com o método Runge-Kutta de 4a. ordem para solução de equações diferenciais." width="672" />
 <p class="caption">
 Figura 6.12: Teores de ligante e proteína livres (L e P), bem como do complexo PL apresentados ao longo do tempo de acordo com o método Runge-Kutta de 4a. ordem para solução de equações diferenciais.
 </p>
 </div>
 
+<!-- Google tag (gtag.js)-->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S1L73VGCG5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S1L73VGCG5');
+</script>
 </div>
 </div>
 <h3>References</h3>
@@ -894,7 +903,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["Bioquímica Quantitativa com R.pdf", "Bioquímica Quantitativa com R.epub"],
+"download": ["Bioquímica Quantitativa & R.pdf", "Bioquímica Quantitativa & R.epub"],
 "search": {
 "engine": "fuse",
 "options": null
@@ -912,7 +921,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
         src = src.replace(/^https?:/, '');

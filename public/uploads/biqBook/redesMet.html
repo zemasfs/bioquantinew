@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Capítulo 10 Redes Metabólicas | Bioquímica Quantitativa com R</title>
+  <title>Capítulo 10 Redes Metabólicas | Bioquímica Quantitativa &amp; R</title>
   <meta name="description" content="não sei." />
-  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Capítulo 10 Redes Metabólicas | Bioquímica Quantitativa com R" />
+  <meta property="og:title" content="Capítulo 10 Redes Metabólicas | Bioquímica Quantitativa &amp; R" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="não sei." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Capítulo 10 Redes Metabólicas | Bioquímica Quantitativa com R" />
+  <meta name="twitter:title" content="Capítulo 10 Redes Metabólicas | Bioquímica Quantitativa &amp; R" />
   
   <meta name="twitter:description" content="não sei." />
   
@@ -91,7 +91,7 @@ code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -104,7 +104,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -154,7 +154,7 @@ div.csl-indent {
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">Bioquímica Quantitativa com R</a></li>
+<li><a href="./">Bioquímica Quantitativa & R</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="introdução.html"><a href="introdução.html"><i class="fa fa-check"></i>Introdução</a></li>
@@ -208,7 +208,7 @@ div.csl-indent {
 <li class="chapter" data-level="5.6" data-path="Enzimas.html"><a href="Enzimas.html#diagnóstico-estatístico-de-inibição-enzimática"><i class="fa fa-check"></i><b>5.6</b> Diagnóstico estatístico de inibição enzimática</a></li>
 <li class="chapter" data-level="5.7" data-path="Enzimas.html"><a href="Enzimas.html#cinética-de-estado-pré-estacionário"><i class="fa fa-check"></i><b>5.7</b> Cinética de estado pré-estacionário</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="Binding.html"><a href="Binding.html"><i class="fa fa-check"></i><b>6</b> Interação Biomolecular</a>
+<li class="chapter" data-level="6" data-path="Binding.html"><a href="Binding.html"><i class="fa fa-check"></i><b>6</b> Interação Bimolecular</a>
 <ul>
 <li class="chapter" data-level="6.1" data-path="Binding.html"><a href="Binding.html#modelos-de-interação-e-representações-lineares"><i class="fa fa-check"></i><b>6.1</b> Modelos de Interação e Representações Lineares</a></li>
 <li class="chapter" data-level="6.2" data-path="Binding.html"><a href="Binding.html#ajuste-não-linear-em-interação-ligante-proteína"><i class="fa fa-check"></i><b>6.2</b> Ajuste Não-Linear Em Interação Ligante-Proteína</a></li>
@@ -270,7 +270,7 @@ div.csl-indent {
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Bioquímica Quantitativa com R</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Bioquímica Quantitativa &amp; R</a>
           </h1>
         </div>
 
@@ -345,7 +345,7 @@ dB=k*A*dt
 <span id="cb320-18"><a href="redesMet.html#cb320-18" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="at">x=</span><span class="dv">2</span>,<span class="dv">5</span>,<span class="at">y=</span><span class="dv">1</span>,<span class="at">legend=</span><span class="fu">c</span>(<span class="st">&quot;A&quot;</span>,<span class="st">&quot;B&quot;</span>),<span class="at">col=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>),<span class="at">cex=</span><span class="dv">1</span>,</span>
 <span id="cb320-19"><a href="redesMet.html#cb320-19" aria-hidden="true" tabindex="-1"></a>       <span class="at">lty=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>))</span></code></pre></div>
 <div class="figure"><span style="display:block;" id="fig:unnamed-chunk-84"></span>
-<img src="Bioqu%C3%ADmica-Quantitativa-com-R_files/figure-html/unnamed-chunk-84-1.png" alt="Solução de sistema de equações diferenciais por método de Euler para conversão de 1a. ordem da espécie A em B, a uma taxa cinética k." width="672" />
+<img src="Bioqu%C3%ADmica-Quantitativa---R_files/figure-html/unnamed-chunk-84-1.png" alt="Solução de sistema de equações diferenciais por método de Euler para conversão de 1a. ordem da espécie A em B, a uma taxa cinética k." width="672" />
 <p class="caption">
 Figura 10.2: Solução de sistema de equações diferenciais por método de Euler para conversão de 1a. ordem da espécie A em B, a uma taxa cinética k.
 </p>
@@ -384,7 +384,7 @@ dB=k*A*dt-km*B*dt
 <span id="cb321-17"><a href="redesMet.html#cb321-17" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="at">x=</span><span class="dv">2</span>,<span class="dv">5</span>,<span class="at">y=</span><span class="dv">2</span>,<span class="at">legend=</span><span class="fu">c</span>(<span class="st">&quot;A&quot;</span>,<span class="st">&quot;B&quot;</span>),<span class="at">col=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>),<span class="at">cex=</span><span class="dv">1</span>,</span>
 <span id="cb321-18"><a href="redesMet.html#cb321-18" aria-hidden="true" tabindex="-1"></a>       <span class="at">lty=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>))</span></code></pre></div>
 <div class="figure"><span style="display:block;" id="fig:unnamed-chunk-85"></span>
-<img src="Bioqu%C3%ADmica-Quantitativa-com-R_files/figure-html/unnamed-chunk-85-1.png" alt="Solução numérica para a conversão reversível da espécie A em B. k = km = 0,5; Ao e Bo = 1 (teores iniciais)." width="672" />
+<img src="Bioqu%C3%ADmica-Quantitativa---R_files/figure-html/unnamed-chunk-85-1.png" alt="Solução numérica para a conversão reversível da espécie A em B. k = km = 0,5; Ao e Bo = 1 (teores iniciais)." width="672" />
 <p class="caption">
 Figura 10.3: Solução numérica para a conversão reversível da espécie A em B. k = km = 0,5; Ao e Bo = 1 (teores iniciais).
 </p>
@@ -408,7 +408,7 @@ Figura 10.3: Solução numérica para a conversão reversível da espécie A em 
 <span id="cb322-16"><a href="redesMet.html#cb322-16" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(t,x[<span class="dv">2</span>,],<span class="at">lty=</span><span class="dv">2</span>,<span class="at">col=</span><span class="dv">2</span>) <span class="co"># adição do gráfico do composto 2</span></span>
 <span id="cb322-17"><a href="redesMet.html#cb322-17" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="at">x=</span><span class="dv">2</span>,<span class="dv">5</span>,<span class="at">y=</span><span class="dv">2</span>,<span class="at">legend=</span><span class="fu">c</span>(<span class="st">&quot;A&quot;</span>,<span class="st">&quot;B&quot;</span>),<span class="at">col=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>),<span class="at">cex=</span><span class="dv">1</span>,<span class="at">lty=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>))</span></code></pre></div>
 <div class="figure"><span style="display:block;" id="fig:unnamed-chunk-86"></span>
-<img src="Bioqu%C3%ADmica-Quantitativa-com-R_files/figure-html/unnamed-chunk-86-1.png" alt="Solução numérica para a conversão reversível da espécie A em B. k = 0,5; km = 0,1; Ao = 1; Bo = 0,2 (teores iniciais)." width="672" />
+<img src="Bioqu%C3%ADmica-Quantitativa---R_files/figure-html/unnamed-chunk-86-1.png" alt="Solução numérica para a conversão reversível da espécie A em B. k = 0,5; km = 0,1; Ao = 1; Bo = 0,2 (teores iniciais)." width="672" />
 <p class="caption">
 Figura 10.4: Solução numérica para a conversão reversível da espécie A em B. k = 0,5; km = 0,1; Ao = 1; Bo = 0,2 (teores iniciais).
 </p>
@@ -453,7 +453,7 @@ dC=k2*B
 <span id="cb323-18"><a href="redesMet.html#cb323-18" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(t,x[<span class="dv">3</span>,],<span class="at">lty=</span><span class="dv">3</span>,<span class="at">col=</span><span class="dv">3</span>) <span class="co"># adição do gráfico do composto 3</span></span>
 <span id="cb323-19"><a href="redesMet.html#cb323-19" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="at">x=</span><span class="dv">2</span>,<span class="dv">5</span>,<span class="at">y=</span><span class="dv">1</span>,<span class="at">legend=</span><span class="fu">c</span>(<span class="st">&quot;A&quot;</span>,<span class="st">&quot;B&quot;</span>,<span class="st">&quot;C&quot;</span>),<span class="at">col=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>),<span class="at">cex=</span><span class="dv">1</span>,<span class="at">lty=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>))</span></code></pre></div>
 <div class="figure"><span style="display:block;" id="fig:MMdiffeq"></span>
-<img src="Bioqu%C3%ADmica-Quantitativa-com-R_files/figure-html/MMdiffeq-1.png" alt="Solução de Euler para uma cinética de 3 compostos. k1 = 0,5; k2 = 1; km1 = 0,1. Teores iniciais: Ao = 1; Bo = 0; Co = 0." width="672" />
+<img src="Bioqu%C3%ADmica-Quantitativa---R_files/figure-html/MMdiffeq-1.png" alt="Solução de Euler para uma cinética de 3 compostos. k1 = 0,5; k2 = 1; km1 = 0,1. Teores iniciais: Ao = 1; Bo = 0; Co = 0." width="672" />
 <p class="caption">
 Figura 10.5: Solução de Euler para uma cinética de 3 compostos. k1 = 0,5; k2 = 1; km1 = 0,1. Teores iniciais: Ao = 1; Bo = 0; Co = 0.
 </p>
@@ -494,7 +494,7 @@ _{k2}\\
 <span id="cb324-20"><a href="redesMet.html#cb324-20" aria-hidden="true" tabindex="-1"></a>     <span class="fu">lines</span>(t,x[<span class="dv">3</span>,],<span class="at">col=</span><span class="dv">3</span>,<span class="at">lty=</span><span class="dv">3</span>)</span>
 <span id="cb324-21"><a href="redesMet.html#cb324-21" aria-hidden="true" tabindex="-1"></a>     <span class="fu">legend</span>(<span class="at">x=</span><span class="dv">8</span>,<span class="at">y=</span><span class="fl">0.6</span>,<span class="at">legend=</span><span class="fu">c</span>(<span class="st">&quot;A&quot;</span>,<span class="st">&quot;B&quot;</span>,<span class="st">&quot;C&quot;</span>),<span class="at">col=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>),<span class="at">cex=</span><span class="dv">1</span>,<span class="at">lty=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>))</span></code></pre></div>
 <div class="figure"><span style="display:block;" id="fig:unnamed-chunk-87"></span>
-<img src="Bioqu%C3%ADmica-Quantitativa-com-R_files/figure-html/unnamed-chunk-87-1.png" alt="Solução de Euler para uma cinética reversível de 3 compostos. k1 = 1; km1 = 3; k2 = 5; km1 = 0,1. Teores iniciais: Ao = 1; Bo = 0; Co = 0." width="672" />
+<img src="Bioqu%C3%ADmica-Quantitativa---R_files/figure-html/unnamed-chunk-87-1.png" alt="Solução de Euler para uma cinética reversível de 3 compostos. k1 = 1; km1 = 3; k2 = 5; km1 = 0,1. Teores iniciais: Ao = 1; Bo = 0; Co = 0." width="672" />
 <p class="caption">
 Figura 10.6: Solução de Euler para uma cinética reversível de 3 compostos. k1 = 1; km1 = 3; k2 = 5; km1 = 0,1. Teores iniciais: Ao = 1; Bo = 0; Co = 0.
 </p>
@@ -557,7 +557,7 @@ dF=k5*E*dt-ka*F*dt
 <span id="cb326-38"><a href="redesMet.html#cb326-38" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(t,x[<span class="dv">6</span>,],<span class="at">col=</span><span class="dv">6</span>,<span class="at">lty=</span><span class="dv">6</span>)</span>
 <span id="cb326-39"><a href="redesMet.html#cb326-39" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="at">x=</span><span class="fl">6.5</span>,<span class="at">y=</span><span class="fl">0.65</span>,<span class="at">legend=</span><span class="fu">c</span>(<span class="st">&quot;A&quot;</span>,<span class="st">&quot;B&quot;</span>,<span class="st">&quot;C&quot;</span>,<span class="st">&quot;D&quot;</span>,<span class="st">&quot;E&quot;</span>,<span class="st">&quot;F&quot;</span>),<span class="at">col=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>),<span class="at">cex=</span><span class="dv">1</span>,<span class="at">lty=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>))</span></code></pre></div>
 <div class="figure"><span style="display:block;" id="fig:unnamed-chunk-88"></span>
-<img src="Bioqu%C3%ADmica-Quantitativa-com-R_files/figure-html/unnamed-chunk-88-1.png" alt="Solução para uma via metabólica fictícia apresentando inibição (ki) e ativação (ka) alostéricas. Taxas cinéticas: k1 = 2, k2 = 0,5, k3 = 0,7, km3 = 0,3, k4 = 5, k5 = 1, ki = 0,3, ka = 0.2. Valores iniciais dos compostos: A=1; B, C, D, E, F = 0" width="672" />
+<img src="Bioqu%C3%ADmica-Quantitativa---R_files/figure-html/unnamed-chunk-88-1.png" alt="Solução para uma via metabólica fictícia apresentando inibição (ki) e ativação (ka) alostéricas. Taxas cinéticas: k1 = 2, k2 = 0,5, k3 = 0,7, km3 = 0,3, k4 = 5, k5 = 1, ki = 0,3, ka = 0.2. Valores iniciais dos compostos: A=1; B, C, D, E, F = 0" width="672" />
 <p class="caption">
 Figura 10.8: Solução para uma via metabólica fictícia apresentando inibição (ki) e ativação (ka) alostéricas. Taxas cinéticas: k1 = 2, k2 = 0,5, k3 = 0,7, km3 = 0,3, k4 = 5, k5 = 1, ki = 0,3, ka = 0.2. Valores iniciais dos compostos: A=1; B, C, D, E, F = 0
 </p>
@@ -644,7 +644,7 @@ _{k5}\\
 <span id="cb327-39"><a href="redesMet.html#cb327-39" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(t,DHCP,<span class="at">type=</span><span class="st">&quot;l&quot;</span>)</span>
 <span id="cb327-40"><a href="redesMet.html#cb327-40" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(t,PEP,<span class="at">type=</span><span class="st">&quot;l&quot;</span>)</span></code></pre></div>
 <div class="figure"><span style="display:block;" id="fig:unnamed-chunk-89-1"></span>
-<img src="Bioqu%C3%ADmica-Quantitativa-com-R_files/figure-html/unnamed-chunk-89-1.png" alt="Cinética de conversões para uma rede metabólica simples envolvendo algumas reações da glicólise, gliconeogênese e via das pentoses. Valores das constantes cinéticas: k1 = 0,1; k2 = 0,5; k3 = 0,05; k4 = 0,5; k5 = 0,2. Valores iniciais dos compostos: G6P = 1; para os demais, 0." width="672" />
+<img src="Bioqu%C3%ADmica-Quantitativa---R_files/figure-html/unnamed-chunk-89-1.png" alt="Cinética de conversões para uma rede metabólica simples envolvendo algumas reações da glicólise, gliconeogênese e via das pentoses. Valores das constantes cinéticas: k1 = 0,1; k2 = 0,5; k3 = 0,05; k4 = 0,5; k5 = 0,2. Valores iniciais dos compostos: G6P = 1; para os demais, 0." width="672" />
 <p class="caption">
 Figura 10.10: Cinética de conversões para uma rede metabólica simples envolvendo algumas reações da glicólise, gliconeogênese e via das pentoses. Valores das constantes cinéticas: k1 = 0,1; k2 = 0,5; k3 = 0,05; k4 = 0,5; k5 = 0,2. Valores iniciais dos compostos: G6P = 1; para os demais, 0.
 </p>
@@ -658,7 +658,7 @@ Figura 10.10: Cinética de conversões para uma rede metabólica simples envolve
 <span id="cb328-7"><a href="redesMet.html#cb328-7" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(t,PEP,<span class="at">type=</span><span class="st">&quot;l&quot;</span>,<span class="at">col=</span><span class="dv">5</span>,<span class="at">lty=</span><span class="dv">5</span>)</span>
 <span id="cb328-8"><a href="redesMet.html#cb328-8" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="at">x=</span><span class="dv">10</span>,<span class="at">y=</span><span class="dv">1</span>,<span class="at">legend=</span><span class="fu">c</span>(<span class="st">&quot;G6P&quot;</span>,<span class="st">&quot;R5P&quot;</span>,<span class="st">&quot;G3P&quot;</span>,<span class="st">&quot;DHCP&quot;</span>,<span class="st">&quot;PEP&quot;</span>),<span class="at">col=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>),<span class="at">cex=</span><span class="dv">1</span>,<span class="at">lty=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>))</span></code></pre></div>
 <div class="figure"><span style="display:block;" id="fig:unnamed-chunk-89-2"></span>
-<img src="Bioqu%C3%ADmica-Quantitativa-com-R_files/figure-html/unnamed-chunk-89-2.png" alt="Cinética de conversões para uma rede metabólica simples envolvendo algumas reações da glicólise, gliconeogênese e via das pentoses. Valores das constantes cinéticas: k1 = 0,1; k2 = 0,5; k3 = 0,05; k4 = 0,5; k5 = 0,2. Valores iniciais dos compostos: G6P = 1; para os demais, 0." width="672" />
+<img src="Bioqu%C3%ADmica-Quantitativa---R_files/figure-html/unnamed-chunk-89-2.png" alt="Cinética de conversões para uma rede metabólica simples envolvendo algumas reações da glicólise, gliconeogênese e via das pentoses. Valores das constantes cinéticas: k1 = 0,1; k2 = 0,5; k3 = 0,05; k4 = 0,5; k5 = 0,2. Valores iniciais dos compostos: G6P = 1; para os demais, 0." width="672" />
 <p class="caption">
 Figura 10.11: Cinética de conversões para uma rede metabólica simples envolvendo algumas reações da glicólise, gliconeogênese e via das pentoses. Valores das constantes cinéticas: k1 = 0,1; k2 = 0,5; k3 = 0,05; k4 = 0,5; k5 = 0,2. Valores iniciais dos compostos: G6P = 1; para os demais, 0.
 </p>
@@ -744,7 +744,7 @@ Figura 10.12: Metabolismo esquemático simplificado para o metabolismo de 6-merc
 <span id="cb329-66"><a href="redesMet.html#cb329-66" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(t,PP,<span class="at">type=</span><span class="st">&quot;l&quot;</span>,<span class="at">col=</span><span class="dv">10</span>,<span class="at">lty=</span><span class="dv">10</span>)</span>
 <span id="cb329-67"><a href="redesMet.html#cb329-67" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="at">x=</span><span class="fl">1.5</span>,<span class="at">y=</span><span class="fl">0.65</span>,<span class="at">legend=</span><span class="fu">c</span>(<span class="st">&quot;MPex&quot;</span>,<span class="st">&quot;MPin&quot;</span>,<span class="st">&quot;TIMP&quot;</span>,<span class="st">&quot;TXMP&quot;</span>,<span class="st">&quot;TGMP&quot;</span>,<span class="st">&quot;meTGMP&quot;</span>,<span class="st">&quot;TITP&quot;</span>,<span class="st">&quot;ATP&quot;</span>,<span class="st">&quot;AMP&quot;</span>,<span class="st">&quot;PP&quot;</span>),<span class="at">col=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>,<span class="dv">7</span>,<span class="dv">8</span>,<span class="dv">9</span>,<span class="dv">10</span>),<span class="at">cex=</span><span class="fl">0.7</span>,<span class="at">lty=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>,<span class="dv">7</span>,<span class="dv">8</span>,<span class="dv">9</span>,<span class="dv">10</span>))</span></code></pre></div>
 <div class="figure"><span style="display:block;" id="fig:unnamed-chunk-90"></span>
-<img src="Bioqu%C3%ADmica-Quantitativa-com-R_files/figure-html/unnamed-chunk-90-1.png" alt="Dependência da dinâmica da rede metabólica de degradação de 6-mercaptopurina em função do teor inicial de ATP a 0,2 umol/L. Os valores iniciais e parâmetros são descritos no trecho de código." width="672" />
+<img src="Bioqu%C3%ADmica-Quantitativa---R_files/figure-html/unnamed-chunk-90-1.png" alt="Dependência da dinâmica da rede metabólica de degradação de 6-mercaptopurina em função do teor inicial de ATP a 0,2 umol/L. Os valores iniciais e parâmetros são descritos no trecho de código." width="672" />
 <p class="caption">
 Figura 10.13: Dependência da dinâmica da rede metabólica de degradação de 6-mercaptopurina em função do teor inicial de ATP a 0,2 umol/L. Os valores iniciais e parâmetros são descritos no trecho de código.
 </p>
@@ -758,6 +758,15 @@ Figura 10.14: Dependência da dinâmica da rede metabólica de degradação de 6
 </div>
 <div class="line-block">      Observe que, com a redução de 10x no teor de ATP, TGMP e TIMP mantiveram teores mais estáveis ao longo do período.</div>
 
+<!-- Google tag (gtag.js)-->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S1L73VGCG5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S1L73VGCG5');
+</script>
 </div>
 </div>
 <h3>References</h3>
@@ -814,7 +823,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["Bioquímica Quantitativa com R.pdf", "Bioquímica Quantitativa com R.epub"],
+"download": ["Bioquímica Quantitativa & R.pdf", "Bioquímica Quantitativa & R.epub"],
 "search": {
 "engine": "fuse",
 "options": null
@@ -832,7 +841,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
         src = src.replace(/^https?:/, '');
