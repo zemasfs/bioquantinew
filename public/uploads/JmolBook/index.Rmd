@@ -22,7 +22,7 @@ fontesize: 12pt
 
 <!-- ![](jmol.png){width=20%} -->
 
-|       O [Jmol](http://jmol.sourceforge.net/){target="_blank"} é um programa de código-fonte e distribuição livres para representação de modelos moleculares tridimensionais, sendo oferecido sob a licença GLPL (GNU Lesser General Public License). O Jmol permite uma diversidade de renderizações cromáticas, movimentos de translação e rotação das moléculas, ampliação visual, cálculos de distância, ângulos, estruturas e superfícies, otimizações moleculares, e animações, dentre outros.
+|       O [Jmol](http://jmol.sourceforge.net/){target="_blank"} constitui um programa de código-fonte e distribuição livres para representação de modelos moleculares tridimensionais, sendo oferecido sob a licença GLPL (GNU Lesser General Public License). O Jmol permite uma diversidade de renderizações cromáticas, movimentos de translação e rotação das moléculas, ampliação visual, cálculos de distância, ângulos, estruturas e superfícies, otimizações moleculares, e animações, dentre outros.
 
 |       O programa é multiplataforma (Windows, Mac OS X, Linux, Unix) elaborado em ambiente Java, e pode ser executado tanto em versão fechada (standalone), como integrado a outras aplicações em Java, ou ainda junto a buscadores de internet por auxílio de um *applet.* Quando instalado, *Jmol* pode rodar tanto a partir de
 uma pasta de diretório contendo seus arquivos, como a partir de um disco rígido ou mídia removível (*pendrive*).
