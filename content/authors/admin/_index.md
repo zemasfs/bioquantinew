@@ -53,7 +53,7 @@ title:
   gtag('config', 'G-S1L73VGCG5');
 </script>
 
-Página elaborada no intuito de contribuir ao ensino-aprendizagem de conteúdos de Bioquímica e áreas correlatas esboçada para um Ensino Reproduzível por *material autoinstrucional* elaborado por texto simultanamente a códigos para execução em programas de livre distribuição ([R](https://cran.r-project.org/) & [RStudio](https://www.rstudio.com/), [Jmol](http://jmol.sourceforge.net/), e [Sisma](http://bioquanti.net/uploads/sismabook/)), o último desenvolvido na UNIFAL-MG.
+Página elaborada no intuito de contribuir para o ensino-aprendizagem de conteúdos de Bioquímica e áreas correlatas esboçada para um Ensino Reproduzível por *material autoinstrucional* elaborado por texto simultanamente a códigos para execução em programas de livre distribuição ([R](https://cran.r-project.org/) & [RStudio](https://www.rstudio.com/), [Jmol](http://jmol.sourceforge.net/), e [Sisma](http://bioquanti.net/uploads/sismabook/)), o último desenvolvido na UNIFAL-MG.
   
   <!---  ![ texto](unifal3.jpg)--->
   
