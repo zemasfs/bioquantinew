@@ -53,8 +53,8 @@ title:
   gtag('config', 'G-S1L73VGCG5');
 </script>
 
-Página elaborada no intuito de contribuir ao ensino e aprendizagem de conteúdos de Bioquímica e áreas correlatas, pelo uso de *material autoinstrucional* baseado em programas de livre distribuição ([R](https://cran.r-project.org/) & [RStudio](https://www.rstudio.com/), [Jmol](http://jmol.sourceforge.net/), e [Sisma](http://bioquanti.net/uploads/sismabook/)), o último desenvolvido na UNIFAL-MG.
+Página elaborada no intuito de contribuir ao ensino-aprendizagem de conteúdos de Bioquímica e áreas correlatas esboçada para um Ensino Reproduzível por *material autoinstrucional* elaborado por texto simultanamente a códigos para execução em programas de livre distribuição ([R](https://cran.r-project.org/) & [RStudio](https://www.rstudio.com/), [Jmol](http://jmol.sourceforge.net/), e [Sisma](http://bioquanti.net/uploads/sismabook/)), o último desenvolvido na UNIFAL-MG.
   
   <!---  ![ texto](unifal3.jpg)--->
   
-  A seleção dos programas baseia-se em suas características de flexibilidade, expansibilidade, rápida curva de aprendizado, boa useabilidade, interatividade, fácil instalação ou uso por navegadores de internete, e larga aplicabilidade, tanto para ensino (presencial, híbrido ou EaD) como para pesquisa.
+  A seleção dos programas baseia-se em suas características tangentes a um Ensino Reproduzível galgado na flexibilidade, expansibilidade, rápida curva de aprendizado, boa useabilidade, interatividade, fácil instalação ou uso por navegadores de internete, e larga aplicabilidade, tanto para ensino (presencial, remoto, híbrido, ou EaD), como para pesquisa.
