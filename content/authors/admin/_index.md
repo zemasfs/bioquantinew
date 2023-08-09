@@ -53,7 +53,7 @@ title:
   gtag('config', 'G-S1L73VGCG5');
 </script>
 
-Página elaborada no intuito de contribuir para o ensino-aprendizagem de conteúdos de Bioquímica e áreas correlatas, e esboçada para um Ensino Reproduzível (ER). O *material autoinstrucional* permite o estudo dos temas juntamente à execução de códigos de programas de livre distribuição para gráficos, análises, tabelas ([R](https://cran.r-project.org/) & [RStudio](https://www.rstudio.com/), para a visualização tridimensional de biomoléculas  [Jmol](http://jmol.sourceforge.net/), e para a observação dinâmica de transformações entre reagentes e produtos [Sisma](http://bioquanti.net/uploads/sismabook/ ;  desenvolvido na UNIFAL-MG).
+Página elaborada no intuito de contribuir para o ensino-aprendizagem de conteúdos de Bioquímica e áreas correlatas, e esboçada para um Ensino Reproduzível (ER). O *material autoinstrucional* permite o estudo dos temas juntamente à execução de códigos de programas de livre distribuição para gráficos, análises, tabelas ([R](https://cran.r-project.org/) & [RStudio](https://www.rstudio.com/)), para a visualização tridimensional de biomoléculas ( [Jmol](http://jmol.sourceforge.net/)), e para a observação dinâmica de transformações entre reagentes e produtos ([Sisma](http://bioquanti.net/uploads/sismabook/ ;  desenvolvido na UNIFAL-MG)).
   
   <!---  ![ texto](unifal3.jpg)--->
   
