@@ -47,13 +47,11 @@
      id="layer1"
      inkscape:label="logo"
      transform="translate(731.46387,22.792759)">
-    <g
-       id="g17590">
-      <image
-         width="687"
-         height="571"
-         preserveAspectRatio="none"
-         xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0a
+    <image
+       width="687"
+       height="571"
+       preserveAspectRatio="none"
+       xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0a
 HBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIy
 MjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAI7Aq8DASIA
 AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
@@ -339,23 +337,23 @@ BRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAF
 FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUU
 UUAFFFFABRRRQAUUUUAFFFFABRRRQB//2Q==
 "
-         id="image17532"
-         x="-731.46387"
-         y="-22.792759"
-         inkscape:export-filename="/home/zema/Dropbox/pesq/Bioquanti/static/icon.png"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96" />
-      <g
-         id="g17362"
-         transform="translate(-308.06069,347.37493)"
-         inkscape:export-filename="/home/zema/Dropbox/pesq/Bioquanti/static/icon.png"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96">
-        <image
-           width="252"
-           height="253"
-           preserveAspectRatio="none"
-           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPwAAAD9CAIAAAAXlY2VAAAAA3NCSVQICAjb4U/gAAAAGXRFWHRT
+       id="image17532"
+       x="-731.46387"
+       y="-22.792759"
+       inkscape:export-filename="/home/zema/Dropbox/pesq/Bioquanti/static/icon.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <g
+       id="g17362"
+       transform="translate(-517.54783,330.76839)"
+       inkscape:export-filename="/home/zema/Dropbox/pesq/Bioquanti/static/icon.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <image
+         width="252"
+         height="253"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPwAAAD9CAIAAAAXlY2VAAAAA3NCSVQICAjb4U/gAAAAGXRFWHRT
 b2Z0d2FyZQBnbm9tZS1zY3JlZW5zaG907wO/PgAAIABJREFUeJzsvWeUHdeRJvhF3Jv5bHlfcFUw
 BUN4giAFErQiRdGo5U23Rq12K02bObv/ds+csz/2z86PnZ09baZb092aVo9cy3uKEimCHiS8Bwig
 4Mp7+1zmjdgfN1+hAJpmSyJIjnQPDvDqVb5EvrzfjRvxxReRJCKqWigURCSbzVprRYSIABCRqvq/
@@ -1923,25 +1921,24 @@ nH51fogoy7Ku68ZxRCAEWD7IoOu6Z3N6y6GAbdTBVt95hVG9rKSwjYQ5PyvWW2Gx8kX1kVASV1aq
 sgweH8iTpb4JADzT0M4+mftx3y+yt4wsiQQRevMYFqTFrJ2KajLd5fnJfZNC86hE6+X7XqCbTNPg
 p/m8L/8HrxXMCSL+YAIAAAAASUVORK5CYII=
 "
-           id="image10" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:26.6667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+         id="image10" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:26.6667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+         x="-69.036896"
+         y="48.392609"
+         id="text2610"
+         transform="rotate(-39.678188)"><tspan
+           sodipodi:role="line"
+           id="tspan2608"
            x="-69.036896"
            y="48.392609"
-           id="text2610"
-           transform="rotate(-39.678188)"><tspan
-             sodipodi:role="line"
-             id="tspan2608"
-             x="-69.036896"
-             y="48.392609"
-             style="font-size:26.6667px;fill:#ff0000">  2o. Lugar</tspan><tspan
-             sodipodi:role="line"
-             x="-69.036896"
-             y="81.725983"
-             id="tspan2612"
-             style="font-size:26.6667px;fill:#ff0000">     2023</tspan></text>
-      </g>
+           style="font-size:26.6667px;fill:#ff0000">  2o. Lugar</tspan><tspan
+           sodipodi:role="line"
+           x="-69.036896"
+           y="81.725983"
+           id="tspan2612"
+           style="font-size:26.6667px;fill:#ff0000">     2023</tspan></text>
     </g>
   </g>
 </svg>
