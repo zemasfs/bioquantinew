@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>bioqtxt - 2&nbsp; pH e Solução Tampão</title>
+<title>Temas em Bioquímica - 2&nbsp; pH e Solução Tampão</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./references.html" rel="next">
+<link href="./estrutura.html" rel="next">
 <link href="./funcoes.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -61,6 +61,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -88,7 +90,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">bioqtxt</a> 
+      <a href="./">Temas em Bioquímica</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -101,9 +103,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preface</span></a>
+ <span class="menu-text">Prefácio</span></a>
   </div>
 </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Introdução</span></span>
+  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./funcoes.html" class="sidebar-item-text sidebar-link">
@@ -116,10 +122,14 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">pH e Solução Tampão</span></span></a>
   </div>
 </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Estruturas</span></span>
+  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+  <a href="./aminoacid.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Aminoácidos</span></span></a>
   </div>
 </li>
     </ul>
@@ -136,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#solução-tampão" id="toc-solução-tampão" class="nav-link" data-scroll-target="#solução-tampão"><span class="header-section-number">2.1.1</span> Solução tampão</a></li>
   </ul></li>
-  <li><a href="#detalhes" id="toc-detalhes" class="nav-link" data-scroll-target="#detalhes"><span class="header-section-number">2.2</span> Detalhes:</a></li>
+  <li><a href="#detalhes" id="toc-detalhes" class="nav-link" data-scroll-target="#detalhes"><span class="header-section-number">2.2</span> Detalhes</a></li>
   <li><a href="#aplicação." id="toc-aplicação." class="nav-link" data-scroll-target="#aplicação."><span class="header-section-number">2.3</span> Aplicação.</a></li>
   </ul>
 </nav>
@@ -166,7 +176,7 @@ ul.task-list li input[type="checkbox"] {
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pode-se afirmar com certo resvelo que termos como pH, pKa e tampão constituem o terror primal do estudante em bioquímica. Mas não é tão assustador quanto parece. Você já ouviu falar em xampu neutro ou já provou um abacaxi ácido ? Tem serventia ? Claro, pois o xampu neutro aparentemente não prejudica o couro cabeludo, e o abacaxi ácido é intragável. Então vamos tentar entender melhor essa noção de ácido e neutro, já que ela vem ao menos preservar nossa vetusta cabeleira e nosso bom senso alimentar. Ácido é uma substância com muito próton H+, neutro uma com o mesmo teor de H+ e OH-, e básica (ou alcalina), uma com muito OH-.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Por razões de formalismo químico, são atribuidos valores de 0 a 14 para se determinar a acidez de toda a gama de substância aquosas. Zero representa a acidez absoluta, 14 a alcalinidade absoluta, e 7, é claro, o ponto médio, a neutralidade absoluta. Diz-se absoluta pois se pode tomar faixas de acidez relativa das substâncias. Neste caso, tudo que estiver entre 0 e 7 será ácido, e entre 7 e 14 será básico ou alcalino. Os valores de 0 a 14 representam, na verdade, transformações matemáticas de concentrações de H+, mais explicitamente, uma transformação logaritmica. Assim, o valor 2 indica 0,01 moles por litro de H+, e 7, 0,0000001 moles por litro de H+. Como esses números são muito desagradáveis para ser representados, os cientistas tomaram o logaritmo negativo (- log) das concentrações de H+ para uma apresentação menos agressiva, chamando-a de pH. Dessa forma -log 0,01 é igual a 2, e -log 0,0000001 é igual a 7. Voilá.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Temos então uma representação menos fragmentada para valores de acidez, o que torna bastante útil se levarmos em conta que a acidez normalmente encontrada na Natureza varia entre 0,0001 e 0,00000001 unidades de moles de H+ por litro de solução aquosa.</p>
-<p>Então o pH nada mais é do que uma representação de valores de acidez de uma solução. Uma solução diluída de vinagre ou ácido acético, por exemplo, tem pH 3, o que significa que ela possui em torno de 0,001 moles por litro de H+. Outros exemplos do cotidiano estão representados na <span class="quarto-unresolved-ref">?fig-pHscala</span> abaixo.</p>
+<p>Então o pH nada mais é do que uma representação de valores de acidez de uma solução. Uma solução diluída de vinagre ou ácido acético, por exemplo, tem pH 3, o que significa que ela possui em torno de 0,001 moles por litro de H+. Outros exemplos do cotidiano estão representados na <a href="#fig-pHscala">Figure&nbsp;<span class="quarto-unresolved-ref">fig-pHscala</span></a> abaixo.</p>
 <p><img src="pHscala.png" id="fig-pHscala" class="img-fluid" alt="Escala de pH e valores medidos para alguns compostos. Observe que a acidez, representada pelo número de prótons H+ aumenta progressivamente à esquerda do valor de neutralidade 7, ao passo que a alcalinidade, representada pelo número de ânions OH -, aumenta à direita desse valor."> | Observe que o pH é inversamente proporcional à acidez. Ou seja, quanto mais zeros aparecerem após a vírgula, maior será o valor de pH e, por conseguinte, menor a acidez da solução (solução muito diluída). Outro simbolismo normalmente encontrado em livros-texto sobre o assunto são denotados por pKa e o pI. O que vem a ser esses parâmetros ? Bom , em primeiro lugar você deve ter notado que pH, pKa e pI começam com a letra “p”. Esse “p” só está aí para que você se lembre tratar daquela operação logarítmica (- log).</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O que vai importar mesmo é que “Ka” é uma constante de dissociação de ácidos, ou seja, uma constante qualquer relativa ao equilíbrio do ácido que está se dissociando na água. Em termos representativos, HA=H+ + A-, onde HA é forma protonada (com próton) e A- a desprotonada (sem próton ). Já o “I” do pI significa isoelétrico (cargas iguais), indicando que a substância tem o mesmo número de cargas positivas que o de negativas em solução. Tanto pKa quanto pI registram, portanto, um pH no qual o ácido encontra-se em equilíbrio na água (pKa), e um pH no qual uma substância tem carga nula em solução (pI). Ambos os conceitos são importantes para o estudo de biomoléculas e de soluções tampão.</p>
 <section id="solução-tampão" class="level3" data-number="2.1.1">
@@ -177,23 +187,43 @@ ul.task-list li input[type="checkbox"] {
 </section>
 </section>
 <section id="detalhes" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="detalhes"><span class="header-section-number">2.2</span> Detalhes:</h2>
+<h2 data-number="2.2" class="anchored" data-anchor-id="detalhes"><span class="header-section-number">2.2</span> Detalhes</h2>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Em poucas palavras, o pH mede a acidez de uma solução, o pKa mede a força de ionização de ácidos fracos, o pI determina o pH em que um íon possui carga nula, e a solução tampão especifica uma mistura de um ácido com um sal capaz de resistir à variação de pH em solução. O pH é representado pela função logaritma da concentração hidrogeniônica em solução ( -log [H+] ou 1/log [H+] ).</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assim, uma solução de 1M de HCl tem pH 1, o suco gástrico tem pH 1,5, o vinagre e o refrigerante pH 3, a cerveja e o vinho tinto pH 4, a água do mar e a clara de ovo pH 8, a amônia doméstica pH 12, o alvejante pH 13, e uma solução de 1M de NaOH, pH 14. Em equilíbrio, soluções ácidos/bases fracos se dissociam parcialmente, podendo ser representados pela equação de Arrhenius:</p>
-<p>HA &lt;—&gt; H+ + A- , Ka = [H+] [A-], com pKa = - log Ka (1) [HA]</p>
+<p><span class="math display">\[
+HA &lt;---&gt; H^+ + A^-
+\]</span> <span class="math display">\[
+Ka = \frac{[H^+] [A^-]}{[HA]},~com~pKa = - log~Ka
+\]</span></p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dessa forma, ácidos/bases fracos podem ter sua “força” de dissociação indexada pelo valor da constante de ionização ou dissociação Ka, que informa “quantos dissociam” e “quão fracos eles são”. Normalmente, a dissociação de um ácido/base fraca tende a ser de 1 para cada 102 - 1013 íons H+ / OH- liberados em solução. Com ácidos/bases fracos é possível se elaborar sistemas tampão, soluções compostas por ácidos e base conjugadas, e que atuam na manutenção do pH. Esta manutenção é vital em todo processo celular, para a interação entre macromoléculas, e para a atividade do arcabouço enzimático.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No plasma sanguíneo, variações mínimas além da faixa de pH fisiológico de 7,3-7,4 podem resultar em paralisação de sistemas enzimáticos com danos celulares irreparáveis, levando à morte em casos extremos (cetoacidose diabética, hiperamonemia adquirida), quando não houver mecanismos de compensação para essas variações. São vários os compartimentos de pH existentes e atividade protéica/enzimática correspondentes. Assim, pepsina estomacal atua sob um pH ótimo de 2, tripsina pancreática em pH 7, e fosfatase alcalina em pH 8. Um sistema tampão funciona como um reservatório de ácidos com bases conjugadas em concentrações aproximadamente iguais, que neutralizam limitadamente a adição de um álcali ou de um ácido à solução.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quando a solução tampão possui 50% de ácido e 50% de base conjugada, pode-se afirmar que ela está com o seu reservatório completo, no que tange à neutralização de pequenas quantidades de base ou de ácido adicionadas a ela, respectivamente. Nesta situação, o pH da solução tampão tem valor igual ao pKa do par conjugado, e solução encontra-se com o seu potencial tamponante máximo. Na prática, isto significa dizer que a adição de ácido ou base à solução resiste a uma variação de até duas unidades de pH. Esse reservatório também é garantido pela capacidade de dissociação do ácido/base fraca, e pela dissociação da água. Pela equação de Arrhenius, a dissociação desta última pode ser representada por:</p>
-<p>H2O &lt;—&gt; H+ + OH- , KH2O = [H+] [OH-], (2)</p>
-<p>Levando-se em conta que [H2O] é de 55,5M, e que KH2O é de 1,8x10-16M (medidas de condutividade elétrica), então o produto “[H+] [OH-]” é de 9,99x10-16M2, ou de 1x10-14. Assim, quando [H+] e [OH-] forem equivalentes em solução (água), então [H+] será de 1x10-7M, e o pH será 7 (solução neutra a 250C). O produto “[H+] [OH-]” é denominado Kw.</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A expressão que relaciona o pH ótimo de tamponamento de uma solução com o pKa do par ácido/base conjugado da mesma é a de Henderson-Hasselbach:</p>
-<p>pH = pKa + log [aceptor de H+] (3) [doador de H+]</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;É possível elaborar uma solução tampão em laboratório por três vias distintas; 1) aplicando a relação de Henderson-Hasselbach com pKa conhecido para o par ácido/base conjugado, 2) diluindo a mesma quantidade (concentração molar) de ácido e de base conjugada em solução aquosa, ou 3) preparando a solução ácida, e ir adicionando a base conjugada até o pH desejado (desde que este possua valor próximo do pKa do par). Os tampões mais importantes no homem são aqueles cujo pKa se aproxima do pH fisiológico, como o bicarbonato (plasmático e extracelular, pKa = 3,8, mas que aumenta para 6,38 em presença de CO2) e o fosfato (intracelular, pKa = 6,86). O tampão bicarbonato age simultaneamente à disponibilidade de dióxido de carbono presente:</p>
-<p>CO2 + H2O &lt;—&gt; H2CO3 &lt;—&gt; H+ + HCO3-</p>
+<p><span class="math display">\[
+H_2O &lt;----&gt; H^+ + OH^-
+\]</span></p>
+<p><span class="math display">\[
+,~K_{H2O}=[H^+][OH^-]
+\]</span></p>
+<p>Levando-se em conta que [H2O] é de 55,5M, e que <span class="math inline">\(K_{H2O}\)</span> é de <span class="math inline">\(1,8x10^{-16}\)</span> M (medidas de condutividade elétrica), então o produto “[H+] [OH-]” é de <span class="math inline">\(9,99x10^{-15}\)</span> M², ou <span class="math inline">\(1x10^{-14}\)</span> M². Assim, quando [H+] e [OH-] forem equivalentes em solução (água), então [H+] será de <span class="math inline">\(1x10^{-7}\)</span> M, e o pH será 7 (solução neutra a <span class="math inline">\(25^o\)</span> C). O produto “[H+] [OH-]” é também denominado <em>Kw</em> (“water”).</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A expressão que relaciona o pH ótimo de tamponamento de uma solução com o pKa do par ácido/base conjugado da mesma é a <strong>equação de Henderson-Hasselbach</strong>:</p>
+<p><span class="math display">\[
+pH=pKa+log\frac{aceptor~de~H^+}{doador~de~H^+}
+\]</span></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;É possível elaborar uma solução tampão em laboratório por três vias distintas:</p>
+<ol type="1">
+<li>Aplicando-se a relação de Henderson-Hasselbach com pKa conhecido para o par ácido/base conjugado;</li>
+<li>Diluindo-se a mesma quantidade (concentração molar) de ácido e de base conjugada em solução aquosa;</li>
+<li>Preparando a solução ácida, e ir adicionando a base conjugada até o pH desejado (desde que este possua valor próximo do pKa do par).</li>
+</ol>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Não obstante o preparo de cunho prático, a 1a. forma possui o formalismo adequado.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Os tampões mais importantes no homem são aqueles cujo pKa se aproxima do pH fisiológico, como o bicarbonato (plasmático e extracelular, pKa = 3,8, mas que aumenta para 6,38 em presença de CO2) e o fosfato (intracelular, pKa = 6,86). O tampão bicarbonato age simultaneamente à disponibilidade de dióxido de carbono presente:</p>
+<p><span class="math display">\[
+CO_2 + H_2O &lt;---&gt; H_2CO_3 &lt;---&gt; H+ + HCO_3^-
+\]</span></p>
 </section>
 <section id="aplicação." class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="aplicação."><span class="header-section-number">2.3</span> Aplicação.</h2>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ecanismos de hiperventilação (respiração de cachorrinho, liberação de CO2) e hipoventilação (inspiração profunda, retenção de CO2) podem corrigir, dessa forma, pequenas variações de pH. Proteínas desempenham, ainda que fracamente, um papel tamponante, devido à presença da histidina, cujo pKa está próximo do fisiológico, 6,0. Os mecanismos fisiológicos do organismo para a manutenção do equilíbrio ácido-básico incluem os pulmões (modulação do sistema bicarbonato pela variação da pressão de CO2 no centro respiratório, e compensação de variações metabólicas de pH) e os rins (excreção modulada de H+ pelas células tubulares, acompanhada de reabsorção de HCO3- e Na+, e secreção de NH3). A <a href="#fig-disfacbase">Figure&nbsp;<span>2.1</span></a> exemplifica algumas disfunções do equilíbrio ácido-base.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mecanismos de hiperventilação (respiração de cachorrinho, liberação de CO2) e hipoventilação (inspiração profunda, retenção de CO2) podem corrigir, dessa forma, pequenas variações de pH. Proteínas desempenham, ainda que fracamente, um papel tamponante, devido à presença da histidina, cujo pKa está próximo do fisiológico, 6,0. Os mecanismos fisiológicos do organismo para a manutenção do equilíbrio ácido-básico incluem os pulmões (modulação do sistema bicarbonato pela variação da pressão de CO2 no centro respiratório, e compensação de variações metabólicas de pH) e os rins (excreção modulada de H+ pelas células tubulares, acompanhada de reabsorção de HCO3- e Na+, e secreção de NH3). A <a href="#fig-disfacbase">Figure&nbsp;<span class="quarto-unresolved-ref">fig-disfacbase</span></a> exemplifica algumas disfunções do equilíbrio ácido-base.</p>
 <div id="fig-disfacbase" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="disfacbase.png" class="img-fluid figure-img"></p>
@@ -448,8 +478,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./references.html" class="pagination-link">
-        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./estrutura.html" class="pagination-link">
+        <span class="nav-page-text">Estruturas</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
