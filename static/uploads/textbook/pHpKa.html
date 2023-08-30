@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>bioqtxt - 2&nbsp; pH e Solução Tampão</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./references.html" rel="next">
+<link href="./funcoes.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./pHpKa.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">pH e Solução Tampão</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">bioqtxt</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./funcoes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Funções Químicas</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./pHpKa.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">pH e Solução Tampão</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introdução" id="toc-introdução" class="nav-link active" data-scroll-target="#introdução"><span class="header-section-number">2.1</span> Introdução</a>
+  <ul class="collapse">
+  <li><a href="#solução-tampão" id="toc-solução-tampão" class="nav-link" data-scroll-target="#solução-tampão"><span class="header-section-number">2.1.1</span> Solução tampão</a></li>
+  </ul></li>
+  <li><a href="#detalhes" id="toc-detalhes" class="nav-link" data-scroll-target="#detalhes"><span class="header-section-number">2.2</span> Detalhes:</a></li>
+  <li><a href="#aplicação." id="toc-aplicação." class="nav-link" data-scroll-target="#aplicação."><span class="header-section-number">2.3</span> Aplicação.</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">pH e Solução Tampão</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="introdução" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="introdução"><span class="header-section-number">2.1</span> Introdução</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pode-se afirmar com certo resvelo que termos como pH, pKa e tampão constituem o terror primal do estudante em bioquímica. Mas não é tão assustador quanto parece. Você já ouviu falar em xampu neutro ou já provou um abacaxi ácido ? Tem serventia ? Claro, pois o xampu neutro aparentemente não prejudica o couro cabeludo, e o abacaxi ácido é intragável. Então vamos tentar entender melhor essa noção de ácido e neutro, já que ela vem ao menos preservar nossa vetusta cabeleira e nosso bom senso alimentar. Ácido é uma substância com muito próton H+, neutro uma com o mesmo teor de H+ e OH-, e básica (ou alcalina), uma com muito OH-.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Por razões de formalismo químico, são atribuidos valores de 0 a 14 para se determinar a acidez de toda a gama de substância aquosas. Zero representa a acidez absoluta, 14 a alcalinidade absoluta, e 7, é claro, o ponto médio, a neutralidade absoluta. Diz-se absoluta pois se pode tomar faixas de acidez relativa das substâncias. Neste caso, tudo que estiver entre 0 e 7 será ácido, e entre 7 e 14 será básico ou alcalino. Os valores de 0 a 14 representam, na verdade, transformações matemáticas de concentrações de H+, mais explicitamente, uma transformação logaritmica. Assim, o valor 2 indica 0,01 moles por litro de H+, e 7, 0,0000001 moles por litro de H+. Como esses números são muito desagradáveis para ser representados, os cientistas tomaram o logaritmo negativo (- log) das concentrações de H+ para uma apresentação menos agressiva, chamando-a de pH. Dessa forma -log 0,01 é igual a 2, e -log 0,0000001 é igual a 7. Voilá.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Temos então uma representação menos fragmentada para valores de acidez, o que torna bastante útil se levarmos em conta que a acidez normalmente encontrada na Natureza varia entre 0,0001 e 0,00000001 unidades de moles de H+ por litro de solução aquosa.</p>
+<p>Então o pH nada mais é do que uma representação de valores de acidez de uma solução. Uma solução diluída de vinagre ou ácido acético, por exemplo, tem pH 3, o que significa que ela possui em torno de 0,001 moles por litro de H+. Outros exemplos do cotidiano estão representados na <span class="quarto-unresolved-ref">?fig-pHscala</span> abaixo.</p>
+<p><img src="pHscala.png" id="fig-pHscala" class="img-fluid" alt="Escala de pH e valores medidos para alguns compostos. Observe que a acidez, representada pelo número de prótons H+ aumenta progressivamente à esquerda do valor de neutralidade 7, ao passo que a alcalinidade, representada pelo número de ânions OH -, aumenta à direita desse valor."> | Observe que o pH é inversamente proporcional à acidez. Ou seja, quanto mais zeros aparecerem após a vírgula, maior será o valor de pH e, por conseguinte, menor a acidez da solução (solução muito diluída). Outro simbolismo normalmente encontrado em livros-texto sobre o assunto são denotados por pKa e o pI. O que vem a ser esses parâmetros ? Bom , em primeiro lugar você deve ter notado que pH, pKa e pI começam com a letra “p”. Esse “p” só está aí para que você se lembre tratar daquela operação logarítmica (- log).</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O que vai importar mesmo é que “Ka” é uma constante de dissociação de ácidos, ou seja, uma constante qualquer relativa ao equilíbrio do ácido que está se dissociando na água. Em termos representativos, HA=H+ + A-, onde HA é forma protonada (com próton) e A- a desprotonada (sem próton ). Já o “I” do pI significa isoelétrico (cargas iguais), indicando que a substância tem o mesmo número de cargas positivas que o de negativas em solução. Tanto pKa quanto pI registram, portanto, um pH no qual o ácido encontra-se em equilíbrio na água (pKa), e um pH no qual uma substância tem carga nula em solução (pI). Ambos os conceitos são importantes para o estudo de biomoléculas e de soluções tampão.</p>
+<section id="solução-tampão" class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="solução-tampão"><span class="header-section-number">2.1.1</span> Solução tampão</h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Um tampão é, basicamente, uma solução que varia pouco o seu pH, condição essencial para que qualquer célula, tecido ou organismo vivo possa realizar suas funções vitais, já que todo o metabolismo celular produz ácidos, na maior parte de suas operações, e álcalis, em minoria, os quais poderiam incompatibilizar os fenômenos vitais se acumulados nos tecidos de origem.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Uma solução tampão é sempre formada por um ácido e um sal derivado de uma base. Com esses dois compostos em mãos, além do conhecimento do pKa do ácido dessa solução, pode-se facilmente elaborar uma solução tampão. É assim que se produz uma solução tampão em laboratórios, e é assim que a Natureza trabalha para impedir mudanças de pH perigosas ao organismo.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exemplificando, o ser humano possui um pH fisiológico sanguíneo em torno de 7.2 a 7.4. Se não existissem tampões naturais, e esse pH baixasse para 6.8, o indivíduo certamente iria a óbíto.</p>
+</section>
+</section>
+<section id="detalhes" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="detalhes"><span class="header-section-number">2.2</span> Detalhes:</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Em poucas palavras, o pH mede a acidez de uma solução, o pKa mede a força de ionização de ácidos fracos, o pI determina o pH em que um íon possui carga nula, e a solução tampão especifica uma mistura de um ácido com um sal capaz de resistir à variação de pH em solução. O pH é representado pela função logaritma da concentração hidrogeniônica em solução ( -log [H+] ou 1/log [H+] ).</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assim, uma solução de 1M de HCl tem pH 1, o suco gástrico tem pH 1,5, o vinagre e o refrigerante pH 3, a cerveja e o vinho tinto pH 4, a água do mar e a clara de ovo pH 8, a amônia doméstica pH 12, o alvejante pH 13, e uma solução de 1M de NaOH, pH 14. Em equilíbrio, soluções ácidos/bases fracos se dissociam parcialmente, podendo ser representados pela equação de Arrhenius:</p>
+<p>HA &lt;—&gt; H+ + A- , Ka = [H+] [A-], com pKa = - log Ka (1) [HA]</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dessa forma, ácidos/bases fracos podem ter sua “força” de dissociação indexada pelo valor da constante de ionização ou dissociação Ka, que informa “quantos dissociam” e “quão fracos eles são”. Normalmente, a dissociação de um ácido/base fraca tende a ser de 1 para cada 102 - 1013 íons H+ / OH- liberados em solução. Com ácidos/bases fracos é possível se elaborar sistemas tampão, soluções compostas por ácidos e base conjugadas, e que atuam na manutenção do pH. Esta manutenção é vital em todo processo celular, para a interação entre macromoléculas, e para a atividade do arcabouço enzimático.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No plasma sanguíneo, variações mínimas além da faixa de pH fisiológico de 7,3-7,4 podem resultar em paralisação de sistemas enzimáticos com danos celulares irreparáveis, levando à morte em casos extremos (cetoacidose diabética, hiperamonemia adquirida), quando não houver mecanismos de compensação para essas variações. São vários os compartimentos de pH existentes e atividade protéica/enzimática correspondentes. Assim, pepsina estomacal atua sob um pH ótimo de 2, tripsina pancreática em pH 7, e fosfatase alcalina em pH 8. Um sistema tampão funciona como um reservatório de ácidos com bases conjugadas em concentrações aproximadamente iguais, que neutralizam limitadamente a adição de um álcali ou de um ácido à solução.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quando a solução tampão possui 50% de ácido e 50% de base conjugada, pode-se afirmar que ela está com o seu reservatório completo, no que tange à neutralização de pequenas quantidades de base ou de ácido adicionadas a ela, respectivamente. Nesta situação, o pH da solução tampão tem valor igual ao pKa do par conjugado, e solução encontra-se com o seu potencial tamponante máximo. Na prática, isto significa dizer que a adição de ácido ou base à solução resiste a uma variação de até duas unidades de pH. Esse reservatório também é garantido pela capacidade de dissociação do ácido/base fraca, e pela dissociação da água. Pela equação de Arrhenius, a dissociação desta última pode ser representada por:</p>
+<p>H2O &lt;—&gt; H+ + OH- , KH2O = [H+] [OH-], (2)</p>
+<p>Levando-se em conta que [H2O] é de 55,5M, e que KH2O é de 1,8x10-16M (medidas de condutividade elétrica), então o produto “[H+] [OH-]” é de 9,99x10-16M2, ou de 1x10-14. Assim, quando [H+] e [OH-] forem equivalentes em solução (água), então [H+] será de 1x10-7M, e o pH será 7 (solução neutra a 250C). O produto “[H+] [OH-]” é denominado Kw.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A expressão que relaciona o pH ótimo de tamponamento de uma solução com o pKa do par ácido/base conjugado da mesma é a de Henderson-Hasselbach:</p>
+<p>pH = pKa + log [aceptor de H+] (3) [doador de H+]</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;É possível elaborar uma solução tampão em laboratório por três vias distintas; 1) aplicando a relação de Henderson-Hasselbach com pKa conhecido para o par ácido/base conjugado, 2) diluindo a mesma quantidade (concentração molar) de ácido e de base conjugada em solução aquosa, ou 3) preparando a solução ácida, e ir adicionando a base conjugada até o pH desejado (desde que este possua valor próximo do pKa do par). Os tampões mais importantes no homem são aqueles cujo pKa se aproxima do pH fisiológico, como o bicarbonato (plasmático e extracelular, pKa = 3,8, mas que aumenta para 6,38 em presença de CO2) e o fosfato (intracelular, pKa = 6,86). O tampão bicarbonato age simultaneamente à disponibilidade de dióxido de carbono presente:</p>
+<p>CO2 + H2O &lt;—&gt; H2CO3 &lt;—&gt; H+ + HCO3-</p>
+</section>
+<section id="aplicação." class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="aplicação."><span class="header-section-number">2.3</span> Aplicação.</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ecanismos de hiperventilação (respiração de cachorrinho, liberação de CO2) e hipoventilação (inspiração profunda, retenção de CO2) podem corrigir, dessa forma, pequenas variações de pH. Proteínas desempenham, ainda que fracamente, um papel tamponante, devido à presença da histidina, cujo pKa está próximo do fisiológico, 6,0. Os mecanismos fisiológicos do organismo para a manutenção do equilíbrio ácido-básico incluem os pulmões (modulação do sistema bicarbonato pela variação da pressão de CO2 no centro respiratório, e compensação de variações metabólicas de pH) e os rins (excreção modulada de H+ pelas células tubulares, acompanhada de reabsorção de HCO3- e Na+, e secreção de NH3). A <a href="#fig-disfacbase">Figure&nbsp;<span>2.1</span></a> exemplifica algumas disfunções do equilíbrio ácido-base.</p>
+<div id="fig-disfacbase" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="disfacbase.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;2.1: Mecanismos para o surgimento de quadros patológicos baseados no desequilíbrio ácido-básico do organismo.</figcaption>
+</figure>
+</div>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alguns ácidos orgânicos tamponam vacúolos de células vegetais, e a amônia tampona a urina. A disponibilidade de nutrientes para os vegetais é bastante influenciada pelo pH dos solos. Assim, a maior disponibilidade de P para as plantas é assinalada em pH de solos acima de 6, ao passo que para o Fe, acima de 7. Mo e Se estão melhor disponíveis em pH alcalino. Dentre os elementos traço, o Mn é o mais afetado pela variação de pH dos solos. Processos biológicos como o da nitrificação diminuem muito em pH 6, tornando-se insignificantes em pH 5. O controle do pH dos solos pode ser reallizado pela adição de cal - óxido de cálcio (para corrigir acidez) ou de enxofre (para corrigir alcalinidade).</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Finalmente, o pI, ou ponto isoelétrico da solução, é aquele representado pelo pH de uma solução na qual o íon (composto, carboidrato, proteína, etc) considerado encontra-se com sua carga líquida nula (soma das cargas positivas e negativas é zero), impedido de mobilidade em um campo elétrico, ou sem interação com a água. Neste ponto, o íon deixa a solução aquosa, precipitando-se.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exemplificando, a caseína, principal proteína do leite, precipita em temperatura ambiente quando o pH da solução atinge o seu pI, de valor 4,6.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./funcoes.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Funções Químicas</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./references.html" class="pagination-link">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>
