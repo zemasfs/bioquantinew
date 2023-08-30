@@ -20,5 +20,5 @@ Página elaborada no intuito de contribuir para o ensino-aprendizagem de conteú
   
   A seleção dos programas baseia-se em suas características tangentes a um Ensino Reproduzível galgado na flexibilidade, expansibilidade,  rápida curva de aprendizado, boa useabilidade, interatividade, fácil instalação ou uso por navegadores de internete, e larga aplicabilidade, tanto para ensino (presencial, remoto, híbrido, ou EaD), como para pesquisa.
   
-  Alternativamente, pode-se acessar um [livro-texto](https://bioquanti.netlify.app/uploads/textbook/index.html) em construção sobre os temas em *Bioquímica*. 
+  Alternativamente, pode-se acessar um [pequeno livro-texto](https://bioquanti.netlify.app/uploads/textbook/index.html) em construção sobre os diversos temas em *Bioquímica* tratados no *website*. 
   
