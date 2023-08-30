@@ -5,7 +5,7 @@ theme: "starter-hugo-academic"
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: Bioquímica Quantitativa # Nome do sítio que vai à esquerda da página principal
-baseURL: 'http://bioquanti.net/' # Website URL
+baseURL: 'https://bioquanti.netlify.app/' # Website URL
 marketing:
   analytics:
     google_analytics: 'G-S1L73VGCG5' 

@@ -1,5 +1,5 @@
 ---
-title: 'null'
+title: ""
 superuser: yes
 ---
 

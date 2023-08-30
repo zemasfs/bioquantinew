@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags | Bioquímica Quantitativa</title>
-    <link>http://bioquanti.net/tags/</link>
-      <atom:link href="http://bioquanti.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://bioquanti.netlify.app/tags/</link>
+      <atom:link href="https://bioquanti.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>pt-br</language>
     <image>
-      <url>http://bioquanti.net/media/icon_hu1183c8e29c74628dad61972deef4661c_176552_512x512_fill_lanczos_center_3.png</url>
+      <url>https://bioquanti.netlify.app/media/icon_hu1183c8e29c74628dad61972deef4661c_176552_512x512_fill_lanczos_center_3.png</url>
       <title>Tags</title>
-      <link>http://bioquanti.net/tags/</link>
+      <link>https://bioquanti.netlify.app/tags/</link>
     </image>
     
   </channel>

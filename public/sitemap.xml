@@ -4,10 +4,10 @@
   
   
   <url>
-    <loc>http://bioquanti.net/</loc><changefreq>weekly</changefreq></url>
+    <loc>https://bioquanti.netlify.app/</loc><changefreq>weekly</changefreq></url>
   <url>
-    <loc>http://bioquanti.net/categories/</loc><changefreq>weekly</changefreq></url>
+    <loc>https://bioquanti.netlify.app/categories/</loc><changefreq>weekly</changefreq></url>
   <url>
-    <loc>http://bioquanti.net/publication_types/</loc><changefreq>weekly</changefreq></url>
+    <loc>https://bioquanti.netlify.app/publication_types/</loc><changefreq>weekly</changefreq></url>
   <url>
-    <loc>http://bioquanti.net/tags/</loc><changefreq>weekly</changefreq></url></urlset>
+    <loc>https://bioquanti.netlify.app/tags/</loc><changefreq>weekly</changefreq></url></urlset>
