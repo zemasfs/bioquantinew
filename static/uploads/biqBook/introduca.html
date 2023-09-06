@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Bioquímica Quantitativa &amp; R</title>
   <meta name="description" content="não sei." />
-  <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Bioquímica Quantitativa &amp; R" />
   <meta property="og:type" content="book" />
@@ -53,6 +53,70 @@
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 <style type="text/css">
 /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
@@ -157,46 +221,40 @@ div.csl-indent {
 <li class="chapter" data-level="7.1" data-path="acNucl.html"><a href="acNucl.html#análise-de-sequências"><i class="fa fa-check"></i><b>7.1</b> Análise de sequências</a></li>
 <li class="chapter" data-level="7.2" data-path="acNucl.html"><a href="acNucl.html#termoestabilidade-de-dna"><i class="fa fa-check"></i><b>7.2</b> Termoestabilidade de DNA</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="membranas.html"><a href="membranas.html"><i class="fa fa-check"></i><b>8</b> Membranas</a>
+<li class="chapter" data-level="8" data-path="Bioenerg.html"><a href="Bioenerg.html"><i class="fa fa-check"></i><b>8</b> Bioenergética &amp; Soluções Matriciais</a>
 <ul>
-<li class="chapter" data-level="8.1" data-path="membranas.html"><a href="membranas.html#concentração-micelar-crítica-cmc"><i class="fa fa-check"></i><b>8.1</b> Concentração micelar crítica (CMC)</a></li>
-<li class="chapter" data-level="8.2" data-path="membranas.html"><a href="membranas.html#transporte-em-membranas-e-teoria-quimiosmótica"><i class="fa fa-check"></i><b>8.2</b> Transporte em membranas e Teoria Quimiosmótica</a></li>
-<li class="chapter" data-level="8.3" data-path="membranas.html"><a href="membranas.html#proteínas-de-transporte-em-membranas"><i class="fa fa-check"></i><b>8.3</b> Proteínas de transporte em membranas</a></li>
+<li class="chapter" data-level="8.1" data-path="Bioenerg.html"><a href="Bioenerg.html#solução-de-sistema-de-equações-lineares-no-r"><i class="fa fa-check"></i><b>8.1</b> Solução de sistema de equações lineares no R</a></li>
+<li class="chapter" data-level="8.2" data-path="Bioenerg.html"><a href="Bioenerg.html#matrizes-e-r"><i class="fa fa-check"></i><b>8.2</b> Matrizes e <code>R</code></a></li>
+<li class="chapter" data-level="8.3" data-path="Bioenerg.html"><a href="Bioenerg.html#solução-de-parâmetros-termodinâmicos-de-estabilidade-enzimática"><i class="fa fa-check"></i><b>8.3</b> Solução de parâmetros termodinâmicos de estabilidade enzimática</a></li>
+<li class="chapter" data-level="8.4" data-path="Bioenerg.html"><a href="Bioenerg.html#entalpia-de-reação-por-matrizes"><i class="fa fa-check"></i><b>8.4</b> Entalpia De Reação Por Matrizes</a></li>
+<li class="chapter" data-level="8.5" data-path="Bioenerg.html"><a href="Bioenerg.html#quantidades-termodinâmicas-por-ajuste-polinomial"><i class="fa fa-check"></i><b>8.5</b> Quantidades Termodinâmicas Por Ajuste Polinomial</a></li>
+<li class="chapter" data-level="8.6" data-path="Bioenerg.html"><a href="Bioenerg.html#estabilidade-termodinâmica-de-biopolímeros"><i class="fa fa-check"></i><b>8.6</b> Estabilidade Termodinâmica de Biopolímeros</a></li>
+<li class="chapter" data-level="8.7" data-path="Bioenerg.html"><a href="Bioenerg.html#relação-quantitativa-estrutura-função-qsar-e-ajuste-multilinear"><i class="fa fa-check"></i><b>8.7</b> Relação Quantitativa Estrutura-Função (QSAR) e Ajuste Multilinear</a>
+<ul>
+<li class="chapter" data-level="8.7.1" data-path="Bioenerg.html"><a href="Bioenerg.html#ajuste-linear-múltiplo-por-função-lm"><i class="fa fa-check"></i><b>8.7.1</b> Ajuste linear múltiplo por função <code>lm</code>:</a></li>
+<li class="chapter" data-level="8.7.2" data-path="Bioenerg.html"><a href="Bioenerg.html#ajuste-linear-múltiplo-por-matrizes"><i class="fa fa-check"></i><b>8.7.2</b> Ajuste linear múltiplo por matrizes:</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="Bioenerg.html"><a href="Bioenerg.html"><i class="fa fa-check"></i><b>9</b> Bioenergética</a>
+<li class="chapter" data-level="8.8" data-path="Bioenerg.html"><a href="Bioenerg.html#rendimento-de-reação-planejamento-fatorial-22"><i class="fa fa-check"></i><b>8.8</b> Rendimento de Reação &amp; Planejamento Fatorial 2<span class="math inline">\(^{2}\)</span></a></li>
+<li class="chapter" data-level="8.9" data-path="Bioenerg.html"><a href="Bioenerg.html#metodologia-de-superfície-de-resposta-msr"><i class="fa fa-check"></i><b>8.9</b> Metodologia de Superfície de Resposta (MSR)</a>
 <ul>
-<li class="chapter" data-level="9.1" data-path="Bioenerg.html"><a href="Bioenerg.html#solução-de-sistema-de-equações-lineares-no-r"><i class="fa fa-check"></i><b>9.1</b> Solução de sistema de equações lineares no R</a></li>
-<li class="chapter" data-level="9.2" data-path="Bioenerg.html"><a href="Bioenerg.html#matrizes-e-r"><i class="fa fa-check"></i><b>9.2</b> Matrizes e <code>R</code></a></li>
-<li class="chapter" data-level="9.3" data-path="Bioenerg.html"><a href="Bioenerg.html#solução-de-parâmetros-termodinâmicos-de-estabilidade-enzimática"><i class="fa fa-check"></i><b>9.3</b> Solução de parâmetros termodinâmicos de estabilidade enzimática</a></li>
-<li class="chapter" data-level="9.4" data-path="Bioenerg.html"><a href="Bioenerg.html#entalpia-de-reação-por-matrizes"><i class="fa fa-check"></i><b>9.4</b> Entalpia De Reação Por Matrizes</a></li>
-<li class="chapter" data-level="9.5" data-path="Bioenerg.html"><a href="Bioenerg.html#quantidades-termodinâmicas-por-ajuste-polinomial"><i class="fa fa-check"></i><b>9.5</b> Quantidades Termodinâmicas Por Ajuste Polinomial</a></li>
-<li class="chapter" data-level="9.6" data-path="Bioenerg.html"><a href="Bioenerg.html#estabilidade-termodinâmica-de-biopolímeros"><i class="fa fa-check"></i><b>9.6</b> Estabilidade Termodinâmica de Biopolímeros</a></li>
-<li class="chapter" data-level="9.7" data-path="Bioenerg.html"><a href="Bioenerg.html#relação-quantitativa-estrutura-função-qsar-e-ajuste-multilinear"><i class="fa fa-check"></i><b>9.7</b> Relação Quantitativa Estrutura-Função (QSAR) e Ajuste Multilinear</a>
-<ul>
-<li class="chapter" data-level="9.7.1" data-path="Bioenerg.html"><a href="Bioenerg.html#ajuste-linear-múltiplo-por-função-lm"><i class="fa fa-check"></i><b>9.7.1</b> Ajuste linear múltiplo por função <code>lm</code>:</a></li>
-<li class="chapter" data-level="9.7.2" data-path="Bioenerg.html"><a href="Bioenerg.html#ajuste-linear-múltiplo-por-matrizes"><i class="fa fa-check"></i><b>9.7.2</b> Ajuste linear múltiplo por matrizes:</a></li>
-</ul></li>
-<li class="chapter" data-level="9.8" data-path="Bioenerg.html"><a href="Bioenerg.html#rendimento-de-reação-planejamento-fatorial-22"><i class="fa fa-check"></i><b>9.8</b> Rendimento de Reação &amp; Planejamento Fatorial 2<span class="math inline">\(^{2}\)</span></a></li>
-<li class="chapter" data-level="9.9" data-path="Bioenerg.html"><a href="Bioenerg.html#metodologia-de-superfície-de-resposta-msr"><i class="fa fa-check"></i><b>9.9</b> Metodologia de Superfície de Resposta (MSR)</a>
-<ul>
-<li class="chapter" data-level="9.9.1" data-path="Bioenerg.html"><a href="Bioenerg.html#superfície-quadrática-de-resposta"><i class="fa fa-check"></i><b>9.9.1</b> Superfície Quadrática de Resposta</a></li>
-<li class="chapter" data-level="9.9.2" data-path="Bioenerg.html"><a href="Bioenerg.html#uma-palavra-sobre-matrizes-e-aplicações"><i class="fa fa-check"></i><b>9.9.2</b> Uma palavra sobre matrizes e aplicações</a></li>
+<li class="chapter" data-level="8.9.1" data-path="Bioenerg.html"><a href="Bioenerg.html#superfície-quadrática-de-resposta"><i class="fa fa-check"></i><b>8.9.1</b> Superfície Quadrática de Resposta</a></li>
+<li class="chapter" data-level="8.9.2" data-path="Bioenerg.html"><a href="Bioenerg.html#uma-palavra-sobre-matrizes-e-aplicações"><i class="fa fa-check"></i><b>8.9.2</b> Uma palavra sobre matrizes e aplicações</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="10" data-path="Metabolismo.html"><a href="Metabolismo.html"><i class="fa fa-check"></i><b>10</b> Metabolismo</a>
+<li class="chapter" data-level="9" data-path="Metabolismo.html"><a href="Metabolismo.html"><i class="fa fa-check"></i><b>9</b> Metabolismo</a>
 <ul>
-<li class="chapter" data-level="10.1" data-path="Metabolismo.html"><a href="Metabolismo.html#rotas-metabólicas-balanceamento-de-reações"><i class="fa fa-check"></i><b>10.1</b> Rotas metabólicas &amp; Balanceamento de Reações</a></li>
-<li class="chapter" data-level="10.2" data-path="Metabolismo.html"><a href="Metabolismo.html#operação-matricial"><i class="fa fa-check"></i><b>10.2</b> Operação matricial</a>
+<li class="chapter" data-level="9.1" data-path="Metabolismo.html"><a href="Metabolismo.html#rotas-metabólicas-balanceamento-de-reações"><i class="fa fa-check"></i><b>9.1</b> Rotas metabólicas &amp; Balanceamento de Reações</a></li>
+<li class="chapter" data-level="9.2" data-path="Metabolismo.html"><a href="Metabolismo.html#operação-matricial"><i class="fa fa-check"></i><b>9.2</b> Operação matricial</a>
 <ul>
-<li class="chapter" data-level="10.2.1" data-path="Metabolismo.html"><a href="Metabolismo.html#obtenção-do-vetor-de-rota-metabólica-para-a-glicólise-aeróbia"><i class="fa fa-check"></i><b>10.2.1</b> Obtenção do vetor de rota metabólica para a glicólise aeróbia:</a></li>
-<li class="chapter" data-level="10.2.2" data-path="Metabolismo.html"><a href="Metabolismo.html#obtenção-do-balanceamento-de-atp-adp-pi-e-coenzimas-de-oxi-redução-na-glicólise"><i class="fa fa-check"></i><b>10.2.2</b> Obtenção do balanceamento de ATP, ADP, Pi e coenzimas de oxi-redução na glicólise</a></li>
+<li class="chapter" data-level="9.2.1" data-path="Metabolismo.html"><a href="Metabolismo.html#obtenção-do-vetor-de-rota-metabólica-para-a-glicólise-aeróbia"><i class="fa fa-check"></i><b>9.2.1</b> Obtenção do vetor de rota metabólica para a glicólise aeróbia:</a></li>
+<li class="chapter" data-level="9.2.2" data-path="Metabolismo.html"><a href="Metabolismo.html#obtenção-do-balanceamento-de-atp-adp-pi-e-coenzimas-de-oxi-redução-na-glicólise"><i class="fa fa-check"></i><b>9.2.2</b> Obtenção do balanceamento de ATP, ADP, Pi e coenzimas de oxi-redução na glicólise</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="11" data-path="redesMet.html"><a href="redesMet.html"><i class="fa fa-check"></i><b>11</b> Redes Metabólicas</a>
+<li class="chapter" data-level="10" data-path="redesMet.html"><a href="redesMet.html"><i class="fa fa-check"></i><b>10</b> Redes Metabólicas</a>
 <ul>
-<li class="chapter" data-level="11.1" data-path="redesMet.html"><a href="redesMet.html#solução-numérica-para-sistema-de-equações-diferenciais"><i class="fa fa-check"></i><b>11.1</b> Solução numérica para sistema de equações diferenciais</a></li>
-<li class="chapter" data-level="11.2" data-path="redesMet.html"><a href="redesMet.html#algumas-reações-do-metabolismo-da-glicose"><i class="fa fa-check"></i><b>11.2</b> Algumas reações do metabolismo da glicose</a></li>
-<li class="chapter" data-level="11.3" data-path="redesMet.html"><a href="redesMet.html#cinética-do-metabolismo-de-6-mercaptopurina"><i class="fa fa-check"></i><b>11.3</b> Cinética do metabolismo de 6-mercaptopurina</a></li>
+<li class="chapter" data-level="10.1" data-path="redesMet.html"><a href="redesMet.html#solução-numérica-para-sistema-de-equações-diferenciais"><i class="fa fa-check"></i><b>10.1</b> Solução numérica para sistema de equações diferenciais</a></li>
+<li class="chapter" data-level="10.2" data-path="redesMet.html"><a href="redesMet.html#algumas-reações-do-metabolismo-da-glicose"><i class="fa fa-check"></i><b>10.2</b> Algumas reações do metabolismo da glicose</a></li>
+<li class="chapter" data-level="10.3" data-path="redesMet.html"><a href="redesMet.html#cinética-do-metabolismo-de-6-mercaptopurina"><i class="fa fa-check"></i><b>10.3</b> Cinética do metabolismo de 6-mercaptopurina</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="referências.html"><a href="referências.html"><i class="fa fa-check"></i>Referências</a></li>
 <li class="chapter" data-level="" data-path="apêndice-a.html"><a href="apêndice-a.html"><i class="fa fa-check"></i>Apêndice A</a></li>
@@ -227,19 +285,28 @@ div.csl-indent {
 <div id="introdução" class="section level1 unnumbered hasAnchor">
 <h1>Introdução<a href="introdução.html#introdução" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div class="line-block">      O <em>software</em> de programação estatística <strong>R</strong> e sua interface gráfica (<em>GUI</em>) <strong>Rstudio</strong> encerram um ambiente de desenvolvimento integrado (<em>IDE</em>) de emprego virtualmente ilimitado para diversas áreas do conhecimento. Dentre essas, as <em>Ciências da Natureza</em> e, em especial, a <em>Bioquímica</em>, <em>Biologia Molecular</em>, <em>Biofísica</em>, e áreas afins.<br />
-      São muitas as características que possibilitam o uso do <em>R &amp; RStudio</em> para o ensino e aprendizagem em <em>Bioquímica</em>. Parte dessas características residem na <em>Pesquisa Reproduzível</em> <span class="citation">(<a href="#ref-gandrud2018reproducible">Gandrud 2018</a>)</span>, a qual é resumidamente norteada pela:</div>
+      São muitas as características que possibilitam o uso do <em>R &amp; RStudio</em> para o ensino e aprendizagem em <em>Bioquímica</em>. Parte dessas características residem na <em>Pesquisa Reproduzível</em> <span class="citation">(<a href="#ref-gandrud2018reproducible" role="doc-biblioref">Gandrud 2018</a>)</span>, o qual é resumidamente norteada pela:</div>
 <ol style="list-style-type: decimal">
 <li>Disponibilização dos dados originais;</li>
 <li>Existência de um código para processar esses dados e analisá-los;</li>
 <li>Documentação dos dados e do código, possibilitando sua reprodutibilidade;</li>
 <li>Distribuição e acessibilidade do código.</li>
 </ol>
-<div class="line-block">      Nesse sentido, a produção de textos, tabelas, gráficos, análise de dados e simulações, podem perfeitamente ajustar-se ao <strong>ensino e aprendizagem</strong> em <em>Bioquímica</em> pelo uso de tais princípios aplicados ao <em>conteúdo quantitativo</em> e às <em>relações matemáticas</em> dos temas abordados, tendo como produto um <strong>livro vivo</strong> tangente a um <strong>Ensino Reproduzível</strong>.<br />
+<div class="line-block">      Nesse sentido, a produção de textos, tabelas, gráficos, análise de dados e simulações, podem perfeitamente ajustar-se ao <strong>ensino e aprendizagem</strong> em <em>Bioquímica</em> pelo uso de tais princípios aplicados ao <em>conteúdo quantitativo</em> e às <em>relações matemáticas</em> dos temas abordados.<br />
       Essas relações estão presentes nos <strong>livros-texto de Bioquímica</strong> e abrangem, por exemplo, <strong>curvas de titulação de ácidos fracos e aminoácidos</strong>, estudo de <strong>cargas efetivas em biomoléculas</strong>, <strong>características físico-químicas de proteínas e ácidos nucleicos</strong> previstas por análise de sequência, <strong>cinética de enzimas e sua inibição</strong>, <strong>quantidades termodinâmicas e Bioenergética</strong>, <strong>interação ligante-biopolímero</strong>, <strong>estequiometria de reações bioquímicas</strong>, <strong>rotas bioquímicas e redes metabólicas</strong>, dentre outros.<br />
       De modo geral, os temas acima são abordados neste material com auxílio do <em>R &amp; RStudio</em>. Não obstante, seu conteúdo não possui a pretensão de abordar, para além da superfície, o uso do <em>R</em>, do <em>RStudio</em>, e mesmo dos temas de <em>Bioquímica</em> propostos. Para esses, recomenda-se as fontes tradicionais de tutoriais, livros-texto e internete. E tampouco se arrisca a adentrar no universo da <em>Bioinformática</em>, tradicional ou estrutural, como na <em>Biologia de Sistemas</em>, <em>alinhamento de sequências</em>, <em>predição estrutural</em>, <em>modelagem, dinâmica e atracamento moleculares</em>, ou nas várias faces dos <em>estudos ômicos</em>.<br />
       Em resumo, objetiva-se apenas abordar os <em>conteúdos quantitativos</em> e <em>relações matemáticas</em> presentes em parte da <em>Bioquímica</em>, tal como descrito acima, utilizando o <em>R &amp; Rstudio</em>. Essa abordagem tangencia a <strong>solução de problemas e simulações por sistema linear de equações, álgebra linear, ajuste linear, não linear, polinomial, linear múltiplo, otimização, minimização, equações diferenciais simples, e análise de sequências</strong>, dentre outros.<br />
       Secundariamente, objetiva-se permitir que o interessado possa, a partir da repetição ou modificação de trechos simples de códigos e de <em>scripts</em>, reproduzir cálculos, gráficos e/ou tabelas pertinentes aos conteúdos elencados.</div>
 
+<!-- Google tag (gtag.js)-->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S1L73VGCG5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S1L73VGCG5');
+</script>
 </div>
 <h3>References</h3>
 <div id="refs" class="references csl-bib-body hanging-indent">
