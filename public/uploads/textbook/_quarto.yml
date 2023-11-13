@@ -1,0 +1,39 @@
+project:
+  type: book
+  
+book:
+  title: "Temas em Bioquímica"
+  author: "José Maurício Schneedorf FS"
+  date: today
+  language: pt
+  chapters:
+    - index.qmd
+    - part: introducao.qmd
+    # - intro.qmd
+    # - summary.qmd
+    - agua.qmd
+    - funcoes.qmd
+    - pHpKa.qmd
+    - part: estrutura.qmd
+    - aminoacid.qmd
+    - proteina.qmd
+    - enzimas.qmd
+    - carboidratos.qmd
+    - glicolise.qmd
+    - krebs.qmd
+    - cadeiaresp.qmd
+    
+    
+    #- references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+
+
+
