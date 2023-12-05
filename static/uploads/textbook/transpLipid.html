@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.3.353">
@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Temas em Bioquímica - 1&nbsp; Água</title>
+<title>Temas em Bioquímica - 16&nbsp; Transporte Lipídico</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./funcoes.html" rel="next">
-<link href="./introducao.html" rel="prev">
+<link href="./metabAA.html" rel="next">
+<link href="./metabCol.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -49,18 +49,20 @@ ul.task-list li input[type="checkbox"] {
   "type": "textbox",
   "limit": 20,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar"
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -70,13 +72,13 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./agua.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Água</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./transpLipid.html"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Transporte Lipídico</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -93,7 +95,7 @@ ul.task-list li input[type="checkbox"] {
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
+        <div id="quarto-search" class="" title="Procurar"></div>
         </div>
         </div>
     <div class="sidebar-menu-container"> 
@@ -110,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./agua.html" class="sidebar-item-text sidebar-link active">
+  <a href="./agua.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Água</span></span></a>
   </div>
 </li>
@@ -208,7 +210,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./transpLipid.html" class="sidebar-item-text sidebar-link">
+  <a href="./transpLipid.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Transporte Lipídico</span></span></a>
   </div>
 </li>
@@ -295,12 +297,14 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+    <h2 id="toc-title">Índice</h2>
    
   <ul>
-  <li><a href="#estrutura-básica" id="toc-estrutura-básica" class="nav-link active" data-scroll-target="#estrutura-básica"><span class="header-section-number">1.1</span> Estrutura básica</a></li>
-  <li><a href="#ligações-de-hidrogênio-e-água" id="toc-ligações-de-hidrogênio-e-água" class="nav-link" data-scroll-target="#ligações-de-hidrogênio-e-água"><span class="header-section-number">1.2</span> Ligações de hidrogênio e água</a></li>
-  <li><a href="#água-e-ph" id="toc-água-e-ph" class="nav-link" data-scroll-target="#água-e-ph"><span class="header-section-number">1.3</span> Água e pH</a></li>
+  <li><a href="#introdução" id="toc-introdução" class="nav-link active" data-scroll-target="#introdução"><span class="header-section-number">16.1</span> Introdução</a></li>
+  <li><a href="#detalhes" id="toc-detalhes" class="nav-link" data-scroll-target="#detalhes"><span class="header-section-number">16.2</span> Detalhes</a>
+  <ul class="collapse">
+  <li><a href="#manteiga-margarina-e-gordura-vegetal-hidrogenada." id="toc-manteiga-margarina-e-gordura-vegetal-hidrogenada." class="nav-link" data-scroll-target="#manteiga-margarina-e-gordura-vegetal-hidrogenada."><span class="header-section-number">16.2.1</span> Manteiga, margarina e gordura vegetal hidrogenada.</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -309,7 +313,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Água</span></h1>
+<h1 class="title"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Transporte Lipídico</span></h1>
 </div>
 
 
@@ -332,21 +336,45 @@ ul.task-list li input[type="checkbox"] {
 
   gtag('config', 'G-S1L73VGCG5');
 </script>
-<section id="estrutura-básica" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="estrutura-básica"><span class="header-section-number">1.1</span> Estrutura básica</h2>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A molécula de água, como bem sabido, é formada por dois átomos de hidrogênio e um de oxigênio. Em função de uma diferença de eletronegatividade desses átomos, o hidrogênio com valor de 2,1 e o oxigênio com valor de 3,9, a água apresenta-se como um dipolo, com carga parcial positiva nos hidrogênios e negativa no oxigênio. Isso permite a formação de interações entre outros átomos com características opostas, ou seja, positivo atraindo negativo, ou vice-versa. No fim das contas, permitindo a interação da água com íons (interação íon-dipolo, como com íons sódio ou cloro), com outras moléculas polares não ionizadas, formando ligações de Hidrogênio de 2 a 4 angstrons aproximados (interação dipolo-dipolo, como água com glicose), como também uma interação da água consigo própria.</p>
+<section id="introdução" class="level2" data-number="16.1">
+<h2 data-number="16.1" class="anchored" data-anchor-id="introdução"><span class="header-section-number">16.1</span> Introdução</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O corpo dos animais é formado por um grande percentual de água. Gordura não se mistura em água. Sendo assim, é necessário um sistema de transporte especial das gorduras no organismo, para que elas sejam aproveitadas pelas células. Proteínas se misturam em água. Neste caso, basta ligar as gorduras em algumas proteínas especiais, as lipoproteínas, e transportá-las pelo sangue. As lipoproteínas têm nomes especiais, dependendo de sua densidade.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Como a densidade de gorduras é menor do que a de proteínas, as lipoproteínas de maior densidade são aquelas que carregam menos gordura e, portanto, mais saudáveis.</p>
+<p>Assim é o caso da HDL, sigla em inglês que quer dizer lipoproteína de alta densidade, o chamado bom colesterol, pois pega o colesterol dos tecidos para degradá-lo no fígado. Já a LDL, sigla para lipoproteína de baixa densidade, carrega muita gordura e colesterol para os tecidos, sendo chamada de mal colesterol, pois pode acumulá-los nos vasos causando arterosclerose e infarto. Existem ainda mais 3 lipoproteínas, produzidas no fígado ou nos intestinos, que ajudam no transporte lipídico. Em conjunto, as lipoproteínas com alto teor de gordura, como a VLDL, IDL e o quilomícron (quilo, do intestino, assim como quimo é do estômago), vão passando suas gorduras para outras lipoproteínas, alterando a densidade e o tamanho das partículas, até a degradação dos lipídios dentro das células. Agora, é claro que as lipoproteínas não vão passando essas gorduras a esmo. Elas precisam de um sinal, e esse sinal se dá na forma de pequenas proteínas que vão se ligando e desligando das lipoproteínas, informando-as do melhor momento para liberar suas gorduras.</p>
+<div id="fig-transpLipidResum" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="transpLipidResum.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figura&nbsp;16.1: Esquema de transporte de lipoproteínas no organismo. Os números entre parênteses representam a sequência lógica dos eventos.</figcaption>
+</figure>
+</div>
 </section>
-<section id="ligações-de-hidrogênio-e-água" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="ligações-de-hidrogênio-e-água"><span class="header-section-number">1.2</span> Ligações de hidrogênio e água</h2>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A água é formada por dois átomos de hidrogênio, com massa atômica unitária, e um de oxigênio, com massa atômica de 16. Assim, sua massa molecular é de 18. Bom, se considerarmos a molécula de água como inserida num determinado volume, um cálculo rápido de concentração molar nos permite concluir que o teor da água em si própria é da orde de 55 molar ! Isso representa um valor maior que qualquer concentração de soluto conhecida, o que traz à água seu papel como solvente universal.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A água é egoista, e só gosta dela própria. Se inserirmos qualquer soluto na água haverá um rearranjo das ligações de hidrogênio intermoleculares da água, visando minimizar a energia global do sistema; em outras palavras, visando reduzir a entropia do sistema, maximizando novas ligações de hidrogênio entre moléculas de água, bem como entre essas e o soluto.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dessa forma, biomoléculas com grupamentos hidrofílicos, tais como aminas, ácidos carboxílicos, aldeídos, cetonas, e grupos tiol, serão facilmente cobertos com camadas moleculares de água (capa de hidratação), ao passo que biomoléculas com grupamentos hidrofóbicos, como grupos metileno, acetileno e aneis aromáticos, tenderão a expulsar a água molecular entre si; esse último efeito é denominado hidrofóbico, e correponde à interação hidrofóbica presente entre solutos de mesma natureza.</p>
-</section>
-<section id="água-e-ph" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="água-e-ph"><span class="header-section-number">1.3</span> Água e pH</h2>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Levando-se em conta que a concentração molar da água é de cerca de 55,5M, e que sua constante de dissociação é de 1,8x10-16 M (medidas de condutividade elétrica), então o produto “[H+] [OH-]” é de 9,99x10-16 M ao quadrado, ou seja, de 1x10-14. Assim, quando [H+] e [OH-] forem equivalentes em solução (água), então [H+] será de 1x10-7 M, e o pH será 7 (solução neutra a 25 graus Celsius). O produto “[H+] [OH-]” é denominado Kw.</p>
+<section id="detalhes" class="level2" data-number="16.2">
+<h2 data-number="16.2" class="anchored" data-anchor-id="detalhes"><span class="header-section-number">16.2</span> Detalhes</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O transporte e manutenção de lipídios solúveis no plasma, como triacilglicerol e colesterol, é realizado por albumina sérica e por lipoproteínas. Lipoproteínas plasmáticas são complexos que possuem um cerne lipídico, formado por triacilglicerol, fosfolipídios e colesterol, e uma superfície polar de proteínas, as apolipoproteínas, que se apresentam combinadas com colesterol esterificado. As apolipoproteínas possuem subdivisão de A a H. Dependendo das densidades e composição lipídica, as lipoproteínas são denominadas QM (<em>quilomícron</em>), VLDL (<em>Very Low Density Lipoprotein</em>), IDL (<em>Intermediary Density Lipoprotein</em>), LDL (<em>Low Density Lipoprotein</em>), o vulgarmente conhecido mal-colesterol, e HDL (<em>High Density Lipoprotein</em>), o bom colesterol.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As funções destas lipoproteínas abrangem composição estrutural das partículas, fornecimento de sítios de reconhecimento para receptores da superfície celular, e ativação e auxílio como coenzimas, para as enzimas envolvidas no metabolismo das lipoproteínas. O metabolismo dos quilomicra se inicia no retículo endoplasmático da mucosa intestinal, onde são embaladas juntamente com o triacilglicerol da dieta, colesterol, fosfolipídios e apolipoproteínas. O produto final é secretado pelo complexo de Golgi.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Existem dois tipos de quilomicra, os nascentes, secretados com apo B-48, apo-E e apo C-II, e liberados no plasma, e os remanescentes, um quilomícron um pouco menor e mais denso. O quilomícron remanescente é produzido quando a apo C-II das paredes dos capilares hidrolisa o triacilglicerol do cerne da partícula, sucedendo-se a redução de volume e aumento de densidade desta (apo-C são devolvidas ao HDL).</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Os quilomícrons remanescentes combinam-se com os receptores hepáticos (B-48 e E), seguindo-se endocitose e liberação de aminoácidos, colesterol livre e ácidos graxos na célula. O metabolismo da VLDL se inicia no fígado. A VLDL compõe-se predominantemente de triacilglicerol, que é transportado para os tecidos. Liberados do fígado, possuem apo B-100 e A-1, recebem apo B-48 e E da HDL. À medida que circulam, reduzem o seu tamanho por ação da lipase lipoprotéica, e aumenta de densidade, por doação de apo-C e apo-E para HDL. Ocorre então uma transferência de ésteres de colesterila da HDL para a VLDL, com troca concomitante de fosfolipídios e triacilglicerol da VLDL à HDL. No plasma, ocorre a conversão à LDL, com a formação de uma lipoproteína intermediária, a IDL.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A LDL, com menor teor de apolipoproteínas e de triacilglicerol, possui alto teor de colesterol e ésteres de colesterila, e sua função principal é transferi-los aos tecidos. Essa operação é realizada através da deposição daqueles nas membranas das células em que entram em contato, com auxílio de reconhecimento de receptores para apo B-100. As LDL são internalizadas, assim como quilomicras e HDL, por endocitose em fendas de clatrina contendo receptores de LDL. O revestimento de clatrina, um conjunto de proteínas associadas que formam um invólucro na partícula, é retirado, gerando vesículas de endossomos. Com a redução do pH endossômico, ocorre um desligamento da LDL de seu receptor, o qual pode ser reciclado à superfície, enquanto que a LDL é degradada à aminoácidos, colesterol, ácidos graxos e fosfolipídios.</p>
+<div id="fig-metabLipid" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="metabLipid.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figura&nbsp;16.2: Representação do transporte lipídico (ácidos graxos, fosfolipídios- FLP, triacilgliceróis – TAG, e colesterol - CLT) através das principais lipoproteínas (quilomícron, VLDL, IDL, HDL e LDL).</figcaption>
+</figure>
+</div>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O metabolismo da HDL se inicia na sua síntese hepática. As HDL removem e esterificam, por intermédio da LCAT, lecitina acil transferase, o colesterol livre de tecidos extra-hepáticos, fornecem apo C-II (reservatório de apolipoproteínas), transportam ésteres de colesterila ao fígado, e transferem ésteres de colesterila à VLDL e LDL.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Captadas por endocitose hepática, têm seus ésteres de colesterila degradados, com o colesterol livre podendo ser reembalado em outras lipoproteínas, convertido em ácidos biliares, ou excretado através da bile. A HDL, inicialmente discóide, vai atingindo uma forma esferoidal à medida em que ocorre um acúmulo de colesterol.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A arterosclerose é uma doença típica do transporte lipídico. Ocorre por migração e modificação de monócitos em macrófagos no endotélio, tornando-os espumosos por captação e oxidação de LDL (<em>macrófagos “scaranger”</em>, com receptores de baixa afinidade por LDL); esta modificação celular resulta em acúmulo local de macrófagos, e permite uma liberação de fatores de crescimento de células musculares lisas e de cálcio, gerando uma calcificação local, e produzindo a placa ateromatosa.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Outras doenças, mais propriamente de origem genética, incluem a hiperlipidemia tipo I (hiperquilomicronemia familiar), uma deficiência na lipase lipoprotéica ou apo C-II, levando a um acúmulo de lipoproteínas ricas em triacilglicerol no plasma. A hiperlipidemia tipo II (hiperbetalipoproteinemia familiar), por sua vez, decorre de uma deficiência em receptores de LDL, com acúmulo de LDL e colesterol plasmáticos. Existe também uma doença rara denominada de analbuminemia, onde ocorre uma perda quase completa de albumina sérica, que praticamente elimina o transporte lipídico por esta proteína. Deficiência na lipase lipoprotéica também pode resultar em xantoma eruptivo, um depósito patológico de gordura na pele, pela incapacidade de processamento de quilomicra.</p>
+<section id="manteiga-margarina-e-gordura-vegetal-hidrogenada." class="level3" data-number="16.2.1">
+<h3 data-number="16.2.1" class="anchored" data-anchor-id="manteiga-margarina-e-gordura-vegetal-hidrogenada."><span class="header-section-number">16.2.1</span> Manteiga, margarina e gordura vegetal hidrogenada.</h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;À despeito da grande variabilidade de teor de gorduras e óleos em carcaças e sementes, existe hoje um consenso em relação à promoção da saúde humana pela ingestão de derivados comerciais dos mesmos e os níveis consequentes de LDL, HDL, triglicérides, e colesterol. De um modo geral, o consumo de óleos é superior em termos terapêuticos ao de gorduras saturadas e gordura vegetal hidrogenada. A margarina, que apesar de sofrer uma transformação química prejudicial ao consumo humano, a transesterificação obrigatória em sua elaboração, parece ser de valor de superior ao da manteiga e esta, ao da gordura hidrogenada e gorduras saturadas.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Isto se deve ao fato de ocorrer uma redução no teor de ácidos graxos monoinsaturados (óleo de soja, óleo de oliva), polinsaturados e polinsaturados essenciais (<span class="math inline">\(\omega\)</span>-3 e <span class="math inline">\(\omega\)</span>-6, óleos vegetais e de peixes de água fria, salmão, arenque, bacalhau e sardinha), e crescente no de saturados e colesterol, do óleo (soja, milho, canola) à gordura animal (ácido palmítico, ácido esteárico, colesterol).</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Apesar de não serem bem determinados os mecanismos moleculares em que os ácidos graxos atuam, sabe-se atualmente que os monoinsaturados são excelentes protetores cardiovasculares, além de atuarem como pró-cicatrizantes e antioxidantes. Os polinsaturados vem em segundo plano, com a desvantagem de seus constituintes alimentares normalmente ser acompanhados de teores significativos de ácidos graxos saturados (hidrogenação dos óleos vegetais na produção da margarina).</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mbos, contudo, estão reportados aumentar o teor de HDL -colesterol e reduzir o de LDL-colesterol e triglicerídeos plasmáticos. Além disso também atuam aumentando os níveis de ácido docosohexaenóico cerebral, um ácido graxo polinsaturado de 22 carbonos muito importante no desenvolvimento e maturação do sistema nervoso. Já manteigas, gordura vegetal hidrogenada e gorduras animais possuem um teor progressivo de ácidos graxos saturados (lembrando que o colesterol está presente apenas nos tecidos animais).</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Estes lipídeos são conhecidos aumentar os teores de triglicérides, LDL-colesterol, a relação LDL / HDL, e o colesterol total sanguíneo, todos envolvidos no comprometimento de vasos sanguíneos e desenvolvimento da arterosclerose. Não obstante, existem teores variados de ácidos graxos saturados e colesterol na carcaça animal. Assim, a carne de frango, sem a pele, possui um teor de colesterol próximo a do suíno e do coelho, todas com reduzido valor do mesmo frente à carne bovina.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -404,12 +432,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "Copiada");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "Copiada");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
@@ -585,13 +613,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./introducao.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Introdução</span>
+      <a href="./metabCol.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Metabolismo de Colesterol</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./funcoes.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Funções Químicas</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./metabAA.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Metabolismo de Aminoácidos</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
