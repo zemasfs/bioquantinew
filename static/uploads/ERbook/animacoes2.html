@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>ERtools - 23&nbsp; Animações</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./programacao.html" rel="next">
+<link href="./pacotes.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script src="site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<script src="site_libs/plotly-binding-4.10.1/plotly.js"></script>
+<script src="site_libs/typedarray-0.1/typedarray.min.js"></script>
+<script src="site_libs/jquery-3.5.1/jquery.min.js"></script>
+<link href="site_libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet">
+<script src="site_libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+<link href="site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+<script src="site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./mais.html">Mais</a></li><li class="breadcrumb-item"><a href="./animacoes2.html"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Animações</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">ERtools</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title"><strong>TODO</strong></span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projetos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./projetos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introdução</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./contrVer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Controle de versões</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chunks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Códigos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cabecalho.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Cabeçalho</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./elementos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Elementos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./links.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Links</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./figuras.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Figuras</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./graficos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Gráficos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tidyverse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Tidyverse</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tabelas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Tabelas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./equacoes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Equações</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./diagramas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Diagramas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./refsCruzadas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Referenciação</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./bibliografia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Bibliografia</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./quantidades.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quantidades</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./acoes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Ações</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./carrega.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Carregamento de dados</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./estatisticas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Estatísticas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./funcoes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Funções</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ajustes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Ajustes de Dados</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./receitas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Algumas receitas matemáticas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./exemplos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Exemplos</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./mais.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mais</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./pacotes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Pacotes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./animacoes2.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Animações</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./programacao.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Testes condicionais e laços</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./docs_exemplo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Documentos exemplificados</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./exemplos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Exemplos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Referências</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#variação-de-parâmetro-em-função-plotável-e-output-de-resultado" id="toc-variação-de-parâmetro-em-função-plotável-e-output-de-resultado" class="nav-link active" data-scroll-target="#variação-de-parâmetro-em-função-plotável-e-output-de-resultado"><span class="header-section-number">23.1</span> Variação de parâmetro em função <em>plotável</em> e <em>output</em> de resultado</a></li>
+  <li><a href="#o-pacote-plotly" id="toc-o-pacote-plotly" class="nav-link" data-scroll-target="#o-pacote-plotly"><span class="header-section-number">23.2</span> O pacote <code>plotly</code></a></li>
+  <li><a href="#o-pacote-manipulate" id="toc-o-pacote-manipulate" class="nav-link" data-scroll-target="#o-pacote-manipulate"><span class="header-section-number">23.3</span> O pacote <code>manipulate</code></a></li>
+  <li><a href="#o-pacote-gganimate" id="toc-o-pacote-gganimate" class="nav-link" data-scroll-target="#o-pacote-gganimate"><span class="header-section-number">23.4</span> O pacote <code>gganimate</code></a></li>
+  <li><a href="#o-pacote-iplots" id="toc-o-pacote-iplots" class="nav-link" data-scroll-target="#o-pacote-iplots"><span class="header-section-number">23.5</span> O pacote <code>iplots</code></a></li>
+  <li><a href="#o-pacote-shiny" id="toc-o-pacote-shiny" class="nav-link" data-scroll-target="#o-pacote-shiny"><span class="header-section-number">23.6</span> O pacote <code>shiny</code></a></li>
+  <li><a href="#o-pacote-gifski" id="toc-o-pacote-gifski" class="nav-link" data-scroll-target="#o-pacote-gifski"><span class="header-section-number">23.7</span> O pacote <code>gifski</code></a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Animações</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="variação-de-parâmetro-em-função-plotável-e-output-de-resultado" class="level2" data-number="23.1">
+<h2 data-number="23.1" class="anchored" data-anchor-id="variação-de-parâmetro-em-função-plotável-e-output-de-resultado"><span class="header-section-number">23.1</span> Variação de parâmetro em função <em>plotável</em> e <em>output</em> de resultado</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Uma animação com uso de laço iterativo (<em>loop</em>) sem qualquer pacote adicional pode agregar valor à compreensão das relações entre variáveis, tal como segue.</p>
+<div class="cell" data-hash="animacoes2_cache/html/unnamed-chunk-1_6754a015ea0c9056acaf0f8dfba8f417">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Relação de pH com potencial de equilíbrio (Nernst)</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="do">## Parâmetros da equação</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>Eo <span class="ot">=</span> <span class="fl">0.7</span> <span class="co"># potencial padrão, V</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>R <span class="ot">=</span> <span class="fl">8.314</span> <span class="co"># const. geral dos gases, J/mol/K</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>T <span class="ot">=</span> <span class="dv">298</span> <span class="co"># temperatura absoluta</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>F <span class="ot">=</span> <span class="dv">96485</span> <span class="co"># const. de Faraday, C/mol</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="do">## Vetor de no. de elétrons</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>n <span class="ot">=</span> <span class="fu">seq</span>(<span class="at">from=</span><span class="dv">1</span>,<span class="at">to=</span><span class="dv">5</span>,<span class="at">by=</span><span class="dv">1</span>)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="do">## Iteração para a equação de Nernst com variação em "n"</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(n)) {</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  add <span class="ot">&lt;-</span> <span class="cf">if</span>(i<span class="sc">==</span><span class="dv">1</span>) <span class="cn">FALSE</span> <span class="cf">else</span> <span class="cn">TRUE</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">curve</span>(Eo<span class="fl">-2.303</span><span class="sc">*</span>(R<span class="sc">*</span>T<span class="sc">/</span>(n[i]<span class="sc">*</span>F))<span class="sc">*</span>x<span class="sc">+</span><span class="fu">runif</span>(<span class="fu">length</span>(n),<span class="dv">0</span>,<span class="fl">0.02</span>),</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>        <span class="at">type =</span> <span class="st">"b"</span>,<span class="at">col=</span> i, <span class="at">lwd=</span><span class="fl">0.8</span>, </span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>        <span class="at">from =</span><span class="dv">1</span> , <span class="at">to=</span><span class="dv">14</span>, <span class="at">n =</span><span class="dv">10</span>, <span class="at">cex =</span><span class="fl">0.5</span>,</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>        <span class="at">xlab=</span><span class="st">"pH"</span>, <span class="at">ylab=</span><span class="st">"E, V"</span>, <span class="at">add=</span>add)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  nernst.slope <span class="ot">&lt;-</span> <span class="fl">2.303</span><span class="sc">*</span>(R<span class="sc">*</span>T<span class="sc">/</span>(n[i]<span class="sc">*</span>F))</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"inclinação de Nernst (mV/pH): "</span>, <span class="fu">round</span>(nernst.slope<span class="sc">*</span><span class="fl">1e3</span>,<span class="at">digits =</span> <span class="dv">1</span>),<span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  add<span class="ot">&lt;-</span><span class="cf">if</span>(i <span class="sc">==</span> <span class="dv">1</span>) <span class="cn">FALSE</span> <span class="cf">else</span> <span class="cn">TRUE</span> <span class="co"># controle de fluxo que permite adição de curva a partir da segunda iteração (ou seja, quando i &gt; 1)</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">Sys.sleep</span>(<span class="fl">0.5</span>) <span class="co"># pausa entre as interações</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>} </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>inclinação de Nernst (mV/pH):  59.1 
+inclinação de Nernst (mV/pH):  29.6 
+inclinação de Nernst (mV/pH):  19.7 
+inclinação de Nernst (mV/pH):  14.8 
+inclinação de Nernst (mV/pH):  11.8 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="do">### Anotações no plot (n, no. de elétrons)</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co">#arrows(2,0,13.5,0.6,length=0.1,angle=45, col="blue") # seta para Km # seta de inclinações progressivas</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">text</span>(<span class="dv">11</span>,<span class="dv">0</span>,<span class="st">"n=1"</span>,<span class="at">cex=</span><span class="fl">0.7</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">text</span>(<span class="fl">11.5</span>,<span class="fl">0.4</span>,<span class="st">"n=2"</span>,<span class="at">cex=</span><span class="fl">0.7</span>)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">text</span>(<span class="fl">11.7</span>,<span class="fl">0.5</span>,<span class="st">"n=3"</span>,<span class="at">cex=</span><span class="fl">0.7</span>)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">text</span>(<span class="dv">12</span>,<span class="fl">0.55</span>,<span class="st">"n=4"</span>,<span class="at">cex=</span><span class="fl">0.7</span>)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="fu">text</span>(<span class="fl">12.4</span>,<span class="fl">0.6</span>,<span class="st">"n=5"</span>,<span class="at">cex=</span><span class="fl">0.7</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="animacoes2_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="o-pacote-plotly" class="level2" data-number="23.2">
+<h2 data-number="23.2" class="anchored" data-anchor-id="o-pacote-plotly"><span class="header-section-number">23.2</span> O pacote <code>plotly</code></h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O exemplo abaixo apresenta um gráfico no qual características dos dados podem ser visualizadas por arraste de mouse sobre os mesmos (<em>mouse over</em>).</p>
+<div class="cell" data-hash="animacoes2_cache/html/unnamed-chunk-2_9b9e36343682d4af55ce6f971401b013">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>tempo <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="fu">rep</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="dv">4</span>),<span class="dv">4</span>))</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>resposta <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">6</span>,<span class="dv">8</span>,<span class="dv">10</span>,<span class="dv">14</span>,<span class="dv">18</span>,<span class="dv">22</span>,<span class="dv">24</span>,<span class="dv">30</span>,<span class="dv">36</span>,<span class="dv">42</span>)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>niveis <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="st">"A"</span>,<span class="dv">4</span>),<span class="fu">rep</span>(<span class="st">"B"</span>, <span class="dv">4</span>), <span class="fu">rep</span>(<span class="st">"C"</span>, <span class="dv">4</span>), <span class="fu">rep</span>(<span class="st">"D"</span>, <span class="dv">4</span>)) <span class="co"># cria vetores com níveis</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span><span class="fu">data.frame</span>(tempo, resposta, niveis) <span class="co"># cria um *dataset* multivariado</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly) <span class="co"># carrega as bibliotecas necessárias</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'plotly'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:ggplot2':
+
+    last_plot</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:stats':
+
+    filter</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:graphics':
+
+    layout</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data=</span>df, <span class="fu">aes</span>(<span class="at">x=</span>tempo, <span class="at">y=</span>resposta, <span class="at">shape=</span>niveis, <span class="at">color=</span>niveis)) <span class="sc">+</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">size=</span><span class="dv">5</span>)) <span class="sc">+</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">linetype=</span>niveis))<span class="sc">+</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(<span class="at">cols=</span><span class="fu">vars</span>(niveis)) <span class="co"># cria um gráfico e atribui uma variável a esse</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplotly</span>(p) <span class="co"># executa uma animação, no caso, um *mouse over* que fornece os dados de cada ponto do gráfico</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="htmlwidget-9f1a3fe4e5dff1f2fbdb" style="width:100%;height:464px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-9f1a3fe4e5dff1f2fbdb">{"x":{"data":[{"x":[1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4],"y":[1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4],"text":["tempo: 1<br />resposta:  1<br />niveis: A<br />niveis: A<br />size: 5","tempo: 2<br />resposta:  2<br />niveis: A<br />niveis: A<br />size: 5","tempo: 3<br />resposta:  3<br />niveis: A<br />niveis: A<br />size: 5","tempo: 4<br />resposta:  4<br />niveis: A<br />niveis: A<br />size: 5","tempo: 1<br />resposta:  1<br />niveis: A<br />niveis: A<br />size: 5","tempo: 2<br />resposta:  2<br />niveis: A<br />niveis: A<br />size: 5","tempo: 3<br />resposta:  3<br />niveis: A<br />niveis: A<br />size: 5","tempo: 4<br />resposta:  4<br />niveis: A<br />niveis: A<br />size: 5","tempo: 1<br />resposta:  1<br />niveis: A<br />niveis: A<br />size: 5","tempo: 2<br />resposta:  2<br />niveis: A<br />niveis: A<br />size: 5","tempo: 3<br />resposta:  3<br />niveis: A<br />niveis: A<br />size: 5","tempo: 4<br />resposta:  4<br />niveis: A<br />niveis: A<br />size: 5","tempo: 1<br />resposta:  1<br />niveis: A<br />niveis: A<br />size: 5","tempo: 2<br />resposta:  2<br />niveis: A<br />niveis: A<br />size: 5","tempo: 3<br />resposta:  3<br />niveis: A<br />niveis: A<br />size: 5","tempo: 4<br />resposta:  4<br />niveis: A<br />niveis: A<br />size: 5"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(248,118,109,1)","opacity":1,"size":17.1421753925017,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(248,118,109,1)"}},"hoveron":"points","name":"(A,1)","legendgroup":"(A,1)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4],"y":[2,4,6,8,2,4,6,8,2,4,6,8,2,4,6,8],"text":["tempo: 1<br />resposta:  2<br />niveis: B<br />niveis: B<br />size: 5","tempo: 2<br />resposta:  4<br />niveis: B<br />niveis: B<br />size: 5","tempo: 3<br />resposta:  6<br />niveis: B<br />niveis: B<br />size: 5","tempo: 4<br />resposta:  8<br />niveis: B<br />niveis: B<br />size: 5","tempo: 1<br />resposta:  2<br />niveis: B<br />niveis: B<br />size: 5","tempo: 2<br />resposta:  4<br />niveis: B<br />niveis: B<br />size: 5","tempo: 3<br />resposta:  6<br />niveis: B<br />niveis: B<br />size: 5","tempo: 4<br />resposta:  8<br />niveis: B<br />niveis: B<br />size: 5","tempo: 1<br />resposta:  2<br />niveis: B<br />niveis: B<br />size: 5","tempo: 2<br />resposta:  4<br />niveis: B<br />niveis: B<br />size: 5","tempo: 3<br />resposta:  6<br />niveis: B<br />niveis: B<br />size: 5","tempo: 4<br />resposta:  8<br />niveis: B<br />niveis: B<br />size: 5","tempo: 1<br />resposta:  2<br />niveis: B<br />niveis: B<br />size: 5","tempo: 2<br />resposta:  4<br />niveis: B<br />niveis: B<br />size: 5","tempo: 3<br />resposta:  6<br />niveis: B<br />niveis: B<br />size: 5","tempo: 4<br />resposta:  8<br />niveis: B<br />niveis: B<br />size: 5"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(124,174,0,1)","opacity":1,"size":17.1421753925017,"symbol":"triangle-up","line":{"width":1.88976377952756,"color":"rgba(124,174,0,1)"}},"hoveron":"points","name":"(B,2)","legendgroup":"(B,2)","showlegend":true,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4],"y":[10,14,18,22,10,14,18,22,10,14,18,22,10,14,18,22],"text":["tempo: 1<br />resposta: 10<br />niveis: C<br />niveis: C<br />size: 5","tempo: 2<br />resposta: 14<br />niveis: C<br />niveis: C<br />size: 5","tempo: 3<br />resposta: 18<br />niveis: C<br />niveis: C<br />size: 5","tempo: 4<br />resposta: 22<br />niveis: C<br />niveis: C<br />size: 5","tempo: 1<br />resposta: 10<br />niveis: C<br />niveis: C<br />size: 5","tempo: 2<br />resposta: 14<br />niveis: C<br />niveis: C<br />size: 5","tempo: 3<br />resposta: 18<br />niveis: C<br />niveis: C<br />size: 5","tempo: 4<br />resposta: 22<br />niveis: C<br />niveis: C<br />size: 5","tempo: 1<br />resposta: 10<br />niveis: C<br />niveis: C<br />size: 5","tempo: 2<br />resposta: 14<br />niveis: C<br />niveis: C<br />size: 5","tempo: 3<br />resposta: 18<br />niveis: C<br />niveis: C<br />size: 5","tempo: 4<br />resposta: 22<br />niveis: C<br />niveis: C<br />size: 5","tempo: 1<br />resposta: 10<br />niveis: C<br />niveis: C<br />size: 5","tempo: 2<br />resposta: 14<br />niveis: C<br />niveis: C<br />size: 5","tempo: 3<br />resposta: 18<br />niveis: C<br />niveis: C<br />size: 5","tempo: 4<br />resposta: 22<br />niveis: C<br />niveis: C<br />size: 5"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,191,196,1)","opacity":1,"size":17.1421753925017,"symbol":"square","line":{"width":1.88976377952756,"color":"rgba(0,191,196,1)"}},"hoveron":"points","name":"(C,3)","legendgroup":"(C,3)","showlegend":true,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4],"y":[24,30,36,42,24,30,36,42,24,30,36,42,24,30,36,42],"text":["tempo: 1<br />resposta: 24<br />niveis: D<br />niveis: D<br />size: 5","tempo: 2<br />resposta: 30<br />niveis: D<br />niveis: D<br />size: 5","tempo: 3<br />resposta: 36<br />niveis: D<br />niveis: D<br />size: 5","tempo: 4<br />resposta: 42<br />niveis: D<br />niveis: D<br />size: 5","tempo: 1<br />resposta: 24<br />niveis: D<br />niveis: D<br />size: 5","tempo: 2<br />resposta: 30<br />niveis: D<br />niveis: D<br />size: 5","tempo: 3<br />resposta: 36<br />niveis: D<br />niveis: D<br />size: 5","tempo: 4<br />resposta: 42<br />niveis: D<br />niveis: D<br />size: 5","tempo: 1<br />resposta: 24<br />niveis: D<br />niveis: D<br />size: 5","tempo: 2<br />resposta: 30<br />niveis: D<br />niveis: D<br />size: 5","tempo: 3<br />resposta: 36<br />niveis: D<br />niveis: D<br />size: 5","tempo: 4<br />resposta: 42<br />niveis: D<br />niveis: D<br />size: 5","tempo: 1<br />resposta: 24<br />niveis: D<br />niveis: D<br />size: 5","tempo: 2<br />resposta: 30<br />niveis: D<br />niveis: D<br />size: 5","tempo: 3<br />resposta: 36<br />niveis: D<br />niveis: D<br />size: 5","tempo: 4<br />resposta: 42<br />niveis: D<br />niveis: D<br />size: 5"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(199,124,255,1)","opacity":1,"size":17.1421753925017,"symbol":"cross-thin-open","line":{"width":1.88976377952756,"color":"rgba(199,124,255,1)"}},"hoveron":"points","name":"(D,4)","legendgroup":"(D,4)","showlegend":true,"xaxis":"x4","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4],"y":[1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4],"text":["tempo: 1<br />resposta:  1<br />niveis: A<br />niveis: A<br />niveis: A","tempo: 1<br />resposta:  1<br />niveis: A<br />niveis: A<br />niveis: A","tempo: 1<br />resposta:  1<br />niveis: A<br />niveis: A<br />niveis: A","tempo: 1<br />resposta:  1<br />niveis: A<br />niveis: A<br />niveis: A","tempo: 2<br />resposta:  2<br />niveis: A<br />niveis: A<br />niveis: A","tempo: 2<br />resposta:  2<br />niveis: A<br />niveis: A<br />niveis: A","tempo: 2<br />resposta:  2<br />niveis: A<br />niveis: A<br />niveis: A","tempo: 2<br />resposta:  2<br />niveis: A<br />niveis: A<br />niveis: A","tempo: 3<br />resposta:  3<br />niveis: A<br />niveis: A<br />niveis: A","tempo: 3<br />resposta:  3<br />niveis: A<br />niveis: A<br />niveis: A","tempo: 3<br />resposta:  3<br />niveis: A<br />niveis: A<br />niveis: A","tempo: 3<br />resposta:  3<br />niveis: A<br />niveis: A<br />niveis: A","tempo: 4<br />resposta:  4<br />niveis: A<br />niveis: A<br />niveis: A","tempo: 4<br />resposta:  4<br />niveis: A<br />niveis: A<br />niveis: A","tempo: 4<br />resposta:  4<br />niveis: A<br />niveis: A<br />niveis: A","tempo: 4<br />resposta:  4<br />niveis: A<br />niveis: A<br />niveis: A"],"type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(248,118,109,1)","dash":"solid"},"hoveron":"points","name":"A","legendgroup":"A","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4],"y":[2,2,2,2,4,4,4,4,6,6,6,6,8,8,8,8],"text":["tempo: 1<br />resposta:  2<br />niveis: B<br />niveis: B<br />niveis: B","tempo: 1<br />resposta:  2<br />niveis: B<br />niveis: B<br />niveis: B","tempo: 1<br />resposta:  2<br />niveis: B<br />niveis: B<br />niveis: B","tempo: 1<br />resposta:  2<br />niveis: B<br />niveis: B<br />niveis: B","tempo: 2<br />resposta:  4<br />niveis: B<br />niveis: B<br />niveis: B","tempo: 2<br />resposta:  4<br />niveis: B<br />niveis: B<br />niveis: B","tempo: 2<br />resposta:  4<br />niveis: B<br />niveis: B<br />niveis: B","tempo: 2<br />resposta:  4<br />niveis: B<br />niveis: B<br />niveis: B","tempo: 3<br />resposta:  6<br />niveis: B<br />niveis: B<br />niveis: B","tempo: 3<br />resposta:  6<br />niveis: B<br />niveis: B<br />niveis: B","tempo: 3<br />resposta:  6<br />niveis: B<br />niveis: B<br />niveis: B","tempo: 3<br />resposta:  6<br />niveis: B<br />niveis: B<br />niveis: B","tempo: 4<br />resposta:  8<br />niveis: B<br />niveis: B<br />niveis: B","tempo: 4<br />resposta:  8<br />niveis: B<br />niveis: B<br />niveis: B","tempo: 4<br />resposta:  8<br />niveis: B<br />niveis: B<br />niveis: B","tempo: 4<br />resposta:  8<br />niveis: B<br />niveis: B<br />niveis: B"],"type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(124,174,0,1)","dash":"dash"},"hoveron":"points","name":"B","legendgroup":"B","showlegend":true,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4],"y":[10,10,10,10,14,14,14,14,18,18,18,18,22,22,22,22],"text":["tempo: 1<br />resposta: 10<br />niveis: C<br />niveis: C<br />niveis: C","tempo: 1<br />resposta: 10<br />niveis: C<br />niveis: C<br />niveis: C","tempo: 1<br />resposta: 10<br />niveis: C<br />niveis: C<br />niveis: C","tempo: 1<br />resposta: 10<br />niveis: C<br />niveis: C<br />niveis: C","tempo: 2<br />resposta: 14<br />niveis: C<br />niveis: C<br />niveis: C","tempo: 2<br />resposta: 14<br />niveis: C<br />niveis: C<br />niveis: C","tempo: 2<br />resposta: 14<br />niveis: C<br />niveis: C<br />niveis: C","tempo: 2<br />resposta: 14<br />niveis: C<br />niveis: C<br />niveis: C","tempo: 3<br />resposta: 18<br />niveis: C<br />niveis: C<br />niveis: C","tempo: 3<br />resposta: 18<br />niveis: C<br />niveis: C<br />niveis: C","tempo: 3<br />resposta: 18<br />niveis: C<br />niveis: C<br />niveis: C","tempo: 3<br />resposta: 18<br />niveis: C<br />niveis: C<br />niveis: C","tempo: 4<br />resposta: 22<br />niveis: C<br />niveis: C<br />niveis: C","tempo: 4<br />resposta: 22<br />niveis: C<br />niveis: C<br />niveis: C","tempo: 4<br />resposta: 22<br />niveis: C<br />niveis: C<br />niveis: C","tempo: 4<br />resposta: 22<br />niveis: C<br />niveis: C<br />niveis: C"],"type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(0,191,196,1)","dash":"dot"},"hoveron":"points","name":"C","legendgroup":"C","showlegend":true,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4],"y":[24,24,24,24,30,30,30,30,36,36,36,36,42,42,42,42],"text":["tempo: 1<br />resposta: 24<br />niveis: D<br />niveis: D<br />niveis: D","tempo: 1<br />resposta: 24<br />niveis: D<br />niveis: D<br />niveis: D","tempo: 1<br />resposta: 24<br />niveis: D<br />niveis: D<br />niveis: D","tempo: 1<br />resposta: 24<br />niveis: D<br />niveis: D<br />niveis: D","tempo: 2<br />resposta: 30<br />niveis: D<br />niveis: D<br />niveis: D","tempo: 2<br />resposta: 30<br />niveis: D<br />niveis: D<br />niveis: D","tempo: 2<br />resposta: 30<br />niveis: D<br />niveis: D<br />niveis: D","tempo: 2<br />resposta: 30<br />niveis: D<br />niveis: D<br />niveis: D","tempo: 3<br />resposta: 36<br />niveis: D<br />niveis: D<br />niveis: D","tempo: 3<br />resposta: 36<br />niveis: D<br />niveis: D<br />niveis: D","tempo: 3<br />resposta: 36<br />niveis: D<br />niveis: D<br />niveis: D","tempo: 3<br />resposta: 36<br />niveis: D<br />niveis: D<br />niveis: D","tempo: 4<br />resposta: 42<br />niveis: D<br />niveis: D<br />niveis: D","tempo: 4<br />resposta: 42<br />niveis: D<br />niveis: D<br />niveis: D","tempo: 4<br />resposta: 42<br />niveis: D<br />niveis: D<br />niveis: D","tempo: 4<br />resposta: 42<br />niveis: D<br />niveis: D<br />niveis: D"],"type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(199,124,255,1)","dash":"dashdot"},"hoveron":"points","name":"D","legendgroup":"D","showlegend":true,"xaxis":"x4","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":37.9178082191781,"r":18.9954337899543,"b":40.1826484018265,"l":37.2602739726027},"plot_bgcolor":"rgba(235,235,235,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"xaxis":{"domain":[0,0.245923026744945],"automargin":true,"type":"linear","autorange":false,"range":[0.85,4.15],"tickmode":"array","ticktext":["1","2","3","4"],"tickvals":[1,2,3,4],"categoryorder":"array","categoryarray":["1","2","3","4"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(255,255,255,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":"","hoverformat":".2f"},"annotations":[{"text":"tempo","x":0.5,"y":0,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"center","yanchor":"top","annotationType":"axis","yshift":-21.9178082191781},{"text":"resposta","x":0,"y":0.5,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"xref":"paper","yref":"paper","textangle":-90,"xanchor":"right","yanchor":"center","annotationType":"axis","xshift":-21.9178082191781},{"text":"A","x":0.122961513372472,"y":1,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(26,26,26,1)","family":"","size":11.689497716895},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"center","yanchor":"bottom"},{"text":"B","x":0.375,"y":1,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(26,26,26,1)","family":"","size":11.689497716895},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"center","yanchor":"bottom"},{"text":"C","x":0.625,"y":1,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(26,26,26,1)","family":"","size":11.689497716895},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"center","yanchor":"bottom"},{"text":"D","x":0.877038486627528,"y":1,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(26,26,26,1)","family":"","size":11.689497716895},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"center","yanchor":"bottom"}],"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-1.05,44.05],"tickmode":"array","ticktext":["0","10","20","30","40"],"tickvals":[0,10,20,30,40],"categoryorder":"array","categoryarray":["0","10","20","30","40"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(255,255,255,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"x","title":"","hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":0.245923026744945,"y0":0,"y1":1},{"type":"rect","fillcolor":"rgba(217,217,217,1)","line":{"color":"transparent","width":0.66417600664176,"linetype":"solid"},"yref":"paper","xref":"paper","x0":0,"x1":0.245923026744945,"y0":0,"y1":23.37899543379,"yanchor":1,"ysizemode":"pixel"},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0.254076973255055,"x1":0.495923026744945,"y0":0,"y1":1},{"type":"rect","fillcolor":"rgba(217,217,217,1)","line":{"color":"transparent","width":0.66417600664176,"linetype":"solid"},"yref":"paper","xref":"paper","x0":0.254076973255055,"x1":0.495923026744945,"y0":0,"y1":23.37899543379,"yanchor":1,"ysizemode":"pixel"},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0.504076973255055,"x1":0.745923026744945,"y0":0,"y1":1},{"type":"rect","fillcolor":"rgba(217,217,217,1)","line":{"color":"transparent","width":0.66417600664176,"linetype":"solid"},"yref":"paper","xref":"paper","x0":0.504076973255055,"x1":0.745923026744945,"y0":0,"y1":23.37899543379,"yanchor":1,"ysizemode":"pixel"},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0.754076973255055,"x1":1,"y0":0,"y1":1},{"type":"rect","fillcolor":"rgba(217,217,217,1)","line":{"color":"transparent","width":0.66417600664176,"linetype":"solid"},"yref":"paper","xref":"paper","x0":0.754076973255055,"x1":1,"y0":0,"y1":23.37899543379,"yanchor":1,"ysizemode":"pixel"}],"xaxis2":{"type":"linear","autorange":false,"range":[0.85,4.15],"tickmode":"array","ticktext":["1","2","3","4"],"tickvals":[1,2,3,4],"categoryorder":"array","categoryarray":["1","2","3","4"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"domain":[0.254076973255055,0.495923026744945],"gridcolor":"rgba(255,255,255,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":"","hoverformat":".2f"},"xaxis3":{"type":"linear","autorange":false,"range":[0.85,4.15],"tickmode":"array","ticktext":["1","2","3","4"],"tickvals":[1,2,3,4],"categoryorder":"array","categoryarray":["1","2","3","4"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"domain":[0.504076973255055,0.745923026744945],"gridcolor":"rgba(255,255,255,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":"","hoverformat":".2f"},"xaxis4":{"type":"linear","autorange":false,"range":[0.85,4.15],"tickmode":"array","ticktext":["1","2","3","4"],"tickvals":[1,2,3,4],"categoryorder":"array","categoryarray":["1","2","3","4"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"domain":[0.754076973255055,1],"gridcolor":"rgba(255,255,255,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":"","hoverformat":".2f"},"showlegend":true,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.689497716895},"title":{"text":"size<br />niveis","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"441d4bbd3ffa":{"x":{},"y":{},"shape":{},"colour":{},"size":{},"type":"scatter"},"441d1600491f":{"x":{},"y":{},"shape":{},"colour":{},"linetype":{}}},"cur_data":"441d4bbd3ffa","visdat":{"441d4bbd3ffa":["function (y) ","x"],"441d1600491f":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="o-pacote-manipulate" class="level2" data-number="23.3">
+<h2 data-number="23.3" class="anchored" data-anchor-id="o-pacote-manipulate"><span class="header-section-number">23.3</span> O pacote <code>manipulate</code></h2>
+<!-- https://rpubs.com/jeremyyew/manipulate-pkg -->
+<!-- https://support.posit.co/hc/en-us/articles/200551906-Interactive-Plotting-with-Manipulate-in-the-RStudio-IDE -->
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Entre outras características, é possível a criação de um controle deslizante (<em>slider</em>) para que se observe o resultado gráfico sobre a variação de um ou mais parâmetros de uma equação.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exemplificando, uma curva hiperbólica com variação no parâmetro de meia resposta (<em>k</em>), como segue. <em>Para obter o resultado visual, é necessário rodar o trecho de código no RStudio</em>.</p>
+<div class="cell" data-hash="animacoes2_cache/html/unnamed-chunk-3_bc2cb289d76eada26bbe8d4efa4210dd">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span> (manipulate)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>k<span class="ot">=</span><span class="dv">1</span> <span class="co"># valor inicial do parâmetro a variar</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">100</span> <span class="co"># criação de vetor</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="fu">manipulate</span>(<span class="fu">plot</span>(x,<span class="dv">2</span><span class="sc">*</span>x<span class="sc">/</span>(k<span class="sc">+</span>x),</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>                <span class="at">ylab=</span><span class="st">"f(x)"</span>, <span class="at">ylim=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">2</span>)),</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>                <span class="at">k =</span> <span class="fu">slider</span>(<span class="fl">0.1</span>, <span class="dv">20</span>)) <span class="co"># aplicação da função</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Obs: o resultado só pode ser visualizado dentro do *RStudio*</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O mesmo exemplo acima pode ser também obtido por uma função matemática, e não apenas por plotagem de pontos, como segue.</p>
+<div class="cell" data-hash="animacoes2_cache/html/unnamed-chunk-4_af72baee03dd65690f1ce07e34af3e9a">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(manipulate)</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">manipulate</span>(<span class="fu">curve</span>(<span class="dv">2</span><span class="sc">*</span>x<span class="sc">/</span>(k<span class="sc">+</span>x),</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>                 <span class="at">ylab=</span><span class="st">"f(x)"</span>, <span class="at">from=</span><span class="dv">0</span>, <span class="at">to=</span><span class="dv">50</span>,</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>                 <span class="at">ylim=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">2</span>)), <span class="at">k =</span> <span class="fu">slider</span>(<span class="fl">0.1</span>, <span class="dv">50</span>))</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Obs: o resultado só pode ser visualizado dentro do *RStudio*</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="o-pacote-gganimate" class="level2" data-number="23.4">
+<h2 data-number="23.4" class="anchored" data-anchor-id="o-pacote-gganimate"><span class="header-section-number">23.4</span> O pacote <code>gganimate</code></h2>
+<div class="cell" data-hash="animacoes2_cache/html/unnamed-chunk-5_c981dfce94ed77caaab7db9cf105ebc4">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gganimate)</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>anim <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(mtcars, <span class="fu">aes</span>(mpg, disp)) <span class="sc">+</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> gear)) <span class="sc">+</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="fu">transition_states</span>(gear, <span class="at">transition_length =</span> <span class="dv">2</span>, <span class="at">state_length =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="fu">enter_fade</span>() <span class="sc">+</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="fu">exit_fade</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="o-pacote-iplots" class="level2" data-number="23.5">
+<h2 data-number="23.5" class="anchored" data-anchor-id="o-pacote-iplots"><span class="header-section-number">23.5</span> O pacote <code>iplots</code></h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Apesar de antigo, o pacote <a href="http://www.iplots.org/" target="&quot;_new">iplots</a> permite a criação de gráficos interativos (pontos, barras, histogramas e mosaico) que destacam os valores de um dado em mais de um gráfico. Isso é particularmente útil quando se deseja identificar um determinado ponto de um gráfico cujas variáveis são transformadas para a produção de outro. Exemplificando do pacote:</p>
+<div class="cell" data-hash="animacoes2_cache/html/unnamed-chunk-6_ff6eda3fb9da39ce54c522a5b5e196fd">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(iris)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">attach</span>(iris)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="fu">iplot</span>(Sepal.Width,Petal.Width)</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="fu">iplot</span>(Sepal.Width<span class="sc">/</span>Sepal.Length, Species)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O pacote também permite ampliação (<em>zoom</em>) e alguns efeitos adicionais (<em>brushing</em>).</p>
+</section>
+<section id="o-pacote-shiny" class="level2" data-number="23.6">
+<h2 data-number="23.6" class="anchored" data-anchor-id="o-pacote-shiny"><span class="header-section-number">23.6</span> O pacote <code>shiny</code></h2>
+</section>
+<section id="o-pacote-gifski" class="level2" data-number="23.7">
+<h2 data-number="23.7" class="anchored" data-anchor-id="o-pacote-gifski"><span class="header-section-number">23.7</span> O pacote <code>gifski</code></h2>
+<p>não tá rodando no lab</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./pacotes.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Pacotes</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./programacao.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Testes condicionais e laços</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>

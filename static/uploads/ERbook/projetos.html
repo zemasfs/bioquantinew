@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>ERtools - 2&nbsp; Introdução</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./contrVer.html" rel="next">
+<link href="./intro.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro.html">Projetos</a></li><li class="breadcrumb-item"><a href="./projetos.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introdução</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">ERtools</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title"><strong>TODO</strong></span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projetos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./projetos.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introdução</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./contrVer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Controle de versões</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chunks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Códigos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cabecalho.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Cabeçalho</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./elementos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Elementos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./links.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Links</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./figuras.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Figuras</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./graficos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Gráficos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tidyverse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Tidyverse</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tabelas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Tabelas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./equacoes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Equações</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./diagramas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Diagramas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./refsCruzadas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Referenciação</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./bibliografia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Bibliografia</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./quantidades.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quantidades</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./acoes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Ações</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./carrega.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Carregamento de dados</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./estatisticas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Estatísticas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./funcoes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Funções</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ajustes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Ajustes de Dados</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./receitas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Algumas receitas matemáticas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./exemplos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Exemplos</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./mais.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mais</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./pacotes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Pacotes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./animacoes2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Animações</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./programacao.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Testes condicionais e laços</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./docs_exemplo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Documentos exemplificados</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./exemplos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Exemplos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Referências</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#criação-de-projeto" id="toc-criação-de-projeto" class="nav-link active" data-scroll-target="#criação-de-projeto"><span class="header-section-number">2.1</span> Criação de projeto</a>
+  <ul class="collapse">
+  <li><a href="#criação-de-projeto-pelo-rstudio" id="toc-criação-de-projeto-pelo-rstudio" class="nav-link" data-scroll-target="#criação-de-projeto-pelo-rstudio"><span class="header-section-number">2.1.1</span> Criação de projeto pelo <code>RStudio</code></a></li>
+  <li><a href="#criação-de-projeto-pelo-terminal" id="toc-criação-de-projeto-pelo-terminal" class="nav-link" data-scroll-target="#criação-de-projeto-pelo-terminal"><span class="header-section-number">2.1.2</span> Criação de projeto pelo Terminal</a></li>
+  </ul></li>
+  <li><a href="#rodando-um-projeto" id="toc-rodando-um-projeto" class="nav-link" data-scroll-target="#rodando-um-projeto"><span class="header-section-number">2.2</span> Rodando um projeto</a>
+  <ul class="collapse">
+  <li><a href="#compilando-por-mouse" id="toc-compilando-por-mouse" class="nav-link" data-scroll-target="#compilando-por-mouse"><span class="header-section-number">2.2.1</span> Compilando por mouse</a></li>
+  <li><a href="#compilando-por-terminal" id="toc-compilando-por-terminal" class="nav-link" data-scroll-target="#compilando-por-terminal"><span class="header-section-number">2.2.2</span> Compilando por Terminal</a></li>
+  </ul></li>
+  <li><a href="#linguagem-do-projeto" id="toc-linguagem-do-projeto" class="nav-link" data-scroll-target="#linguagem-do-projeto"><span class="header-section-number">2.3</span> Linguagem do projeto</a>
+  <ul class="collapse">
+  <li><a href="#para-um-documento-único" id="toc-para-um-documento-único" class="nav-link" data-scroll-target="#para-um-documento-único"><span class="header-section-number">2.3.1</span> Para um documento único</a></li>
+  <li><a href="#para-um-projeto" id="toc-para-um-projeto" class="nav-link" data-scroll-target="#para-um-projeto"><span class="header-section-number">2.3.2</span> Para um projeto</a></li>
+  </ul></li>
+  <li><a href="#um-documento-dinâmico-simples" id="toc-um-documento-dinâmico-simples" class="nav-link" data-scroll-target="#um-documento-dinâmico-simples"><span class="header-section-number">2.4</span> Um documento dinâmico simples</a></li>
+  <li><a href="#título" id="toc-título" class="nav-link" data-scroll-target="#título"><span class="header-section-number">2.5</span> Título</a>
+  <ul class="collapse">
+  <li><a href="#compilando-o-documento" id="toc-compilando-o-documento" class="nav-link" data-scroll-target="#compilando-o-documento"><span class="header-section-number">2.5.1</span> Compilando o documento</a></li>
+  </ul></li>
+  <li><a href="#subtítulos" id="toc-subtítulos" class="nav-link" data-scroll-target="#subtítulos"><span class="header-section-number">2.6</span> Subtítulos</a></li>
+  <li><a href="#texto-estilizado" id="toc-texto-estilizado" class="nav-link" data-scroll-target="#texto-estilizado"><span class="header-section-number">2.7</span> Texto estilizado</a></li>
+  <li><a href="#estilo-de-texto" id="toc-estilo-de-texto" class="nav-link" data-scroll-target="#estilo-de-texto"><span class="header-section-number">2.8</span> Estilo de texto</a>
+  <ul class="collapse">
+  <li><a href="#listas" id="toc-listas" class="nav-link" data-scroll-target="#listas"><span class="header-section-number">2.8.1</span> Listas</a></li>
+  <li><a href="#fontes" id="toc-fontes" class="nav-link" data-scroll-target="#fontes"><span class="header-section-number">2.8.2</span> Fontes</a></li>
+  <li><a href="#cores" id="toc-cores" class="nav-link" data-scroll-target="#cores"><span class="header-section-number">2.8.3</span> Cores</a></li>
+  </ul></li>
+  <li><a href="#comentários" id="toc-comentários" class="nav-link" data-scroll-target="#comentários"><span class="header-section-number">2.9</span> Comentários</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introdução</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="criação-de-projeto" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="criação-de-projeto"><span class="header-section-number">2.1</span> Criação de projeto</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pode-se considerar como um <em>projeto</em>, digamos, <strong>tudo</strong> que se desejar fazer pelo ‘R &amp; RStudio’ de forma organizada. Elencam-se aí documentos simples, <em>slides</em>, e livros, dentre outros. Seja qual o tipo de projeto a que se destina, a criação é muito parecida. Como ambiente de desenvolvimento integrado (ou <em>IDE</em> da sigla em inglês), o <code>RStudio</code> permite a criação de projetos por ponteiro de <em>mouse</em>.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alternativamente, o projeto pode ser criado por linha de comando no <em>Terminal</em>, quer do próprio <code>RStudio</code> como pelo <code>R</code>, esse com ou sem interface gráfica (ou <em>GUI</em>, da sigla em inglês).</p>
+<section id="criação-de-projeto-pelo-rstudio" class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="criação-de-projeto-pelo-rstudio"><span class="header-section-number">2.1.1</span> Criação de projeto pelo <code>RStudio</code></h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para tanto, siga as instruções que seguem:</p>
+<ol type="1">
+<li>Clique em <em>File</em> (ou em sua tradução para Português, dependendo da instalação do programa);</li>
+<li>Selecione na sequência, <em>New Project</em>, <em>New Directory</em>, <em>Quarto Project</em>;</li>
+<li>Preencha os campos (novo diretório, por ex) e selecione alguma característica para o projeto (editor visual, por ex);</li>
+<li>Pronto ! Pressupondo-se que o projeto chama-se “teste”, o sistema irá disponibilizar um projeto simples contendo quatro arquivos, a saber:</li>
+</ol>
+<div class="cell" data-hash="projetos_cache/html/unnamed-chunk-1_4788f437f06dc03f3afafcdce67e694a">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>teste.Rproj <span class="co"># arquivo principal do projeto </span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>test.qmd <span class="co"># arquivo de documento do projeto</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>.gitignore <span class="co"># arquivo de informação de compartilhamento em repositório (Git)</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>_quarto.yml <span class="co"># arquivo de metadados</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dos arquivos acima, pode-se traduzir cada um como:</p>
+<ol type="1">
+<li><em>.Rproj</em> - arquivo que conterá todas as informações do projeto, como o caminho de diretório, pastas e subpastas, <em>scripts</em>, e outros documentos. É o arquivo que, quando clicado num explorador de arquivos, apresenta o projeto e seu conteúdo.</li>
+<li><em>.qmd</em> - arquivo em que será inserido texto e/ou códigos. É como um arquivo <em>DOCX</em> (MS-Word) ou <em>ODT</em> (Libreoffice), onde a digitação será compilada para um produto final (HTML, PDF, EPUB, ODT). A sigla refere-se a <em>Quarto Markup Document</em>.</li>
+<li>*_quarto.yml* - arquivo de configuração que contém toda a informação necessária para a compilação do(s) arquivo(s) <em>.qmd</em> constantes do projeto. Essas informações incluem o tipo de documento gerado (PDF, HTML, por ex), título, autor, data, e formatações gerais do documento final. O atributo <em>yml</em> é uma abreviação de <em>yaml</em>, um acrónimo recursivo para <em>YAML</em> (“Ain’t Markup Language” ou “Yet Another Markup Language). Trata-se de uma linguagem para dados de leitura relativamente fácil (<em>human-readable</em>) empregada na escrita de arquivos de configuração, e voltada para dados e não para documentos.</li>
+</ol>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agora, traduzindo a tradução propriamente dita, dois arquivos são vitais na compilação; o arquivo <em>.qmd</em>, ou vários desses, como uma folha de papel onde será escrito o documento, e o arquivo *_quarto.yml*, onde será escrita toda a configuração para a compilação.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E desse dois, o arquivo *_quarto.yml* é normalmente utilizado na compilação de mais de um arquivo <em>.qmd</em>, repassando a esses toda a configuração desejada (como a sequência de capítulos de um livro, cada qual escrito como um documento <em>.qmd</em> separadamente). Se a ideia é elaborar apenas um arquivo de documento, dinâmico ou não, basta a criação de um documento simples, como descrito mais embaixo.</p>
+</section>
+<section id="criação-de-projeto-pelo-terminal" class="level3" data-number="2.1.2">
+<h3 data-number="2.1.2" class="anchored" data-anchor-id="criação-de-projeto-pelo-terminal"><span class="header-section-number">2.1.2</span> Criação de projeto pelo Terminal</h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nesse caso, não é necessário o <code>RStudio</code>, como mencionado acima, mas um terminal de <em>prompt</em> de comando, tal como o <em>CMD</em> (Windows) ou <em>Terminal</em> (Linux). Algumas opções para se digitar num <em>Terminal</em> para a criação de um projeto incluem:</p>
+<div class="cell" data-hash="projetos_cache/html/unnamed-chunk-2_93474db3549c62149bb72521a857502f">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>quarto create project <span class="co"># abre janela de opções pra projeto</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>quarto create project <span class="sc">&lt;</span>tipo<span class="sc">&gt;</span> <span class="er">&lt;</span>nome<span class="sc">&gt;</span> <span class="co"># cria o projeto já identificado</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="rodando-um-projeto" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="rodando-um-projeto"><span class="header-section-number">2.2</span> Rodando um projeto</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para se “rodar” o projeto, ou seja, para que o algoritmo realize a compilação, tanto de textos como de códigos, também existem opções por ponteiro de <em>mouse</em> ou por <em>Terminal</em>.</p>
+<section id="compilando-por-mouse" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="compilando-por-mouse"><span class="header-section-number">2.2.1</span> Compilando por mouse</h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Algumas alternativas também possibilitam “rodar” o documento, tais como:</p>
+<ol type="1">
+<li>Por atalho, <em>Ctrl + Shift + K</em> (<em>K</em> de <em>knitr</em>, a máquina por traz do algoritmo…ou vice-versa);</li>
+<li>Clicando-se em <em>File</em>, <em>Render Document</em>;</li>
+<li>Clicando-se no ícone de uma seta azul seguido de <em>Render</em>, abaixo do <em>menu</em> principal.</li>
+</ol>
+</section>
+<section id="compilando-por-terminal" class="level3" data-number="2.2.2">
+<h3 data-number="2.2.2" class="anchored" data-anchor-id="compilando-por-terminal"><span class="header-section-number">2.2.2</span> Compilando por Terminal</h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Por outro lado, a compilação de um documento dinâmico por <em>Terminal</em> também pode dar-se de várias formas, como:</p>
+<div class="cell" data-hash="projetos_cache/html/unnamed-chunk-3_d3b07eb996d2ea49a2fc8c22d73a387f">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>quarto render <span class="co"># renderiza o projeto no diretório</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>quarto render meuprojeto <span class="co"># renderiza um projeto específico</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>quarto render articles <span class="co"># renderiza um tipo de documento do subdiretório (também por Ctrl+Shift+K)</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>quarto render <span class="sc">--</span>to pdf  </span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>... ou ....   quarto render meuprojeto <span class="sc">--</span>to pdf <span class="co"># renderiza para MS-Word</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>quarto render meudoc.qmd <span class="sc">--</span>to odt <span class="co"># renderiza para Libreoffice (Writer)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="linguagem-do-projeto" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="linguagem-do-projeto"><span class="header-section-number">2.3</span> Linguagem do projeto</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pode-se definir a linguagem (ex: en, pt, es) para um documento único (arquivo <em>.qmd</em>) ou para todo projeto (ex: livro). Para tanto:</p>
+<section id="para-um-documento-único" class="level3" data-number="2.3.1">
+<h3 data-number="2.3.1" class="anchored" data-anchor-id="para-um-documento-único"><span class="header-section-number">2.3.1</span> Para um documento único</h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Basta acrescentar a linha de comando no cabeçalho do documento:</p>
+<div class="cell" data-hash="projetos_cache/html/unnamed-chunk-4_517e8a5e8e9e7bc650ade728af669387">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> <span class="st">"Documento"</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>lang<span class="sc">:</span> pt</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="para-um-projeto" class="level3" data-number="2.3.2">
+<h3 data-number="2.3.2" class="anchored" data-anchor-id="para-um-projeto"><span class="header-section-number">2.3.2</span> Para um projeto</h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nesse caso, a alteração se dará em todos os arquivos <em>.qmd</em> do projeto, sendo necessário uma inclusão simples no arquivo *_quarto.yml* de metadados:</p>
+<div class="cell" data-hash="projetos_cache/html/unnamed-chunk-5_67eca6cc4d0da5a3b91ef0a8bf7fe83c">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>project<span class="sc">:</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  type<span class="sc">:</span> book</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>book<span class="sc">:</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  title<span class="sc">:</span> <span class="st">"Meulivro"</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  author<span class="sc">:</span> <span class="st">"Eu"</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  date<span class="sc">:</span> <span class="st">"x/xx/xxxx"</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  language<span class="sc">:</span> pt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="um-documento-dinâmico-simples" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="um-documento-dinâmico-simples"><span class="header-section-number">2.4</span> Um documento dinâmico simples</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O pacote ´quarto´ permite a elaboração de diversos tipos de documentos dinâmicos, destacando-se apresentações, animações, livros, e documentos mais simples. Iniciando por esses é possível perceber o racional de produção dos demais.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Um documento dinâmico simples pode ser pensado como um documento de editor de texto estilizado, embora com a possibilidade de inserção e execução de linhas de comandos para execução de tarefas e programação. Tendo em mente a estrutura mais simples, um documento estilizado poderá conter:</p>
+<ol type="1">
+<li>Título;</li>
+<li>Subtítulos;</li>
+<li>Texto estilizado;</li>
+<li>Comentários não visíveis;</li>
+<li>Objeto complementar (imagem, tabela, gráfico, equação).</li>
+</ol>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As etapas abaixo descrevem a elaboração de um documento simples.</p>
+</section>
+<section id="título" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="título"><span class="header-section-number">2.5</span> Título</h2>
+<section id="compilando-o-documento" class="level3" data-number="2.5.1">
+<h3 data-number="2.5.1" class="anchored" data-anchor-id="compilando-o-documento"><span class="header-section-number">2.5.1</span> Compilando o documento</h3>
+</section>
+</section>
+<section id="subtítulos" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="subtítulos"><span class="header-section-number">2.6</span> Subtítulos</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subtítulos são inseridos automaticamente em sequência numérica e com fontes estilizadas (negrito) de tamanhos distintos. São alocados simplesmente por número de <em>hashtag</em>s inseridos antes. Existem 6 níveis (ex: <em>1.2</em>, <em>2.4.1</em>, etc), e que são indexados por <em>#</em>, <em>##</em>, <em>###</em>, <em>####</em>, <em>#####</em>, <em>######</em>.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Desejando-se que a numeração não apareça no subtítulo, ou que não seja listada no sumário inicial (quando a opção de docuemnto é <em>livro</em>; TOC (<em>Table of Contents</em>), bastas os comandos:</p>
+<div class="cell" data-hash="projetos_cache/html/unnamed-chunk-6_2d3a2ae8d058e062d420ad4a28e2c4da">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="do">## subtítulo {.unnumbered} # não aparece no título</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="do">## subtítulo {.unlisted .unnumbered} # não é listada no TOC</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="texto-estilizado" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="texto-estilizado"><span class="header-section-number">2.7</span> Texto estilizado</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Usando-se <em>Rmarkdown</em> é possível estabelecer com facilidade termos em negrito, itálico, etc, tal como segue:</p>
+<div class="cell" data-hash="projetos_cache/html/unnamed-chunk-7_e6c7dffb9dba6cbb2706675ac51d543f">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="sc">*</span>itálico<span class="sc">*</span> <span class="co"># itálico</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="er">**</span>negrito<span class="sc">**</span> <span class="co"># negrito</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="er">~~</span>cortado<span class="sc">~</span><span class="er">~</span> <span class="co"># cortado</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="er">^</span><span class="dv">2</span><span class="sc">^</span> <span class="co"># superescrito</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="er">***</span> <span class="co"># linha horizontal</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="estilo-de-texto" class="level2" data-number="2.8">
+<h2 data-number="2.8" class="anchored" data-anchor-id="estilo-de-texto"><span class="header-section-number">2.8</span> Estilo de texto</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Usando-se <em>Rmarkdown</em> é possível estabelecer com facilidade termos em negrito, itálico, etc, tal como segue:</p>
+<div class="cell" data-hash="projetos_cache/html/unnamed-chunk-8_5a8b493e1d8ceaca139f52be1dedf476">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="sc">*</span>itálico<span class="sc">*</span> ou _itálico_<span class="co"># itálico</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="sc">**</span>negrito<span class="sc">**</span> ou __negrito__ <span class="co"># negrito</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="sc">~</span><span class="er">~</span>cortado<span class="sc">~</span><span class="er">~</span> <span class="co"># cortado</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>x<span class="sc">^</span><span class="dv">2</span><span class="sc">^</span> <span class="co"># superescrito</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="sc">--</span> <span class="co"># linha curta</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span> <span class="co"># linha não tão curta</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="listas" class="level3" data-number="2.8.1">
+<h3 data-number="2.8.1" class="anchored" data-anchor-id="listas"><span class="header-section-number">2.8.1</span> Listas</h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Listas podem apresentar-se com ou sem numeração. Para as últimas, ítens e subítens podem explicitar-se como segue:</p>
+<div class="cell" data-hash="projetos_cache/html/unnamed-chunk-9_358dcee8d67f913282f6e71fab25faab">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="sc">*</span> item <span class="dv">1</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="sc">*</span> item <span class="dv">2</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="sc">+</span> subitem <span class="dv">1</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="sc">+</span> subitem <span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O resultado do trecho acima fica:</p>
+<ul>
+<li>item 1</li>
+<li>item 2</li>
+<li>subitem 1</li>
+<li>subitem 2</li>
+</ul>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Já para uma lista numerada pode-se espelhar o exemplo acima. Pode-se elaborá-la enumerando-se manualmente ou, de forma mais prática, automaticamente, nesse caso bastando-se inserir <em>“1.”</em> para todos os ítens da lista.</p>
+<div class="cell" data-hash="projetos_cache/html/unnamed-chunk-10_d41f4b6d915a63a8578e43f1e4179204">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> item <span class="dv">1</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> item <span class="dv">2</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="sc">+</span> subitem <span class="dv">1</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="sc">+</span> subitem <span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>O resultado ficará como:</p>
+<ol type="1">
+<li>item 1</li>
+<li>item 2</li>
+</ol>
+<ul>
+<li>subitem 1</li>
+<li>subitem 2</li>
+</ul>
+</section>
+<section id="fontes" class="level3" data-number="2.8.2">
+<h3 data-number="2.8.2" class="anchored" data-anchor-id="fontes"><span class="header-section-number">2.8.2</span> Fontes</h3>
+<hr>
+</section>
+<section id="cores" class="level3" data-number="2.8.3">
+<h3 data-number="2.8.3" class="anchored" data-anchor-id="cores"><span class="header-section-number">2.8.3</span> Cores</h3>
+<p>cor de texto: Roses are , violets are .</p>
+</section>
+</section>
+<section id="comentários" class="level2" data-number="2.9">
+<h2 data-number="2.9" class="anchored" data-anchor-id="comentários"><span class="header-section-number">2.9</span> Comentários</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;É sempre desejável conhecer o significado de um conjunto de comandos, ou a essência de uma solução para um problema, uma lista de afazeres (<em>ToDo</em>), um trecho que se está experimentando, ou que foi colado de outra fonte para observação, ou qualquer informação que não se deseja visualizar no documento final, ou em preparação.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A inserção de comentários dá-se pelo atalho <em>Shift + Ctrl + C</em>, ao iniciar uma linha (pra um subtítulo, por ex), ao final dessa (pra uma explicação sobre o código), ou para um trecho selecionado. Para desfazer o comentário, basta repetir o atalho.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./intro.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Projetos</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./contrVer.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Controle de versões</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>
