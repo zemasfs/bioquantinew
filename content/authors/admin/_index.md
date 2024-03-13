@@ -41,5 +41,5 @@ superuser: yes
   _____________________________________________________________________
   
   
-  Atualmente, encontra-se desenvolvimento um [material](https://bioquanti.netlify.app/uploads/ERbook/index.html) para orientação à produção de textos e objetos didáticos, visando tangenciar um **Ensino Reproduzível (ER)** com auxílio do *R & RStudio*. Esta proposta baseia-se na elaboração de  **documentos dinâmicos** , criados a partir do conceito de [programação letrada](https://academic.oup.com/comjnl/article/27/2/97/343244?login=true). 
+  Atualmente, encontra-se em desenvolvimento um *material de orientação* para a produção de [documentos dinâmicos](https://bioquanti.netlify.app/uploads/ERbook/index.html) com auxílio da linguagem [RMarkdown](https://rmarkdown.rstudio.com/), e da ferramenta *R & RStudio*. Tal conteúdo visa tangenciar um **Ensino Reproduzível** para *qualquer área do Conhecimento*, baseando-se nos conceitos de [Pesquisa Reproduzível](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/bes2.1801) e de [programação letrada](https://academic.oup.com/comjnl/article/27/2/97/343244?login=true), gerando um documento que ofereça simultaneamente *texto formatado* e *instruções de código*. 
   
