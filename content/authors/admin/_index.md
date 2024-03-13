@@ -13,7 +13,7 @@ superuser: yes
   gtag('config', 'G-S1L73VGCG5');
 </script>
 
-Página elaborada no intuito de contribuir para o ensino-aprendizagem de conteúdos de Bioquímica e áreas correlatas, e esboçada para um **Ensino Reproduzível (ER)**. O *material autoinstrucional* permite o estudo dos temas juntamente à execução de códigos de programas de livre distribuição para gráficos, análises e tabelas, simulações e animações ([R](https://cran.r-project.org/) & [RStudio](https://www.rstudio.com/)), como para o estudo e visualização tridimensional de biomoléculas ([Jmol](http://jmol.sourceforge.net/)), e para a observação dinâmica de reações e redes metabólicas ([Sisma](https://bioquanti.netlify.app/uploads/sismabook), desenvolvido na UNIFAL-MG).
+  Página elaborada no intuito de contribuir para o ensino-aprendizagem de conteúdos de Bioquímica e áreas correlatas, e esboçada para um **Ensino Reproduzível (ER)**. O *material autoinstrucional* permite o estudo dos temas juntamente à execução de códigos de programas de livre distribuição para gráficos, análises e tabelas, simulações e animações ([R](https://cran.r-project.org/) & [RStudio](https://www.rstudio.com/), como para o estudo e visualização tridimensional de biomoléculas ([Jmol](http://jmol.sourceforge.net/)), e para a observação dinâmica de reações e redes metabólicas ([Sisma](https://bioquanti.netlify.app/uploads/sismabook), desenvolvido na UNIFAL-MG).
   
   <!---  ![ texto](unifal3.jpg)--->
   
@@ -25,5 +25,5 @@ Página elaborada no intuito de contribuir para o ensino-aprendizagem de conteú
   _____________________________________________________________________
   
   
-  Atualmente, encontra-se desenvolvimento um [material](https://bioquanti.netlify.app/uploads/ERbook/index.html) para produção de textos e objetos didáticos visando tangenciar um **Ensino Reproduzível (ER)**. Esta proposta baseia-se na elaboração de  **documentos dinâmicos** com auxílio do *R & RStudio*, criados a partir do conceito de [programação letrada](https://academic.oup.com/comjnl/article/27/2/97/343244?login=true) . 
+  Atualmente, encontra-se desenvolvimento um [material](https://bioquanti.netlify.app/uploads/ERbook/index.html) para orientação à produção de textos e objetos didáticos, visando tangenciar um **Ensino Reproduzível (ER)** com auxílio do *R & RStudio*. Esta proposta baseia-se na elaboração de  **documentos dinâmicos** , criados a partir do conceito de [programação letrada](https://academic.oup.com/comjnl/article/27/2/97/343244?login=true). 
   
