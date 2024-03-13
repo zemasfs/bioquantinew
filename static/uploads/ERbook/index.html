@@ -21,40 +21,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -107,7 +73,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">**TODO**</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Documentos dinâmicos</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -135,7 +101,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title"><strong>TODO</strong></span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Documentos dinâmicos</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -348,10 +314,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#todo" id="toc-todo" class="nav-link active" data-scroll-target="#todo"><span class="header-section-number">1</span> <strong>TODO</strong></a></li>
-  <li><a href="#sobre-o-er" id="toc-sobre-o-er" class="nav-link" data-scroll-target="#sobre-o-er"><span class="header-section-number">2</span> Sobre o ER</a>
+  <li><a href="#documentos-dinâmicos" id="toc-documentos-dinâmicos" class="nav-link active" data-scroll-target="#documentos-dinâmicos"><span class="header-section-number">1</span> Documentos dinâmicos</a>
   <ul class="collapse">
-  <li><a href="#documentos-dinâmicos" id="toc-documentos-dinâmicos" class="nav-link" data-scroll-target="#documentos-dinâmicos"><span class="header-section-number">2.1</span> Documentos dinâmicos</a></li>
+  <li><a href="#aspectos-gerais-de-documento-dinâmico-no-r-rstudio" id="toc-aspectos-gerais-de-documento-dinâmico-no-r-rstudio" class="nav-link" data-scroll-target="#aspectos-gerais-de-documento-dinâmico-no-r-rstudio"><span class="header-section-number">1.1</span> Aspectos gerais de documento dinâmico no R &amp; RStudio</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -388,51 +353,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<section id="todo" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> <strong>TODO</strong></h1>
-<ul>
-<li><p>matlab package</p></li>
-<li><p>alterar ticks/fontes nos eixos</p></li>
-<li><p>plotar/calcular só colunas/rows de interesse</p></li>
-<li><p>subset: easySteps, p148</p></li>
-<li><p>lowess, loess - p.&nbsp;275</p></li>
-<li><p>3 formas diff de plotar - p275</p></li>
-<li><p>import dados da net - p.&nbsp;243</p></li>
-<li><p>readline - p.&nbsp;234</p></li>
-<li><p>write table</p></li>
-<li><p>operador “…”, elipsis</p></li>
-<li><p>diff cat, print (valor com head column), paste</p></li>
-<li><p>ggplot2</p>
-<ul>
-<li>label=df$e; nomeia ponts</li>
-<li>dplyr (tidyverse)</li>
-</ul></li>
-<li><p>legend(title =““, legend=levels(colx),col=1:nlevels, pch=1)</p></li>
-<li><p>estatísticas (cinética Meet, ScriptRplot)</p></li>
-<li><p>baseline</p></li>
-</ul>
-<p>Bloomfield - xii - códigos do livro - convesão unidades - p11</p>
-<ul>
-<li>uniroot - p94</li>
-<li>rootSolve - p109</li>
-<li>symbolic computati - p155</li>
-<li>min/max de função - p160 -for..i c/ i=c(1,1,1,1,) - p266</li>
-<li>fitting polynomial - p266</li>
-<li>I() - p194</li>
-<li>nls p296</li>
-<li>LM algoritm - p315</li>
-<li>deriv 1a., 2a. com splinefun - p315</li>
-<li>findpeaks - p321</li>
-<li>savitz-golay p324</li>
-</ul>
-<p>*** Outros - ver pacotes baseados em ggplot2 (e graphics) - reproduzir ggplot2 com graphics - completar com meus tutoriais de R - completar com ER tools do GDocs - usar pacote datasets pra exemplos - heat mapa</p>
-</section>
-<section id="sobre-o-er" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Sobre o ER</h1>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O ER é legal !!!</p>
-<section id="documentos-dinâmicos" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="documentos-dinâmicos"><span class="header-section-number">2.1</span> Documentos dinâmicos</h2>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Um documento dinâmico poderá ter:</p>
+<section id="documentos-dinâmicos" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Documentos dinâmicos</h1>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O termo “<em>documentos dinâmicos</em>” abrange um conceito baseado em <a href="https://academic.oup.com/comjnl/article/27/2/97/343244?login=true">programação letrada</a>, ou “<em>literate programming</em>”, e que resume-se à oferta simultânea de <em>texto estilizado</em> combinado a <em>códigos de programação</em> para enriquecer o conteúdo de um tema específico. Nesse sentido, um <em>documento dinâmico</em> permite que se interprete o texto juntamente à execução de códigos que resultem em gráficos, tabelas, animações, e outro objetos, a partir da ação do usuário. De todo, a percepção do documento criado tende a elevar consideravelmente sua interpretação e apropriação temática, algo significativo em conteúdos que envolvem um <strong>letramento visual</strong>, como <a href="https://www.lifescied.org/doi/abs/10.1187/cbe.16-06-0193" target="_blank">Bioquímica</a>, Física, Química e Biologia.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Num termo mais simples, um <em>documento dinâmico</em> espelha um conteúdo de <em>tema vivo</em>, em que o usário aborda seu conteúdo tanto por simples leitura como por criação e modificação de elementos gráficos, simulações, e animações.</p>
+<section id="aspectos-gerais-de-documento-dinâmico-no-r-rstudio" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="aspectos-gerais-de-documento-dinâmico-no-r-rstudio"><span class="header-section-number">1.1</span> Aspectos gerais de documento dinâmico no R &amp; RStudio</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para o desenvolvimento de um <em>documento dinâmico</em> no <em>R &amp; RStudio</em> busca-se cumprir um esboço, tal como segue:</p>
+<ol type="1">
+<li>Cria-se um projeto</li>
+<li>Customiza-se (ou não) o arquivo de compilação inicial (*_yaml*)</li>
+<li>Redige-se texto com numeração serial (#)</li>
+<li>Cria-se chunks e suas características</li>
+<li>Insere-se comentários nos chunks; #</li>
+<li>Ressalta-se texto com cores</li>
+<li>Ressalta-se chunks com formatações específicas</li>
+<li>Insere-se imagens e as formata (dimensões, por ex)</li>
+<li>O mesmo para gráficos, tabelas, simulações, animações</li>
+</ol>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Colocado dessa forma, um documento dinâmico poderá englobar:</p>
 <ol type="1">
 <li>Texto estilizado</li>
 </ol>
@@ -454,83 +393,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Cálculos</li>
 <li>Pacotes de <em>LaTex</em></li>
 </ol>
-<div class="cell" data-hash="index_cache/html/unnamed-chunk-1_20ab9d16304c7f6b78367b81336c296c">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a> tamanhos de etiquetas, espessura, e valores dos eixos</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span> diferenciar estética pra <span class="sc">&gt;</span> <span class="dv">1</span> grupo</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span> criar paineis</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span> ajustar linha e curva</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span> ajustes linear e não <span class="fu">linear</span> (sigmoide, hipérbole, eq. de usuário)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span> ajuste não linear como camada adicionada produzida por geom_curve ou similar a partir de parâmetros de ajuste fora do ggplot2</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span> reprodução de plots e análise de artigos </span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span> sobre o que é<span class="sc">:</span> gráficos e análise com poucos <span class="fu">dados</span> (bancada)</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span> sobre o que não é<span class="sc">:</span> data science</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span> simulações</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span> <span class="dv">3</span> sistemas gráficos</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span> programação básica</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span> shiny, knitr, plotly</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span> soluções numéricas e analíticas</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span> Anava, testes pos<span class="sc">-</span>hoc, planejamento </span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>receitas super<span class="sc">-</span>simples</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>bem direto e asteísta</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>soluções pra problemas <span class="fu">comuns</span> (teste<span class="sc">-</span>t, gráfico de barras com erros)</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>notas de rodapé com dicas e pacotes avançados </span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>quando estiver entendendo melhor…recupera o ScriptRplot</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>o que uma pessoa precisa após obter o dado</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>carregar os dados<span class="sc">:</span> compilar o dado numa planilha…ou analisá<span class="sc">-</span>lo diretamente no R</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>plotar pra ver a relação entre variáveis (plot, pairs)</span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>acrescentar linha pontilhada em determinado marco</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>analisar os dados<span class="sc">:</span> sumário estatístico, diferenças de médias<span class="sc">/</span>variâncias, testes pos<span class="sc">-</span>hoc</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>plot de subconjuntos mais desejados</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>simular um cenário e observar parâmetros de uma equação</span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>produzir gráficos de qualidade pra publicação</span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>Pra carregar os dados<span class="sc">:</span></span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>copiando e colando </span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>criando</span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>na unha</span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>colando de planilha</span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>juntando vetores</span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>criando dataframe ou matriz</span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="fu">importando</span> (Excel, csv)</span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>Pra fazer um plot<span class="sc">:</span></span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>Seleciona as variáveis de um <span class="fu">dataset</span> (ou faz o plot de um contendo apenas x e y), ou seleciona um subconjunto desejado, ou seleciona alguma estatística dos <span class="fu">dados</span> (mean e sd de triplicatas <span class="sc">-</span> <span class="dv">3</span> vetores y, por ex)</span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>Processa dos dados</span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>pra evitar missing <span class="fu">data</span> (<span class="at">na.rm=</span><span class="cn">TRUE</span>)</span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>pra transformar variáveis</span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>Escolhe um tipo de <span class="fu">plot</span> (pontos, linhas, barras)</span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>Faz o plot</span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>Se tiver barras de erros, já coloca <span class="fu">antes</span> (ou depois)</span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="fu">Coloca</span> (ou não) legenda</span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>Melhora a visualização (símbolo, tamanho, cor, fonte, eixos)</span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>Altera as etiquetas de eixos</span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>Adiciona outro eixo, se necessário</span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>Escreve algo no plot</span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>Adiciona uma linha de marcação no plot <span class="sc">-</span>  (<span class="fu">abline</span>(<span class="at">h=</span><span class="dv">0</span>))</span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>Altera plano de fundo</span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>Verifica relação entre variáveis (modelagem)<span class="sc">-</span> linear, polinomial, <span class="fu">curvilinear</span> (não linear)</span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>Obtém os parâmetros do modelo</span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>Informa no plot o modelo<span class="sc">/</span>parâmetros</span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>Refina o plot pra publicação</span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>ER RAcional</span>
-<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>Cria um projeto</span>
-<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="fu">Customiza</span> (ou não) o _yaml</span>
-<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>Redige texto com numeração (<span class="co">#)</span></span>
-<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>Cria<span class="sc">-</span>se chunks e suas características</span>
-<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>Insere<span class="sc">-</span>se comentários nos chunks;   <span class="co">#</span></span>
-<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>Pode<span class="sc">-</span>se ressaltar texto com cores</span>
-<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>Pode<span class="sc">-</span>se ressaltar chunks com formatações específicas</span>
-<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>Pode<span class="sc">-</span>se inserir imagens e formatá<span class="sc">-</span>las</span>
-<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>O mesmo para gráficos, tabelas, simulações, animações</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
 
 
 </section>

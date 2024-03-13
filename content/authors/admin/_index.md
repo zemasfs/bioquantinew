@@ -19,10 +19,11 @@ Página elaborada no intuito de contribuir para o ensino-aprendizagem de conteú
   
   A seleção dos programas baseia-se em suas características tangentes a um Ensino Reproduzível galgado na flexibilidade, expansibilidade,  rápida curva de aprendizado, boa useabilidade, interatividade, fácil instalação ou uso por navegadores de internete, e larga aplicabilidade, tanto para ensino (presencial, remoto, híbrido, ou EaD), como para pesquisa.
   
-  Alternativamente, pode-se acessar um conteúdo extraído do livro [**Bioquímica básica, de gente, de bicho, e de planta**](https://bioquanti.netlify.app/uploads/textbook/index.html) (ISBN 978-65-00-90366-9), sobre diversos temas em *Bioquímica*.
+  Alternativamente, pode-se acessar um conteúdo sobre temas em *Bioquímica* extraído do livro [**Bioquímica básica, de gente, de bicho, e de planta**](https://bioquanti.netlify.app/uploads/textbook/index.html) (ISBN 978-65-00-90366-9), sobre diversos temas em *Bioquímica*.
   
   _____________________________________________________________________
   _____________________________________________________________________
   
-  Atualmente, encontra-se desenvolvimento um [material](https://bioquanti.netlify.app/uploads/ERbook/index.html) para produção de textos e objetos didáticos visando tangenciar um **Ensino Reproduzível** baseado em [programação letrada](https://academic.oup.com/comjnl/article/27/2/97/343244?login=true) com auxílio do *R & RStudio*. 
+  
+  Atualmente, encontra-se desenvolvimento um [material](https://bioquanti.netlify.app/uploads/ERbook/index.html){target="_blank"} para produção de textos e objetos didáticos visando tangenciar um **Ensino Reproduzível (ER)**. Esta proposta baseia-se na elaboração de  **documentos dinâmicos** com auxílio do *R & RStudio*, criados a partir do conceito de [programação letrada](https://academic.oup.com/comjnl/article/27/2/97/343244?login=true) . 
   
