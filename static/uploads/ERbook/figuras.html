@@ -135,7 +135,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title"><strong>TODO</strong></span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Documentos dinâmicos</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -348,7 +348,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#parâmetros-de-chunk" id="toc-parâmetros-de-chunk" class="nav-link active" data-scroll-target="#parâmetros-de-chunk"><span class="header-section-number">7.1</span> Parâmetros de <em>chunk</em></a></li>
+  <li><a href="#inserção" id="toc-inserção" class="nav-link active" data-scroll-target="#inserção"><span class="header-section-number">7.1</span> Inserção</a></li>
+  <li><a href="#parâmetros-de-chunk" id="toc-parâmetros-de-chunk" class="nav-link" data-scroll-target="#parâmetros-de-chunk"><span class="header-section-number">7.2</span> Parâmetros de <em>chunk</em></a></li>
   </ul>
 </nav>
     </div>
@@ -372,17 +373,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<section id="parâmetros-de-chunk" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="parâmetros-de-chunk"><span class="header-section-number">7.1</span> Parâmetros de <em>chunk</em></h2>
+<section id="inserção" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="inserção"><span class="header-section-number">7.1</span> Inserção</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O modo mais simples de inserção de uma figura não requer um trecho de código, e pode ser exemplificado como segue:</p>
+<div class="cell" data-hash="figuras_cache/html/unnamed-chunk-1_e3ac5f3b4dfcad405a29248dab7037c3">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="sc">!</span>[Veja um logo do R.](logoR.png)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="parâmetros-de-chunk" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="parâmetros-de-chunk"><span class="header-section-number">7.2</span> Parâmetros de <em>chunk</em></h2>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No <code>quarto</code> pode-se definir algumas características para figura a inserir no documento, como a legenda (<em>caption</em>) e o tamanho, tal como ilustrado no trecho de código abaixo.</p>
-<div class="cell" data-hash="figuras_cache/html/unnamed-chunk-1_a4c603d70f78816de33b1f03fe730cb4">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>dpi <span class="ot">=</span> <span class="dv">300</span> <span class="co"># resolução da figura ("dots per inch")</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>fig.cap <span class="ot">=</span> <span class="st">"meu gráfico"</span> <span class="co"># legenda do gráfico</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>fig.align <span class="ot">=</span> <span class="st">'default'</span> <span class="co"># alinhamento do gráfico (opções: 'left', 'right', or 'center')</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>fig.height <span class="ot">=</span> <span class="dv">5</span> <span class="co"># altura</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>fig.width <span class="ot">=</span> <span class="dv">7</span> <span class="co"># largura</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>fig.path <span class="ot">=</span> <span class="st">"C:/figuras"</span> <span class="co"># caminho do diretório</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>fig.subcap <span class="ot">=</span> <span class="st">"meu inserto"</span> <span class="co"># legenda em subfigura</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="figuras_cache/html/unnamed-chunk-2_392c0e2f88dea02bba4f8a976af43d30">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>dpi <span class="ot">=</span> <span class="dv">300</span> <span class="co"># resolução da figura ("dots per inch")</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>fig.cap <span class="ot">=</span> <span class="st">"meu gráfico"</span> <span class="co"># legenda do gráfico</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>fig.align <span class="ot">=</span> <span class="st">'default'</span> <span class="co"># alinhamento do gráfico (opções: 'left', 'right', or 'center')</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>fig.height <span class="ot">=</span> <span class="dv">5</span> <span class="co"># altura</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>fig.width <span class="ot">=</span> <span class="dv">7</span> <span class="co"># largura</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>fig.path <span class="ot">=</span> <span class="st">"C:/figuras"</span> <span class="co"># caminho do diretório</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>fig.subcap <span class="ot">=</span> <span class="st">"meu inserto"</span> <span class="co"># legenda em subfigura</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 
