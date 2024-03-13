@@ -13,6 +13,22 @@ superuser: yes
   gtag('config', 'G-S1L73VGCG5');
 </script>
 
+<!-- Hotjar tag -->
+
+<!-- Hotjar Tracking Code for https://bioquanti.netlify.app/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3904376,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+
+
   Página elaborada no intuito de contribuir para o ensino-aprendizagem de conteúdos de Bioquímica e áreas correlatas, e esboçada para um **Ensino Reproduzível (ER)**. O *material autoinstrucional* permite o estudo dos temas juntamente à execução de códigos de programas de livre distribuição para gráficos, análises e tabelas, simulações e animações ([R](https://cran.r-project.org/) & [RStudio](https://www.rstudio.com/), como para o estudo e visualização tridimensional de biomoléculas ([Jmol](http://jmol.sourceforge.net/)), e para a observação dinâmica de reações e redes metabólicas ([Sisma](https://bioquanti.netlify.app/uploads/sismabook), desenvolvido na UNIFAL-MG).
   
   <!---  ![ texto](unifal3.jpg)--->
