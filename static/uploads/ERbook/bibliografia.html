@@ -348,12 +348,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#geração-de-lista-de-referências" id="toc-geração-de-lista-de-referências" class="nav-link active" data-scroll-target="#geração-de-lista-de-referências"><span class="header-section-number">15</span> Geração de lista de referências</a>
-  <ul class="collapse">
-  <li><a href="#de-forma-manual" id="toc-de-forma-manual" class="nav-link" data-scroll-target="#de-forma-manual"><span class="header-section-number">15.1</span> De forma manual</a></li>
-  <li><a href="#de-forma-automática" id="toc-de-forma-automática" class="nav-link" data-scroll-target="#de-forma-automática"><span class="header-section-number">15.2</span> De forma automática</a></li>
-  </ul></li>
-  <li><a href="#citações-bibliográficas" id="toc-citações-bibliográficas" class="nav-link" data-scroll-target="#citações-bibliográficas"><span class="header-section-number">16</span> Citações bibliográficas</a></li>
+  <li><a href="#de-forma-manual" id="toc-de-forma-manual" class="nav-link active" data-scroll-target="#de-forma-manual"><span class="header-section-number">14.1</span> De forma manual</a></li>
+  <li><a href="#de-forma-automática" id="toc-de-forma-automática" class="nav-link" data-scroll-target="#de-forma-automática"><span class="header-section-number">14.2</span> De forma automática</a></li>
+  <li><a href="#citações-bibliográficas" id="toc-citações-bibliográficas" class="nav-link" data-scroll-target="#citações-bibliográficas"><span class="header-section-number">15</span> Citações bibliográficas</a></li>
   </ul>
 </nav>
     </div>
@@ -377,10 +374,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<section id="geração-de-lista-de-referências" class="level1" data-number="15">
-<h1 data-number="15"><span class="header-section-number">15</span> Geração de lista de referências</h1>
-<section id="de-forma-manual" class="level2" data-number="15.1">
-<h2 data-number="15.1" class="anchored" data-anchor-id="de-forma-manual"><span class="header-section-number">15.1</span> De forma manual</h2>
+<section id="de-forma-manual" class="level2" data-number="14.1">
+<h2 data-number="14.1" class="anchored" data-anchor-id="de-forma-manual"><span class="header-section-number">14.1</span> De forma manual</h2>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A bibliografia é inserida automaticamente ao final de um documento; dessa forma, basta terminá-lo com algo como “Referências”, por exemplo. Isso é bastante útil quando se deseja alocar referência bibliográficas em cada capítulo de um livro, por exemplo.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Por outro lado, se desejar-se alocá-la antes do final, como precedente ao um <em>Apêndice ou Anexo</em>, basta digitar o trecho de código abaixo:</p>
 <div class="cell" data-hash="bibliografia_cache/html/unnamed-chunk-1_35cfb791f5b05be6958fa90ce8a510ad">
@@ -396,8 +391,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="sc">:::</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="de-forma-automática" class="level2" data-number="15.2">
-<h2 data-number="15.2" class="anchored" data-anchor-id="de-forma-automática"><span class="header-section-number">15.2</span> De forma automática</h2>
+<section id="de-forma-automática" class="level2" data-number="14.2">
+<h2 data-number="14.2" class="anchored" data-anchor-id="de-forma-automática"><span class="header-section-number">14.2</span> De forma automática</h2>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O sistema <code>quarto</code> permite um gerenciamento de referências para formatação automática de listas de referências (livros, periódicos, apresentações, congressos, patentes, etc) e de citações, e baseada na inserção de comandos específicos no arquivo *_quarto.yml* de cabeçalho.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Existem algumas formas para se criar o documento de bibliografia que será compilado para registro e citação automáticos. Uma forma simples envolve a construção de um documento de texto contendo a sintaxe de um gerenciador bibliográfico renomado, <a href="https://www.bibtex.org/">BibTex</a>. Uma referência em <em>BibTex</em> nada mais é do que o conjunto de metadados usados pelo compilador para gerar a referência no formato desejado.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Em síntese, basta criar um documento de texto contendo uma referência em código <em>BibTex</em>, salvar, compilar o documento no <em>RStudio</em>, e adicionar outras tantas referências à medida que forem obtidas. Também existem diversas formas para se obter tal código <em>BibTex</em> necessário para a criação do arquivo homônimo. Entre essas, o formato <em>BibTex</em> normalmente disponível para exportação na página própria do periódico/fonte em que se encontra o artigo/fonte desejada.</p>
@@ -421,9 +416,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para informações complementares sobre o uso do gerenciador, recomenda-se acessar o site dos desenvolvedores, <a href="https://www.zotero.org/">Zotero</a>.</p>
 </section>
-</section>
-<section id="citações-bibliográficas" class="level1" data-number="16">
-<h1 data-number="16"><span class="header-section-number">16</span> Citações bibliográficas</h1>
+<section id="citações-bibliográficas" class="level1" data-number="15">
+<h1 data-number="15"><span class="header-section-number">15</span> Citações bibliográficas</h1>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Existem algumas formas para citação de referências, independemente do estilo escolhido. De modo mais simples pode-se realizar a citação pelo modos abaixo:</p>
 <div class="cell" data-hash="bibliografia_cache/html/unnamed-chunk-6_41d669440333eb9ccf073bfd225000e1">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> Com autor e data<span class="sc">:</span> colocar entre parênteses; [ <span class="sc">@</span>bib ]</span>
