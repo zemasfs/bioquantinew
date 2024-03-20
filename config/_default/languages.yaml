@@ -6,17 +6,26 @@
 pt:
   languageCode: pt-br
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
-  #contentDir: content/en
+  contentDir: content/pt-br
 
 # Uncomment the lines below to configure your website in a second language.
-#zh:
-#  languageCode: zh-Hans
-#  contentDir: content/zh
-#  title: Chinese website title...
-#  params:
-#    description: Site description in Chinese...
-#  menu:
-#    main:
-#      - name: 传
-#        url: '#about'
-#        weight: 1
+en:
+  languageCode: en
+  contentDir: content/en
+  title: Quantitative Biochemistry
+  params:
+    description: Site description in English...
+  menu:
+    main:
+      - name: Home
+        url: '#about'
+        weight: 10
+      - name: Tools
+        url: '#ferramentas'
+        weight: 30
+      - name: About
+        url: '#contato'
+        weight: 60
+
+
+

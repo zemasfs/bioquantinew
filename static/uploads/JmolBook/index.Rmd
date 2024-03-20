@@ -35,21 +35,21 @@ uma pasta de diretório contendo seus arquivos, como a partir de um disco rígid
 
 ### Conteúdo
 
-[Comandos](.\JmolQuarto\comandos.html){target="_blank"}
+[Comandos](.\JmolQuarto\comandos.html)
 
-[Aminoácidos](.\JmolQuarto\aminoacido.html){target="_blank"}
+[Aminoácidos](.\JmolQuarto\aminoacido.html)
 
-[Peptídios](.\JmolQuarto\peptidio.html){target="_blank"}
+[Peptídios](.\JmolQuarto\peptidio.html)
 
-[Proteínas](.\JmolQuarto\proteina.html){target="_blank"}
+[Proteínas](.\JmolQuarto\proteina.html)
 
-[Enzimas](.\JmolQuarto\enzima.html){target="_blank"}
+[Enzimas](.\JmolQuarto\enzima.html)
 
-[Carboidratos](.\JmolQuarto\carboidrato.html){target="_blank"}
+[Carboidratos](.\JmolQuarto\carboidrato.html)
 
-[Lipídios](.\JmolQuarto\lipidio.html){target="_blank"}
+[Lipídios](.\JmolQuarto\lipidio.html)
 
-[Ácidos nucleicos](.\JmolQuarto\acnucleico.html){target="_blank"}
+[Ácidos nucleicos](.\JmolQuarto\acnucleico.html)
 
 
 

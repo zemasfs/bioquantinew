@@ -2,14 +2,14 @@
   "name": "Bioquímica Quantitativa",
   "short_name": "Bioquímica Quantitativa",
   "lang": "pt-br",
-  "theme_color": "#EF525B",
-  "background_color": "#EF525B",
+  "theme_color": "#bbdefb",
+  "background_color": "#bbdefb",
   "icons": [{
-    "src": "/media/icon_hu1183c8e29c74628dad61972deef4661c_176552_192x192_fill_lanczos_center_3.png",
+    "src": "/media/icon_hu7208a802a376a45d3814814dd5d5e8f4_16213_192x192_fill_lanczos_center_3.png",
     "sizes": "192x192",
     "type": "image/png"
     }, {
-    "src": "/media/icon_hu1183c8e29c74628dad61972deef4661c_176552_512x512_fill_lanczos_center_3.png",
+    "src": "/media/icon_hu7208a802a376a45d3814814dd5d5e8f4_16213_512x512_fill_lanczos_center_3.png",
     "sizes": "512x512",
     "type": "image/png"
      }],
