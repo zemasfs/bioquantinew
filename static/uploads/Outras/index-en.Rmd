@@ -35,7 +35,7 @@ tags: []
 
 [iMolView](https://www.molsoft.com/iMolview.html){target="\_blank"}. Designed for Android devices, iMolView is a mobile application that enables users to visualize molecules in 3D. The application accesses data from various databases, including NCBI, PDB, and DrugBank.
 
-[LudoKrebs: Learning Biochemistry in a Fun Way](LudoKrebs: aprendendo bioquímica de um modo divertido){target="\_blank"}. This board game provides an engaging approach to learning about energy metabolism.
+<!-- [LudoKrebs: Learning Biochemistry in a Fun Way](LudoKrebs: aprendendo bioquímica de um modo divertido){target="\_blank"}. This board game provides an engaging approach to learning about energy metabolism. -->
 
 [Serological Determination of Antigen by ELISA](https://media.hhmi.org/biointeractive/vlabs/immunology/index.html){target="\_blank"}. This online tool simulates an ELISA experiment used to identify lupus erythematosus, providing an interactive learning experience for understanding immunological techniques.
 

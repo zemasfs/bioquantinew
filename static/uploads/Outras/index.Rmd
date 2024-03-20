@@ -33,7 +33,7 @@ tags: []
 
 [iMolView](https://www.molsoft.com/iMolview.html){target="\_blank"}. Aplicativo para Android de visualização de moléculas em 3D (NCBI, PDB e DrugBank).
 
-[LudoKrebs: aprendendo bioquímica de um modo divertido](LudoKrebs: aprendendo bioquímica de um modo divertido){target="\_blank"}. Jogo de tabuleiro para o ensino de metabolismo energético.
+<!-- [LudoKrebs: aprendendo bioquímica de um modo divertido](LudoKrebs: aprendendo bioquímica de um modo divertido){target="\_blank"}. Jogo de tabuleiro para o ensino de metabolismo energético. -->
 
 [Determinação sorológica de antígeno por ELISA](https://media.hhmi.org/biointeractive/vlabs/immunology/index.html){target="\_blank"}. Ferramenta online de simulação de ELISA aplicada à identificação de lupus eritematoso.
 
