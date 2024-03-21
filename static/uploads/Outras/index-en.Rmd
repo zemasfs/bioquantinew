@@ -1,5 +1,5 @@
 ---
-title: "Open Teaching Resources for Biochemistry and Related Fields"
+title: "Some Open Teaching Resources for Biochemistry and Related Fields"
 author: 
 # hidedate: TRUE
 date:  

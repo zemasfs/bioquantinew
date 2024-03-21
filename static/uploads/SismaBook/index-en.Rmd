@@ -37,7 +37,7 @@ Through these functionalities, Sisma transforms the static presentation of force
 
 ### Development:
 
-The program was developed collaboratively by a team led by Prof. Dr. Luiz Eduardo da Silva from the Department of Computer Science (DCC/UNIFAL-MG) and three undergraduate students participating in a Scientific Initiation program.
+The program was developed collaboratively by a team led by Prof. DSc. Luiz Eduardo da Silva from the Department of Computer Science (DCC/UNIFAL-MG) and three undergraduate students participating in a Scientific Initiation program.
 
 
 <br />

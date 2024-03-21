@@ -63,7 +63,7 @@ fontesize: 12pt
 
 
 
-## Offline Learning Materials (ebook e molecular models)
+## Offline Learning Materials
 
 ![](jmol.png){width=20%}
 
@@ -72,9 +72,9 @@ fontesize: 12pt
 |       The author also provides downloadable resources related to Jmol and Biochemistry. These include:
 
 *    The ebook [Bioquímica Estrutural Guiada Por Jmol](.\BioqEstrutJmol.pdf)
-*    Renderable 3D models from the ebook: These models can be accessed individually [by chapter](.\figBook\figuras.html) or downloaded as a [single compressed file](.\figBook\figBook.zip). These models can be viewed statically with an image viewer (2D model), or dynamically (3D rendering), with *Jmol.*
+*    Renderable 3D models from the ebook: these models can be accessed individually [by chapter](.\figBook\figuras.html) or downloaded as a [single compressed file](.\figBook\figBook.zip). These models can be viewed statically with an image viewer (2D model), or dynamically (3D rendering), with *Jmol.*
 
-## Additional Molecular Visualization Software:
+## Other Molecular Visualization Software:
 
 |       Several other programs offer functionalities similar to Jmol, including standalone software for desktop computers, mobile applications (Android, iPhone), and online platforms. A simple web search can help you find programs like:
 
