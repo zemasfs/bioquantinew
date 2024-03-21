@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>comandos-en</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="comandos-en_files/libs/clipboard/clipboard.min.js"></script>
+<script src="comandos-en_files/libs/quarto-html/quarto.js"></script>
+<script src="comandos-en_files/libs/quarto-html/popper.min.js"></script>
+<script src="comandos-en_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="comandos-en_files/libs/quarto-html/anchor.min.js"></script>
+<link href="comandos-en_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="comandos-en_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="comandos-en_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="comandos-en_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="comandos-en_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+<!-- Google tag (gtag.js)-->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-S1L73VGCG5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S1L73VGCG5');
+</script>
+<section id="commands" class="level1">
+<h1>Commands</h1>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jmol offers a comprehensive set of commands for visualizing and interacting with molecular models. These commands can be accessed primarily through the program’s main menu or through right-click interactions within the Jmol interface, including the web-based JSmol applet.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;However, scripting functionality via the console, available in both the installed program and the <em>JSmol applet</em>, unlocks a significantly broader range of capabilities. Scripting allows for the execution of sequential commands, enabling the generation of customized visualizations, calculations, animations, and even rudimentary programming using the Jmol scripting language. Comprehensive documentation for both scripting commands and the programming language is available on the developer’s website: <a href="https://chemapps.stolaf.edu/jmol/docs/">Jmol - Documentation &amp; Scripting</a>. This website provides extensive examples and interactive links for further exploration.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This chapter focuses on summarizing the essential console and script-based commands used for viewing, manipulating, importing/exporting, performing calculations on, and animating molecular models.</p>
+<section id="creating-jmol-scripts" class="level2">
+<h2 class="anchored" data-anchor-id="creating-jmol-scripts">Creating Jmol Scripts</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For complex observations or animations, <em>scripts</em> can be created using any basic text editor. These scripts should be saved with the <em>“.spt”</em> file extension. Scripts can then be loaded as files or directly pasted into the console field for execution.</p>
+</section>
+<section id="jmol-command-syntax" class="level2">
+<h2 class="anchored" data-anchor-id="jmol-command-syntax">Jmol Command Syntax</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jmol commands are case-insensitive and do not differentiate between singular and plural forms. Both <em>“show group”</em> and <em>“Show groups”</em> will produce the same results.</p>
+</section>
+<section id="adding-comments-to-jmol-scripts" class="level2">
+<h2 class="anchored" data-anchor-id="adding-comments-to-jmol-scripts">Adding Comments to Jmol Scripts</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When constructing scripts, it is recommended to include comments within the code for improved readability. Comments can be added using the <em>hashtag symbol (#)</em> placed at the beginning of a line following the desired command.</p>
+</section>
+<section id="changing-interface-language-directory" class="level2">
+<h2 class="anchored" data-anchor-id="changing-interface-language-directory">Changing interface language &amp; directory</h2>
+<section id="language" class="level3">
+<h3 class="anchored" data-anchor-id="language">Language</h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The <em>Menu</em> language and command output (results) can be changed as below. Remembering, however, that the commands themselves refer to computational algorithms; therefore, it is not possible to change the language of the commands.</p>
+<pre><code>set language = code # pt (portuguese), es (spanish), en (english), fr (french), de (germany), etc...</code></pre>
+</section>
+</section>
+<section id="folder" class="level2">
+<h2 class="anchored" data-anchor-id="folder">Folder</h2>
+<pre><code>cd # shows the actual directory 
+cd ? # open an window to choose a folder
+cd path # changes the standard folder (ex: ../temp)
+set defaultDirectory "/home/" # standard directory (applet)</code></pre>
+</section>
+<section id="general-commands" class="level2">
+<h2 class="anchored" data-anchor-id="general-commands">General commands</h2>
+<pre><code>Help: help # help zoom
+Quit: quit
+Undo: undo
+Redo: redo
+Return to the original model (position, size, centering and orientation): reset
+Jmol inicialization: initialize
+History: history on ou history off
+Model minimization by force fields: minimize</code></pre>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Try some of the above commands with the following <em>applet</em> for <em>JSmol</em>:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://chemapps.stolaf.edu/jmol/jsmol/simple.htm"><img src="jsmol.png" class="img-fluid figure-img" style="width:20.0%"></a></p>
+</figure>
+</div>
+</section>
+<section id="obtaining-molecular-models" class="level2">
+<h2 class="anchored" data-anchor-id="obtaining-molecular-models">Obtaining molecular models</h2>
+<section id="one-model" class="level3">
+<h3 class="anchored" data-anchor-id="one-model">One model</h3>
+<pre><code>From internet:
+  general molecules: load $cholesterol
+  PDB molecules (Protein Data Bank): load=9pap
+
+From the computer (the files must be in the root directory or pre-selected by "cd" - see above):
+  load "1aay.pdb"</code></pre>
+</section>
+<section id="two-or-more-models" class="level3">
+<h3 class="anchored" data-anchor-id="two-or-more-models">Two or more models</h3>
+<pre><code>Separated: load files "1a2t.pdb" "1aay.pdb"
+  presenting the 1st model: model 1 ou model 1.1
+  presenting the 2nd model: model 2 ou model 2.1
+  presenting all models: model* ou frame*
+Together: load append "1a2t.pdb" "1aay.pdb"</code></pre>
+</section>
+</section>
+<section id="model-visualization" class="level2">
+<h2 class="anchored" data-anchor-id="model-visualization">Model visualization:</h2>
+<pre><code>Visualization: display 2.1
+Hidding: hide 1.1
+Removing all models: zap</code></pre>
+</section>
+<section id="presenting-some-model-informations-command-show" class="level2">
+<h2 class="anchored" data-anchor-id="presenting-some-model-informations-command-show">Presenting some model informations (command <em>show</em>)</h2>
+<pre><code>Present nothing: show none
+Model: show model
+Atom: show atom
+Chain (protein or nucleic acid): show chain
+Structural minimization: show DSSP
+Surfaces (molecular, eletrostatic): show isosurface
+Groups: show group
+General information: show info
+Primary sequence of proteins: show sequence
+Command history: show history
+Protein residues: show residues
+Molecular orbital: show mo
+Internet path: show url
+PDB file: show file</code></pre>
+</section>
+<section id="molecular-model-databases-and-file-formats" class="level2">
+<h2 class="anchored" data-anchor-id="molecular-model-databases-and-file-formats">Molecular Model Databases and File Formats</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;There are several online databases that provide access to molecular models for rendering and download in formats compatible with Jmol. Some prominent examples include:</p>
+<p><a href="https://pubchem.ncbi.nlm.nih.gov/">PubChem</a>: This database focuses on small molecules;</p>
+<p><a href="https://go.drugbank.com/">DrugBank</a>: A resource for information on small molecule drugs and their targets;</p>
+<p><a href="https://www.rcsb.org/">RCSB Protein Data Bank (RCSB PDB</a>: This database houses a vast collection of experimentally determined structures of biological macromolecules, such as proteins and nucleic acids;</p>
+<p><a href="https://www.guidetopharmacology.org/">IUPHAR/BPS Guide to PHARMACOLOGY</a>: This resource provides access to information on both small molecules and macromolecules relevant to pharmacology.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Within these databases, you can typically search for molecules of interest and download their structures in formats such as PDB, MOL, and SDF, which are all compatible with Jmol for visualization.</p>
+</section>
+<section id="general-jmol-operations" class="level2">
+<h2 class="anchored" data-anchor-id="general-jmol-operations">General Jmol Operations</h2>
+<section id="model-reset" class="level3">
+<h3 class="anchored" data-anchor-id="model-reset">Model Reset:</h3>
+<pre><code>Keyboard Shortcut: Shift + Double Click (or reset in the Console)
+Function: Resets the model position, size, and centering.</code></pre>
+</section>
+<section id="jmol-logo" class="level3">
+<h3 class="anchored" data-anchor-id="jmol-logo">Jmol Logo:</h3>
+<pre><code>Command: set frank off
+Function: Removes the Jmol logo from the displayed image.</code></pre>
+</section>
+<section id="model-rotation" class="level3">
+<h3 class="anchored" data-anchor-id="model-rotation">Model Rotation:</h3>
+<pre><code>spin 10 (Sets rotation speed to 10 degrees per frame)
+rotate 20 (Rotates the model 20 degrees)
+rotate x 90 (Rotates the model 90 degrees around the x-axis)</code></pre>
+</section>
+<section id="background-color" class="level3">
+<h3 class="anchored" data-anchor-id="background-color">Background Color:</h3>
+<pre><code>set environment white (Sets the background color to white)</code></pre>
+</section>
+<section id="mouse-and-keyboard-controls" class="level3">
+<h3 class="anchored" data-anchor-id="mouse-and-keyboard-controls">Mouse and Keyboard Controls</h3>
+<p>Right-Click: Opens a menu with options for visualization, calculations, and surface generation.</p>
+</section>
+<section id="model-movement" class="level3">
+<h3 class="anchored" data-anchor-id="model-movement">Model Movement:</h3>
+<pre><code>Simple Rotation: Click and drag the mouse in any direction.
+Rotation on the Same Axis: Shift + Right Click.
+Model Translation: Ctrl + Right Click.
+Zoom: Shift + Left Click and drag (or use the mouse scroll wheel).</code></pre>
+</section>
+<section id="saving-and-exporting-models" class="level3">
+<h3 class="anchored" data-anchor-id="saving-and-exporting-models">Saving and Exporting Models</h3>
+<p>Saving Images:</p>
+<pre><code>Default (PNG): write model-name
+With Specifications: write PNGJ 2000 2000 "big.png" (specifies image dimensions and filename)
+Other Formats (JPG, PDF): write name.jpg
+All Models: write frames* "all.jpg" (saves images of all loaded models)</code></pre>
+<p>Saving Coordinates:</p>
+<pre><code>write name.mol (or other formats like PDB)</code></pre>
+<p>Saving Script State:</p>
+<pre><code>write molecula.spt (saves the current model state and changes)</code></pre>
+</section>
+</section>
+<section id="copying-images" class="level2">
+<h2 class="anchored" data-anchor-id="copying-images">Copying Images:</h2>
+<p>Model image can be copied through the program’s main menu.</p>
+</section>
+<section id="determining-quantities-measurements" class="level2">
+<h2 class="anchored" data-anchor-id="determining-quantities-measurements">Determining Quantities (Measurements)</h2>
+<section id="distances-and-angles" class="level3">
+<h3 class="anchored" data-anchor-id="distances-and-angles">Distances and Angles:</h3>
+<pre><code>Interactive Measurement: Double-click right mouse button on the first atom, then drag to the second atom (distance); three clicks for angles.
+Console Commands:
+    measure no. atom1 no. atom2 (distance)
+    measure no. atom1 no. atom2 no. atom3 (angle)
+    measure twist atom1 atom2 atom3 atom4 (dihedral angle)
+Measurement Units: set measure nm (nanometers), pm, angstroms, au (Bohr atomic unit)</code></pre>
+<section id="obtaining-and-viewing-quantities" class="level4">
+<h4 class="anchored" data-anchor-id="obtaining-and-viewing-quantities">Obtaining and Viewing Quantities:</h4>
+<pre><code>Hydrogen Bonds: calculate hbonds (or hbonds calculate)
+Formal Charges: calculate formalcharge (label with label %C)
+Partial Charges: calculate partialcharge (label with label %P)
+Secondary Structure: calculate structure (DSSP algorithm)
+All Connections and Distances: measure allconnected (*)(*)</code></pre>
+</section>
+</section>
+</section>
+<section id="changing-model-representation" class="level2">
+<h2 class="anchored" data-anchor-id="changing-model-representation">Changing Model Representation</h2>
+<p>Jmol offers various ways to visualize structures. Here are some common commands:</p>
+<pre><code>Wireframe, backbone, trace, strands, cartoon, ribbons, meshriboon, rockets, cpk (spacefill), ball&amp;stick
+
+To view a single shape: wireframe only
+
+To hide a shape: &lt;shape&gt; off (e.g., backbone off)
+
+To render as "ball&amp;stick": Combine wireframe only; wireframe reset; spacefill reset</code></pre>
+</section>
+<section id="controlling-molecular-representation-size" class="level2">
+<h2 class="anchored" data-anchor-id="controlling-molecular-representation-size">Controlling Molecular Representation Size</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The visual representation of a molecule in Jmol can be adjusted based on the size of its constituent atoms. For instance, the <em>“spacefill”</em> rendering method scales the atom radius according to the van der Waals radius of each atom.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Command Examples:</p>
+<pre><code>spacefill on/off: Enables or disables spacefill rendering.
+wireframe 0.5: Sets the wireframe thickness to 0.5 Angstrom (absolute value).
+backbone 50: Sets the backbone thickness to 50/250 Angstrom, which equals 0.2 Angstrom (relative value).
+cartoon 50%: Increases the cartoon thickness by 50% compared to the default setting.
+spacefill 2: Sets the spacefill radius to 2/250 Angstrom, which is approximately 0.008 Angstrom (no decimal point indicates relative value).
+spacefill 2.0: Sets the spacefill radius to 2.0 Angstrom (decimal point indicates absolute value).</code></pre>
+</section>
+<section id="additional-notes" class="level2">
+<h2 class="anchored" data-anchor-id="additional-notes">Additional Notes:</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The provided commands demonstrate how to control the size of various representations. Jmol offers a wider range of visualization styles beyond those shown here.</p>
+</section>
+<section id="colors" class="level2">
+<h2 class="anchored" data-anchor-id="colors">Colors</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An atom or set of these can also be assigned a specific color, as follows:</p>
+<pre><code>AliceBlue,AntiqueWhite,Aqua,Aquamarine,Azure,Beige,Bisque,Black,
+BlanchedAlmond,Blue,BlueViolet,Brown,BurlyWood,CadetBlue,Chartreuse,
+Chocolate,Coral,CornflowerBlue,Cornsilk,Crimson,Cyan,DarkBlue,DarkCyan,
+DarkGoldenRod,DarkGray,DarkGrey,DarkGreen,DarkKhaki,DarkMagenta,
+DarkOliveGreen,Darkorange,DarkOrchid,DarkRed,DarkSalmon,DarkSeaGreen,
+DarkSlateBlue,DarkSlateGray,DarkSlateGrey,DarkTurquoise,DarkViolet,
+DeepPink,DeepSkyBlue,DimGray,DimGrey,DodgerBlue,FireBrick,FloralWhite,
+ForestGreen,Fuchsia,Gainsboro,GhostWhite,Gold,GoldenRod,Gray,Grey,Green,
+GreenYellow,HoneyDew,HotPink,IndianRed,Indigo,Ivory,Khaki,Lavender,
+LavenderBlush,LawnGreen,LemonChiffon,LightBlue,LightCoral,LightCyan,
+LightGoldenRodYellow,LightGray,LightGrey,LightGreen,LightPink,LightSalmon,
+LightSeaGreen,LightSkyBlue,LightSlateGray,LightSlateGrey,LightSteelBlue,
+LightYellow,Lime,LimeGreen,Linen,Magenta,Maroon,MediumAquaMarine,MediumBlue,
+MediumOrchid,MediumPurple,MediumSeaGreen,MediumSlateBlue,MediumSpringGreen,
+MediumTurquoise,MediumVioletRed,MidnightBlue,MintCream,MistyRose,Moccasin,
+NavajoWhite,Navy,OldLace,Olive,OliveDrab,Orange,OrangeRed,Orchid,PaleGoldenRod,PaleGreen,PaleTurquoise,PaleVioletRed,PapayaWhip,PeachPuff,Peru,Pink,Plum,
+PowderBlue,Purple,Red,RosyBrown,RoyalBlue,SaddleBrown,Salmon,SandyBrown,
+SeaGreen,SeaShell,Sienna,Silver,SkyBlue,SlateBlue,SlateGray,SlateGrey,Snow,
+SpringGreen,SteelBlue,Tan,Teal,Thistle,Tomato,Turquoise,Violet,Wheat,White,
+WhiteSmoke,Yellow,YellowGreen.</code></pre>
+</section>
+<section id="model-labelling-label" class="level2">
+<h2 class="anchored" data-anchor-id="model-labelling-label">Model labelling (<em>label</em>)</h2>
+<pre><code>General label: label on/off
+Chain: label %c
+Formal charge: label %C
+Partial charge: label %P
+Amino acid residue in protein: %n
+residue number: %r
+Atom: %a
+Atom identifier number: %i
+Element: %e</code></pre>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Some specific operations also allow tagging.</p>
+<pre><code>label binding site # label with the expression
+
+label binding | site # tag with the expression, separated by lines ("|" is the "pipe" command)</code></pre>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Jmol</em> also allows to tag a specific atom, residue, interaction or reaction site, or some group for better identification and exploitation of the model. To do this, you can select the structure by <em>select</em>, followed by a proposed label. For example:</p>
+<pre><code>select pro31 # Proline selectio at position 31 in the protein primary sequence
+label Proline-31 # labelling an specific Pro residue
+set echo top left; echo "Model 1" # text insertion
+select all; label on # atomic symbol and number for all atoms in the model</code></pre>
+</section>
+<section id="selecting-atoms-in-jmol" class="level2">
+<h2 class="anchored" data-anchor-id="selecting-atoms-in-jmol">Selecting Atoms in Jmol</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;General Atom Selection:</p>
+<p>To select a general group of atoms, use the following mouse and keyboard combination:</p>
+<pre><code>Hold down the Shift key.
+Left-click on the first atom in the desired group.
+Drag the mouse while holding down the Shift key to encompass the rest of the group.</code></pre>
+<section id="nature" class="level3">
+<h3 class="anchored" data-anchor-id="nature">Nature:</h3>
+<p>all, none, protein, nucleic, dna, rna, carbohydrate, hetero, ligand, solvent, water ou hoh, ions, hem, amino</p>
+</section>
+<section id="chemical-element" class="level3">
+<h3 class="anchored" data-anchor-id="chemical-element">Chemical element:</h3>
+<ul>
+<li>By name: oxygen, nitrogen, carbon</li>
+<li>By symbol: _N, _C, _Fe</li>
+<li>By atomic number: elemNo=7, ou atomNo=5</li>
+<li>By identifier number in the sequence (serial): atomNo&lt;50</li>
+</ul>
+</section>
+<section id="parts-of-the-molecule" class="level3">
+<h3 class="anchored" data-anchor-id="parts-of-the-molecule">Parts of the molecule:</h3>
+<p>backbone, sidechain, :b (for chains), spine</p>
+</section>
+<section id="residue-type" class="level3">
+<h3 class="anchored" data-anchor-id="residue-type">Residue type</h3>
+<p>3-letter abbreviation of amino acids, acidic, basic, polar, neutral, charged, purine, pyrimidine, large, small, buried, surface, cyclic, hydrophilic, hydrophobic, aromatic, cystine, aliphatic, spine, base</p>
+</section>
+<section id="secondary-structure-of-proteins" class="level3">
+<h3 class="anchored" data-anchor-id="secondary-structure-of-proteins">Secondary structure of proteins</h3>
+<p>helix, sheet, turn</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The general commands for using the above expressions or combinations of these are, basically:</p>
+<pre><code>select, restrict, hide, display, delete</code></pre>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Each expression must be enclosed in parentheses. You can also apply <em>Boolean operations</em> (<em>or, and, but not</em>, or <em>=, &lt;, &gt;, &lt;=, &gt;=, !=</em>).</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The <em>restrict</em> command is irreversible in nature, while the <em>hide</em> command is reversible during rendering. followed by the desired expression. Some examples:</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here are some examples for the above commands:</p>
+</section>
+</section>
+<section id="command-restrict" class="level2">
+<h2 class="anchored" data-anchor-id="command-restrict">Command restrict</h2>
+<pre><code>*   restrict helix # only the helices of the secondary structure remain
+*   restrict ligand # only the ligand
+*   restrict not ligand # only proteins without prosthetic groups
+*   restrict 42-60 # only the indicated residue sequence remains
+*   restrict f6p # only the identified group remains (a linker, in this case)
+*   restrict not(:a, :b) # strings other than "a" and "b" remain</code></pre>
+</section>
+<section id="command-select" class="level2">
+<h2 class="anchored" data-anchor-id="command-select">Command select</h2>
+<pre><code>  select Tyr
+  select polar
+  select all 
+  select none
+  select hem and :b # only the hem group of the "b" chain
+  select hem and not iron :b # selects the heme group of the "b" chain, except the Fe atom in "b" chain
+  select */2 # all atoms in model 2
+select connected(oxygen) # all atoms linked to an oxygen
+   select ser70 :A .ca # serine alpha carbon no. 70 of chain A
+   select hetero and not solvent # heteroatoms except water
+   select hetero and not ligand # heteroatoms except ligand
+   select buried only # only residues from the protein core
+   select helix or backbone # select helices or protein backbone
+   select not helix # selects the other 2nd structures. protein (turn, sheet)
+   select 62 and(sidechain or alpha) # sidechain or alpha carbon of residue 62
+   select ser70.ca # alpha carbons of serine no. 70
+   select ser70 :a.ca # serine alpha carbons no. 70 of chain "a"
+   select (lys,arg) # only Lys and Arg residues
+   select (lys,arg) and :b # Lys and Arg residues from chain "b"
+   select 19-32 :y # residue sequence of chain "y"
+   select asp47 # Asp residue at position 47
+   select [asp]47 :y # residue asp47 from string "y"
+   select (10 or 25) and backbone
+   select resNo&gt;14 and resNo&lt;25 and *.CA # alpha carbons of residues 14 to 25
+   select hoh.o/2 # oxygen from water molecules in model 2
+   select (14,16,18,20) # the numbered residues
+   select backbone and *:b # the backbone of chain "b"
+   select backbone and not *:b # the backbone of all strings except "b"
+   select not hidden...select displayed # everything that is not hidden
+   select not selected # everything that was not previously selected
+   select carbon and not selected # carbon atoms not previously selected</code></pre>
+</section>
+<section id="command-delete" class="level2">
+<h2 class="anchored" data-anchor-id="command-delete">Command delete</h2>
+<p>delete(calcium,nadph)</p>
+</section>
+<section id="special-selections" class="level2">
+<h2 class="anchored" data-anchor-id="special-selections">Special selections</h2>
+<section id="within-command" class="level3">
+<h3 class="anchored" data-anchor-id="within-command"><em>within</em> command</h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This command allows a recursive selection, that is, a selection within a selection.</p>
+<pre><code>select within (5,(bca,amp)) # selects two ligands that are 5 Angstroms away from the selected group of atoms
+
+select within(3.0, _Fe) # all atoms within 3 Angstroms of the iron atom</code></pre>
+</section>
+</section>
+<section id="command-define" class="level2">
+<h2 class="anchored" data-anchor-id="command-define">Command <em>define</em></h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Allows you to define a group of atoms for specific rendering or observation.</p>
+<pre><code>   defines Site within(3.0, _Cu) # 3 Angstroms away from copper atom
+   defines PointX within(5.0,arg31) # 5 Angstroms away from Arg31
+   defines neighbors selected # previously selected</code></pre>
+</section>
+<section id="commands-selected-hidden-displayed" class="level2">
+<h2 class="anchored" data-anchor-id="commands-selected-hidden-displayed">Commands <em>selected</em>, <em>hidden</em>, <em>displayed</em></h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;They allow directing an action to the group of atoms already selected, hidden or displayed, respectively.</p>
+</section>
+<section id="zooming" class="level2">
+<h2 class="anchored" data-anchor-id="zooming">Zooming</h2>
+<pre><code>2x magnification: zoom in
+3x magnification: zoom *3
+2x reduction: zoom out
+3x reduction: zoom /3
+Delete magnification: zoom off
+Ligand restriction and amplification: restrict ligand; zoom 0</code></pre>
+</section>
+<section id="animated-magnification-zoomto" class="level2">
+<h2 class="anchored" data-anchor-id="animated-magnification-zoomto">Animated magnification (<em>zoomto</em>)</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This feature allows you to visualize in a temporally expanded way some parts of interest in the model, such as ligand interaction sites or prosthetic groups. The expression syntax is:</p>
+<pre><code>zoomto or zoomTo (atom/group expression) size
+or...
+
+zoomto time (atom/group expression) size</code></pre>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Examples:</p>
+<pre><code>Zoom in by 3x, half a second at a time: zoomto 0.5 *3
+Zoom in by 4x, half a second at a time: zoomto 0.5 400
+Focus on a ligand at 2x magnification: zoomto 2(ligand) 0
+Focus on a ligand at 4x magnification, half a second at a time: zoom to 0.5(ligand) *4</code></pre>
+</section>
+<section id="surfaces" class="level2">
+<h2 class="anchored" data-anchor-id="surfaces">Surfaces</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Jmol</em> allows you to render some types of surfaces around the model’s atoms. For macromolecules, it should be noted that rendering will take longer.</p>
+<pre><code>dots on/off # van der Waals surface
+   dots only # only the vdw surface present (without the model)
+   dots vanderwaals...or dots vdw
+   ionic dots
+
+isosurface on/off # molecular surface
+   isosurface solvent # excluding solvent
+   molecular isosurface # including solvent
+   molecular isosurface 5 # surface at a given VDW radius
+   isosurface sasurface # solvent accessible surface
+   isosurface mep # "molecular electrostatic potential"
+   isosurface map vdw # Van der Waals surface
+   isosurface map mep # color mapping
+   isosurface molecular map property PartialCharge # or temperature, vanderwaals
+
+geosurface on/off # geodesic (curved) molecular surface
+   geosurface only # exclusively the surface, without the model
+   geosurface vdw
+   ionic geosurface
+   geosurface 5 # value in Angstrom
+  
+Note: To visualize the surfaces including the solvent, you can use the "set solvent on" command first.</code></pre>
+</section>
+<section id="graphics" class="level2">
+<h2 class="anchored" data-anchor-id="graphics">Graphics</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Some two- and three-dimensional graphs can be generated using simple <em>Jmol</em> commands. To return to the original model, give the <em>model 1</em> command.</p>
+<pre><code>   plot properties resno partialcharge # resno = residue number (plots after command to calculate surface charge - see above)
+   plot properties phi psi resno # 3D plot with dihedral angles against no. of the residue
+   plot rama...or plot ramachandran # Ramachandran plot for structure 2a. in proteins
+  
+   Other properties: hydrophobicity, mass, temperature, radius, occupancy, chaino</code></pre>
+</section>
+<section id="creating-and-reading-scripts" class="level2">
+<h2 class="anchored" data-anchor-id="creating-and-reading-scripts">Creating and reading scripts</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scripting allows the observation and analysis of a specific part of the model under study, by composing code snippets as command lines. In this way, the <em>script</em> resembles an <em>algorithm</em> with a succession of commands. A <em>script</em> can be loaded by calling the program’s files (<em>File, Open</em>), or even by dragging the file to the program’s screen area.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The creation of the <em>script</em> can be done in a simple text file, saving it as **.spt<em>. On the other hand,</em> Jmol* has its own construction and testing environment, <em>Script Editor</em>, accessible through the main <em>Menu</em>. In this environment it is possible to open, create, check, and run a <em>script</em>. It is also valid to copy/paste some code snippet into <em>Console</em> or <em>Jmol/JSmol</em>, separating the commands with <em>semicolons</em> on successive lines. This way the <em>Script Editor</em> is simulated in the <em>Console</em> itself.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It is also possible through <em>Jmol</em> to define an initial <em>script</em> to be run when the program opens. For this:</p>
+<pre><code>set defaultLoadScript "commands"</code></pre>
+</section>
+<section id="mutation" class="level2">
+<h2 class="anchored" data-anchor-id="mutation">Mutation</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It is also possible to observe consequences of the mutation of specific residues in a model, such as weak interactions (electrostatic or hydrogen bonds, for example).</p>
+<pre><code>   mutate 33Lys # specifically changes position 33 of the primary sequence to Lysine
+   mutate Ala34 ~W # change Ala to Trp
+   mutate(1:3) ~GAL # changes the first three positions in the protein to Gly, Ala and Leu</code></pre>
+</section>
+<section id="animations-in-models" class="level2">
+<h2 class="anchored" data-anchor-id="animations-in-models">Animations in models</h2>
+<pre><code>Focusing on the Fe atom in myoglobin:
+   select hem; wireframe only; wireframe 70# group exclusive rendering
+   zooto 2(_Fe) 0 # 2x magnification</code></pre>
+<section id="move" class="level3">
+<h3 class="anchored" data-anchor-id="move">Move</h3>
+</section>
+<section id="moveto" class="level3">
+<h3 class="anchored" data-anchor-id="moveto">MoveTo</h3>
+</section>
+<section id="compare" class="level3">
+<h3 class="anchored" data-anchor-id="compare">Compare</h3>
+</section>
+<section id="navigate" class="level3">
+<h3 class="anchored" data-anchor-id="navigate">Navigate</h3>
+</section>
+<section id="delay" class="level3">
+<h3 class="anchored" data-anchor-id="delay">Delay</h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Command that allows you to wait a period of time in seconds before the next action. Normally used in the sequence of commands by the <em>Console</em>, throughout a <em>script</em>.</p>
+</section>
+</section>
+<section id="programming" class="level2">
+<h2 class="anchored" data-anchor-id="programming">Programming</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Programming and loop commands (<em>loop</em>) implemented in <em>Jmol</em>:</p>
+<pre><code>IF    FOR   WHILE   STEP    BREAK   WAIT    PAUSE   
+BREAK   CASE    CONTINUE    QUIT</code></pre>
+</section>
+<section id="configurations-set" class="level2">
+<h2 class="anchored" data-anchor-id="configurations-set">Configurations (<em>set</em>)</h2>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

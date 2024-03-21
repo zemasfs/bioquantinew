@@ -45,7 +45,7 @@ fontesize: 12pt
 
 ### Contents
 
-[Commands](.\JmolQuarto\comandos.html)
+[Commands](.\JmolQuarto\comandos-en.html)
 
 [Aminoacids](.\JmolQuarto\aminoacido.html)
 
