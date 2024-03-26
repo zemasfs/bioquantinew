@@ -88,7 +88,7 @@
   
   
   
-    <meta name="theme-color" content="#bbdefb" />
+    <meta name="theme-color" content="#795548" />
   
 
   
@@ -246,7 +246,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.394add373da6aea9daa0560ff1df1d97.css" />
+  <link rel="stylesheet" href="/css/wowchemy.238f8390ce18d1cc788568810f95bf07.css" />
 
   
   
@@ -257,8 +257,8 @@
   
     
     
-    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" disabled>
-    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
   
 
   
@@ -372,7 +372,7 @@
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper  dark "  >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper   "  >
 
   
   
@@ -383,7 +383,7 @@
   
   
   
-  <script src="/js/wowchemy-init.min.22ad66a4f96b4e9da14bbb023ea57684.js"></script>
+  <script src="/js/wowchemy-init.min.613040fe4f2c0f007b4dcb64404201cb.js"></script>
 
   
 
@@ -446,6 +446,10 @@
     <div class="container-xl">
 
       
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/en/">Quantitative Biochemistry</a>
+      </div>
+      
 
       
       <button type="button" class="navbar-toggler" data-toggle="collapse"
@@ -454,6 +458,10 @@
       </button>
       
 
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/en/">Quantitative Biochemistry</a>
+      </div>
       
 
       
@@ -596,13 +604,30 @@
         
         
         
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
 
         
         
         <li class="nav-item dropdown i18n-dropdown">
-          <a href="#" class="nav-link " data-toggle="dropdown"
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
              aria-haspopup="true" aria-label="Languages">
-            <i class="fas fa-globe mr-1" aria-hidden="true"></i></a>
+            <i class="fas fa-globe mr-1" aria-hidden="true"></i><span class="d-none d-lg-inline">English</span></a>
           <div class="dropdown-menu">
             <div class="dropdown-item dropdown-item-active">
               <span>English</span>
