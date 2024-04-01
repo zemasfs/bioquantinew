@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Bioquímica Quantitativa</title>
+    <title>bioQuanti</title>
     <link>https://bioquanti.netlify.app/</link>
       <atom:link href="https://bioquanti.netlify.app/index.xml" rel="self" type="application/rss+xml" />
-    <description>Bioquímica Quantitativa</description>
+    <description>bioQuanti</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>pt-br</language>
     <image>
       <url>https://bioquanti.netlify.app/media/icon_hu7208a802a376a45d3814814dd5d5e8f4_16213_512x512_fill_lanczos_center_3.png</url>
-      <title>Bioquímica Quantitativa</title>
+      <title>bioQuanti</title>
       <link>https://bioquanti.netlify.app/</link>
     </image>
     
@@ -22,9 +22,9 @@
     
     <item>
       <title></title>
-      <link>https://bioquanti.netlify.app/authors/admin/_index13mar/</link>
+      <link>https://bioquanti.netlify.app/authors/admin/avatares/_index13mar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://bioquanti.netlify.app/authors/admin/_index13mar/</guid>
+      <guid>https://bioquanti.netlify.app/authors/admin/avatares/_index13mar/</guid>
       <description>&lt;!-- Google tag (gtag.js)--&gt; 
 &lt;script async src=&#34;https://www.googletagmanager.com/gtag/js?id=G-S1L73VGCG5&#34;&gt;&lt;/script&gt;
 &lt;script&gt;

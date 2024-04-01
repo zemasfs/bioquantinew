@@ -10,7 +10,7 @@ appearance:
    theme_night: minimal
    font: minimal
    font_size: l
-
+  
 # SEO
 
 marketing:
@@ -50,8 +50,6 @@ footer:
       share_alike: true
       allow_commercial: false
 
-# Localization
-
 locale:
   date_format: 'Jan 2, 2006'
   time_format: '3:04 PM'
@@ -90,10 +88,6 @@ features:
       api_key: ''
       index_name: ''
       show_logo: false
-  map:
-    provider: ''
-    api_key: ''
-    zoom: 15
 
 # Extensions
 

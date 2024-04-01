@@ -14,8 +14,8 @@ design:
 
 <font size="6">
 
-<!--- Jmol --->
-{{< icon name="list-group-item" pack="fa fa-pencil fa-fw" >}} {{< staticref "uploads/JmolBook/index.html" >}}Estrutura & Jmol{{< /staticref >}}
+<!---## Jmol
+{{< icon name="list-group-item" pack="fa fa-pencil fa-fw" >}} {{< staticref "uploads/JmolBook/index.html" >}}Estrutura & Jmol{{< /staticref >}}--->
 
 <!--- RStudio --->
 {{< icon name="list-group-item" pack="fa fa-pencil fa-fw" >}} {{< staticref "uploads/biqBook/index.html" >}}Função & R{{< /staticref >}} 

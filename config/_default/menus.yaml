@@ -3,6 +3,27 @@
 #     desired widget in your `content/home/` folder.
 #   The weight parameter defines the order that the links will appear in.
 
+# Menu novo
+# main:
+#   - name: Home
+#     url: '#about'
+#     weight: 10
+#   - name: Ferramentas
+#     identifier: ferr
+#     weight: 20
+#   - name: EM
+#     parent: ferr
+#     url: '#em'
+#     weight: 10
+#   - name: Programas
+#     parent: ferr
+#     url: '#programas'
+#     weight: 20
+#   - name: Contato
+#     url: '#contato'
+#     weight: 60
+
+# Menu velho
 main:
   - name: Home
     url: '#about'
@@ -22,6 +43,7 @@ main:
   - name: Contato
     url: '#contato'
     weight: 60
+
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Authors | Bioquímica Quantitativa</title>
+    <title>Authors | bioQuanti</title>
     <link>https://bioquanti.netlify.app/authors/</link>
       <atom:link href="https://bioquanti.netlify.app/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
@@ -14,9 +14,9 @@
     
     <item>
       <title></title>
-      <link>https://bioquanti.netlify.app/authors/admin/_index13mar/</link>
+      <link>https://bioquanti.netlify.app/authors/admin/avatares/_index13mar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://bioquanti.netlify.app/authors/admin/_index13mar/</guid>
+      <guid>https://bioquanti.netlify.app/authors/admin/avatares/_index13mar/</guid>
       <description>&lt;!-- Google tag (gtag.js)--&gt; 
 &lt;script async src=&#34;https://www.googletagmanager.com/gtag/js?id=G-S1L73VGCG5&#34;&gt;&lt;/script&gt;
 &lt;script&gt;

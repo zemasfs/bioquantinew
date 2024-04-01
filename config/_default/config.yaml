@@ -4,7 +4,7 @@ theme: "starter-hugo-academic"
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: Bioquímica Quantitativa # Nome do sítio que vai à esquerda da página principal
+title: bioQuanti # Nome do sítio que vai à esquerda da página principal
 baseURL: 'https://bioquanti.netlify.app/' # Website URL
 marketing:
   analytics:
