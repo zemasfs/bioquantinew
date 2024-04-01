@@ -12,7 +12,7 @@ headless: true
 # Order that this section appears on the page.
 weight: 20
 
-title: Quantitative Biochemistry
+title: bioQuanti
 subtitle: Algumas ferramentas para o ensino e aprendizagem em Bioquímica e conteúdos afins <!--- não aparece --->
 
 # Choose the user profile to display

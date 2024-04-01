@@ -12,7 +12,7 @@ pt:
 en:
   languageCode: en
   contentDir: content/en
-  title: Quantitative Biochemistry
+  title: bioQuanti
   params:
     description: Site description in English...
   menu:
