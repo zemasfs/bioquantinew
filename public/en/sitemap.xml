@@ -54,8 +54,6 @@
       href="https://bioquanti.netlify.app/en/publication_types/"
     /></url>
   <url>
-    <loc>https://bioquanti.netlify.app/en/index-en/</loc><changefreq>weekly</changefreq></url>
-  <url>
     <loc>https://bioquanti.netlify.app/en/tags/</loc><changefreq>weekly</changefreq><xhtml:link
       rel="alternate"
       hreflang="pt"

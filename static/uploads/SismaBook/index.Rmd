@@ -19,6 +19,8 @@ tags: ["R Markdown", "plot", "regression"]
 
 <font size="4">
 
+<body style="background-color:   #e6ffe6;"> 
+
 ![ ](logo_sisma.png){width=20%}
 
 |       **Sisma** é um programa elaborado com a proposta de gerar uma imagem dinâmica de transformações ocorridas entre reagentes e produtos de reações isoladas ou em rede, pela simples inserção de compostos (*object*) interligados por setas (*path*). Nesse sentido, o programa foi desenhado para facilitar a inserção de reagentes e vias metabólicas, **simulando o que se desenharia com um lápis e uma folha de papel em branco**. 
@@ -84,4 +86,5 @@ tags: ["R Markdown", "plot", "regression"]
 
 </font>
 
+</body style> 
 

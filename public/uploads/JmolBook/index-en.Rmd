@@ -8,6 +8,8 @@ tags: ["R Markdown", "plot", "regression"]
 fontesize: 12pt
 ---
 
+<body style="background-color:  #e6ffff;"> 
+
 <!-- <!-- Google tag (gtag.js) ## se não funcionar o default, tem que colocar essa tag em cada página do sítio--> 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-S1L73VGCG5"></script>
 <script>
@@ -81,6 +83,8 @@ fontesize: 12pt
 |       Several other programs offer functionalities similar to Jmol, including standalone software for desktop computers, mobile applications (Android, iPhone), and online platforms. A simple web search can help you find programs like:
 
 *[Pymol](https://pymol.org/2/), *[Maestro](https://www.schrodinger.com/products/maestro), *[iMolView](https://www.molsoft.com/iMolview.html), *[VMD](https://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=VMD), *[UCSF Chimera](https://www.cgl.ucsf.edu/chimera/) *[Vesta](https://jp-minerals.org/vesta/en/), and *[QuteMol](https://qutemol.sourceforge.net/), among several.
+
+</body>
 
 
 

@@ -8,6 +8,9 @@ tags: ["R Markdown", "plot", "regression"]
 fontesize: 12pt
 ---
 
+<body style="background-color:  #e6ffff;"> 
+
+
 <!-- <!-- Google tag (gtag.js) ## se não funcionar o default, tem que colocar essa tag em cada página do sítio--> 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-S1L73VGCG5"></script>
 <script>
@@ -70,6 +73,8 @@ uma pasta de diretório contendo seus arquivos, como a partir de um disco rígid
 ## Outros programas para visualização de modelos moleculares
 
 |       Existem diversos programas para renderização tridimensional de modelos atômicos, tanto *standalone*, para dispositivos móveis (Android, iPhone), como *online*. Uma rápida busca na internet permite acessar programas como [Pymol](https://pymol.org/2/), [Maestro](https://www.schrodinger.com/products/maestro), [iMolView](https://www.molsoft.com/iMolview.html), [VMD](https://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=VMD), [UCSF Chimera](https://www.cgl.ucsf.edu/chimera/) [Vesta](https://jp-minerals.org/vesta/en/), e [QuteMol](https://qutemol.sourceforge.net/), dentre vários.
+
+</body>
 
 
 

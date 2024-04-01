@@ -21,7 +21,7 @@ en:
         url: '#about'
         weight: 10
       - name: Tools
-        url: '#ferramentas'
+        url: '#programs'
         weight: 30
       - name: About
         url: '#contato'
