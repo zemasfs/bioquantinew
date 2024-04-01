@@ -4,45 +4,49 @@
 #   The weight parameter defines the order that the links will appear in.
 
 # Menu novo
-# main:
-#   - name: Home
-#     url: '#about'
-#     weight: 10
-#   - name: Ferramentas
-#     identifier: ferr
-#     weight: 20
-#   - name: EM
-#     parent: ferr
-#     url: '#em'
-#     weight: 10
-#   - name: Programas
-#     parent: ferr
-#     url: '#programas'
-#     weight: 20
-#   - name: Contato
-#     url: '#contato'
-#     weight: 60
-
-# Menu velho
 main:
   - name: Home
     url: '#about'
     weight: 10
-  # - name: Posts
-  #   url: '#posts'
-  #   weight: 20
   - name: Ferramentas
-    url: '#ferramentas'
-    weight: 30
-  # - name: Talks
-  #   url: '#talks'
-  #   weight: 40
-  # - name: Publications
-  #   url: '#featured'
-  #   weight: 50
+    identifier: ferr
+    weight: 20
+  # - name: EM
+  #   parent: ferr
+  #   url: '#em'
+  #   weight: 10
+  - name: Programas
+    parent: ferr
+    url: '#programas'
+    weight: 20
   - name: Contato
     url: '#contato'
     weight: 60
+
+###################################
+
+# ############################# Menu velho
+# main:
+#   - name: Home
+#     url: '#about'
+#     weight: 10
+#   # - name: Posts
+#   #   url: '#posts'
+#   #   weight: 20
+#   - name: Ferramentas
+#     url: '#ferramentas'
+#     weight: 30
+#   # - name: Talks
+#   #   url: '#talks'
+#   #   weight: 40
+#   # - name: Publications
+#   #   url: '#featured'
+#   #   weight: 50
+#   - name: Contato
+#     url: '#contato'
+#     weight: 6
+    
+#######################################
 
 
 # Link to a PDF of your resume/CV from the menu.
