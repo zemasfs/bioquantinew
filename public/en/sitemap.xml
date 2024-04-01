@@ -24,6 +24,16 @@
       href="https://bioquanti.netlify.app/en/authors/"
     /></url>
   <url>
+    <loc>https://bioquanti.netlify.app/en/</loc><changefreq>weekly</changefreq><xhtml:link
+      rel="alternate"
+      hreflang="pt"
+      href="https://bioquanti.netlify.app/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://bioquanti.netlify.app/en/"
+    /></url>
+  <url>
     <loc>https://bioquanti.netlify.app/en/categories/</loc><changefreq>weekly</changefreq><xhtml:link
       rel="alternate"
       hreflang="pt"
@@ -42,16 +52,6 @@
       rel="alternate"
       hreflang="en"
       href="https://bioquanti.netlify.app/en/publication_types/"
-    /></url>
-  <url>
-    <loc>https://bioquanti.netlify.app/en/</loc><changefreq>weekly</changefreq><xhtml:link
-      rel="alternate"
-      hreflang="pt"
-      href="https://bioquanti.netlify.app/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://bioquanti.netlify.app/en/"
     /></url>
   <url>
     <loc>https://bioquanti.netlify.app/en/index-en/</loc><changefreq>weekly</changefreq></url>
