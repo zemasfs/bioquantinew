@@ -10,15 +10,16 @@ main:
     weight: 10
   - name: Ferramentas
     identifier: ferr
+    url: '#programas'
     weight: 20
   # - name: EM
   #   parent: ferr
   #   url: '#em'
   #   weight: 10
-  - name: Programas
-    parent: ferr
-    url: '#programas'
-    weight: 20
+  # name: Programas
+  # parent: ferr
+  # url: '#programas'
+  # weight: 20
   - name: Contato
     url: '#contato'
     weight: 60
