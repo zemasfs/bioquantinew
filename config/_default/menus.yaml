@@ -12,9 +12,9 @@ main:
     identifier: ferr
     url: '#programas'
     weight: 20
-  # - name: EM
-  #   parent: ferr
-  #   url: '#em'
+  # - name: EM # nome que aparece à esquerda como um tópico
+  #   parent: ferr # ítem pai 
+  #   url: '#em'  # nome do arquivo na pasta menu ferramentas
   #   weight: 10
   # name: Programas
   # parent: ferr
