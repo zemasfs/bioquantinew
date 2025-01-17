@@ -20,6 +20,9 @@ main:
   # parent: ferr
   # url: '#programas'
   # weight: 20
+  - name: Ensino Básico
+    url: https://errre.netlify.app/
+    weight: 40
   - name: Contato
     url: '#contato'
     weight: 60

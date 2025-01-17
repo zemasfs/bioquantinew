@@ -14,8 +14,6 @@ design:
 
 <font size="6">
 
-## Jmol
-
 <!--- Jmol --->
 {{< icon name="list-group-item" pack="fa fa-pencil fa-fw" >}} {{< staticref "uploads/JmolBook/index.html" >}}Estrutura & Jmol{{< /staticref >}}
 
