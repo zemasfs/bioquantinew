@@ -24,7 +24,7 @@ design:
 {{< icon name="list-group-item" pack="fa fa-pencil fa-fw" >}} {{< staticref "uploads/SismaBook/index.html" >}}Dinâmica & Sisma{{< /staticref >}}
 
 <!---Outras --->
-{{< icon name="list-group-item" pack="fa fa-pencil fa-fw" >}} {{< staticref "uploads/Outras/index.html" >}}Outras{{< /staticref >}}
+{{< icon name="list-group-item" pack="fa fa-pencil fa-fw" >}} {{< staticref "uploads/Outras/index.html" >}}Outros{{< /staticref >}}
 
 {{< icon name="list-group-item" pack="fa fa-pencil fa-fw" >}} {{< staticref "uploads/textbook/index.html" >}}Livro{{< /staticref >}}
 
