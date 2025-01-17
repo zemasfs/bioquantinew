@@ -3,7 +3,7 @@ widget: blank
 headless: true
 
 # ... Put Your Section Options Here (title etc.) ...
-title: Ferramentas
+title: Bioquímica
 subtitle: 
 
 weight: 30  # section position on page
@@ -25,6 +25,8 @@ design:
 
 <!---Outras --->
 {{< icon name="list-group-item" pack="fa fa-pencil fa-fw" >}} {{< staticref "uploads/Outras/index.html" >}}Outras{{< /staticref >}}
+
+{{< icon name="list-group-item" pack="fa fa-pencil fa-fw" >}} {{< staticref "uploads/textbook/index.html" >}}Livro{{< /staticref >}}
 
 
 </font>

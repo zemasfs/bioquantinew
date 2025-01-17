@@ -2,8 +2,8 @@
   "name": "bioQuanti",
   "short_name": "bioQuanti",
   "lang": "en",
-  "theme_color": "#795548",
-  "background_color": "#795548",
+  "theme_color": "#707070",
+  "background_color": "#707070",
   "icons": [{
     "src": "/media/icon_hu7208a802a376a45d3814814dd5d5e8f4_16213_192x192_fill_lanczos_center_3.png",
     "sizes": "192x192",
