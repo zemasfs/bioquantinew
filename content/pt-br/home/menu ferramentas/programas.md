@@ -15,18 +15,18 @@ design:
 <font size="6">
 
 <!--- Jmol --->
-{{< icon name="list-group-item" pack="fa fa-pencil fa-fw" >}} {{< staticref "uploads/JmolBook/index.html" >}}Estrutura & Jmol{{< /staticref >}}
+{{< icon name="list-group-item" pack="fa-solid fa-atom" >}} {{< staticref "uploads/JmolBook/index.html" >}}Estrutura & Jmol{{< /staticref >}}
 
 <!--- RStudio --->
-{{< icon name="list-group-item" pack="fa fa-pencil fa-fw" >}} {{< staticref "uploads/biqBook/index.html" >}}Função & R{{< /staticref >}} 
+{{< icon name="list-group-item" pack="fa-solid fa-chart-line" >}} {{< staticref "uploads/biqBook/index.html" >}}Função & R{{< /staticref >}} 
 
 <!---Sisma --->
-{{< icon name="list-group-item" pack="fa fa-pencil fa-fw" >}} {{< staticref "uploads/SismaBook/index.html" >}}Dinâmica & Sisma{{< /staticref >}}
+{{< icon name="list-group-item" pack="fa-solid fa-diagram-project" >}} {{< staticref "uploads/SismaBook/index.html" >}}Dinâmica & Sisma{{< /staticref >}}
+
+{{< icon name="list-group-item" pack="fa-solid fa-book" >}} {{< staticref "uploads/textbook/index.html" >}}Bioquímica básica, de gente, de bicho, e de planta{{< /staticref >}}
 
 <!---Outras --->
-{{< icon name="list-group-item" pack="fa fa-pencil fa-fw" >}} {{< staticref "uploads/Outras/index.html" >}}Outros{{< /staticref >}}
-
-{{< icon name="list-group-item" pack="fa fa-pencil fa-fw" >}} {{< staticref "uploads/textbook/index.html" >}}Livro{{< /staticref >}}
+{{< icon name="list-group-item" pack="fa-solid fa-link" >}} {{< staticref "uploads/Outras/index.html" >}}Outros{{< /staticref >}}
 
 
 </font>
